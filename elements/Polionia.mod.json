@@ -22,6 +22,9 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:PolioniaFlatlands"
+      },
+      {
+        "value": "CUSTOM:PolioniaDesert"
       }
     ],
     "worldGenType": "Normal world gen",

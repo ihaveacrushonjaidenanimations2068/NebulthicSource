@@ -123,7 +123,8 @@ public class PolioniaDimension extends NebulithicAscensionRewrittenModElements.M
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:polionia_flatlands")),};
+		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:polionia_flatlands")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:polionia_desert")),};
 	}
 
 	@Override

@@ -1557,6 +1557,132 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "polio_tree_10"
+    },
+    {
+      "name": "DormantCactrapBottom",
+      "type": "block",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dormant_cactrap_bottom"
+    },
+    {
+      "name": "DormantCactrapMiddle",
+      "type": "block",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dormant_cactrap_middle"
+    },
+    {
+      "name": "DormantCactrap",
+      "type": "block",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dormant_cactrap"
+    },
+    {
+      "name": "PolioniaDesert",
+      "type": "biome",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polionia_desert"
+    },
+    {
+      "name": "PolioniaCactus",
+      "type": "structure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polionia_cactus"
+    },
+    {
+      "name": "PolioCactus2",
+      "type": "structure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_cactus_2"
+    },
+    {
+      "name": "PolioCactus3",
+      "type": "structure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_cactus_3"
+    },
+    {
+      "name": "PolioCactus4",
+      "type": "structure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_cactus_4"
+    },
+    {
+      "name": "PolioCactus5",
+      "type": "structure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_cactus_5"
+    },
+    {
+      "name": "PolioCactus6",
+      "type": "structure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_cactus_6"
+    },
+    {
+      "name": "PolioCactus7",
+      "type": "structure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_cactus_7"
+    },
+    {
+      "name": "PolioCactus8",
+      "type": "structure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_cactus_8"
+    },
+    {
+      "name": "PolioCactus9",
+      "type": "structure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_cactus_9"
+    },
+    {
+      "name": "PolioCactus10",
+      "type": "structure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_cactus_10"
     }
   ],
   "variable_elements": [],
@@ -1644,6 +1770,7 @@
       "item.nebulithic_ascension_rewritten.sclerosia": "Sclerosia Realmstone",
       "block.nebulithic_ascension_rewritten.purple_mebris_leaves": "Purple Mebris Leaves",
       "block.nebulithic_ascension_rewritten.eye": "Eye",
+      "block.nebulithic_ascension_rewritten.dormant_cactrap": "Dormant Cactrap",
       "block.nebulithic_ascension_rewritten.dense_volcanic_matter": "Dense Volcanic Matter",
       "block.nebulithic_ascension_rewritten.sclerotic_dirt": "Sclerotic Dirt",
       "block.nebulithic_ascension_rewritten.sclerotis_261_snow": "Sclerotis 261 Snow",
@@ -1666,6 +1793,7 @@
       "block.nebulithic_ascension_rewritten.sclerocalyptus_log": "Sclerocalyptus Log",
       "entity.nebulithic_ascension_rewritten.vascaetosapien": "Vascaetosapien",
       "item.nebulithic_ascension_rewritten.razorbird": "Razorbird Spawn Egg",
+      "block.nebulithic_ascension_rewritten.dormant_cactrap_middle": "Dormant Cactrap",
       "block.nebulithic_ascension_rewritten.purple_mebris_log": "Purple Mebris Log",
       "block.nebulithic_ascension_rewritten.sclerotis_261_regolith": "Sclerotis 261 Regolith",
       "item.nebulithic_ascension_rewritten.polionia": "Polionia Tome",
@@ -1683,6 +1811,7 @@
       "item.nebulithic_ascension_rewritten.vascaetosapien": "Vascaetosapien Spawn Egg",
       "block.nebulithic_ascension_rewritten.hemopine_shrub": "Hemopine Shrub",
       "block.nebulithic_ascension_rewritten.ashling_egg": "Ashling Egg",
+      "block.nebulithic_ascension_rewritten.dormant_cactrap_bottom": "Dormant Cactrap",
       "block.nebulithic_ascension_rewritten.cheripite_ore": "Cheripite Ore",
       "block.nebulithic_ascension_rewritten.polionia_grass": "Polionia Grass",
       "block.nebulithic_ascension_rewritten.blue_mebris_grass": "Blue Mebris Grass",

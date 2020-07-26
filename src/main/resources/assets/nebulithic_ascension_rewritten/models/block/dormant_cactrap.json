@@ -1,0 +1,8 @@
+{
+  "parent": "nebulithic_ascension_rewritten:custom/cactrap_dormant",
+  "textures": {
+    "all": "nebulithic_ascension_rewritten:blocks/polionia_sand",
+    "particle": "nebulithic_ascension_rewritten:blocks/polionia_sand",
+    "0": "nebulithic_ascension_rewritten:blocks/dormant_cactrap"
+  }
+}
