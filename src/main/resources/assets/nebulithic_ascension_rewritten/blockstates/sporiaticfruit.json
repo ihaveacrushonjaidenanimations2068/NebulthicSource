@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "nebulithic_ascension_rewritten:block/sporiaticfruit"
+    },
+    "facing=east": {
+      "model": "nebulithic_ascension_rewritten:block/sporiaticfruit",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "nebulithic_ascension_rewritten:block/sporiaticfruit",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nebulithic_ascension_rewritten:block/sporiaticfruit",
+      "y": 270
+    }
+  }
+}

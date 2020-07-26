@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nebulithic_ascension_rewritten:blocks/dragonbound_dirt",
+    "up": "nebulithic_ascension_rewritten:blocks/dragonbound_grass_top",
+    "north": "nebulithic_ascension_rewritten:blocks/dragonboundgrass_side",
+    "east": "nebulithic_ascension_rewritten:blocks/dragonboundgrass_side",
+    "south": "nebulithic_ascension_rewritten:blocks/dragonboundgrass_side",
+    "west": "nebulithic_ascension_rewritten:blocks/dragonboundgrass_side",
+    "particle": "nebulithic_ascension_rewritten:blocks/dragonbound_dirt"
+  }
+}

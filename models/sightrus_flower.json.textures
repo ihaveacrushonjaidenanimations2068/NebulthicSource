@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "sightrus_flower"
+      },
+      "name": "default"
+    }
+  }
+}

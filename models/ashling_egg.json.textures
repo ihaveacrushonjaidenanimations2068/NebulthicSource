@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "ashling_egg_block"
+      },
+      "name": "default"
+    }
+  }
+}

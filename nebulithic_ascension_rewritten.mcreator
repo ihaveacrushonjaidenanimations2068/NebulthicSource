@@ -1,0 +1,1671 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "HemopineLog",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemopine_log"
+    },
+    {
+      "name": "NABlocks",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "na_blocks"
+    },
+    {
+      "name": "VolcanicGrass",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volcanic_grass"
+    },
+    {
+      "name": "HemopineLeaves",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemopine_leaves"
+    },
+    {
+      "name": "Ash",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ash"
+    },
+    {
+      "name": "DenseVolcanicMatter",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dense_volcanic_matter"
+    },
+    {
+      "name": "Sporiaticfruit",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sporiaticfruit"
+    },
+    {
+      "name": "BloodForest",
+      "type": "biome",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blood_forest"
+    },
+    {
+      "name": "Hemopinetree",
+      "type": "structure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemopinetree"
+    },
+    {
+      "name": "Mierrogenia",
+      "type": "dimension",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mierrogenia"
+    },
+    {
+      "name": "HemoTree2",
+      "type": "structure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_tree_2"
+    },
+    {
+      "name": "HemoTree3",
+      "type": "structure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_tree_3"
+    },
+    {
+      "name": "HemoTree4",
+      "type": "structure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_tree_4"
+    },
+    {
+      "name": "HemoTree5",
+      "type": "structure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_tree_5"
+    },
+    {
+      "name": "HemoTree6",
+      "type": "structure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_tree_6"
+    },
+    {
+      "name": "HemoTree7",
+      "type": "structure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_tree_7"
+    },
+    {
+      "name": "HemoTree8",
+      "type": "structure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_tree_8"
+    },
+    {
+      "name": "HemoTree9",
+      "type": "structure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_tree_9"
+    },
+    {
+      "name": "HemoTree10",
+      "type": "structure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_tree_10"
+    },
+    {
+      "name": "Sangriosapien",
+      "type": "mob",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangriosapien"
+    },
+    {
+      "name": "Firebloom",
+      "type": "plant",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "firebloom"
+    },
+    {
+      "name": "VeinwoodLog",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "veinwood_log"
+    },
+    {
+      "name": "HemoTree11",
+      "type": "structure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_tree_11"
+    },
+    {
+      "name": "Eye",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eye"
+    },
+    {
+      "name": "NAItems",
+      "type": "tab",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "na_items"
+    },
+    {
+      "name": "VeinwoodLeaves",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "veinwood_leaves"
+    },
+    {
+      "name": "EyeStalk",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eye_stalk"
+    },
+    {
+      "name": "NAConsumables",
+      "type": "tab",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "na_consumables"
+    },
+    {
+      "name": "SporiaticFruitItem",
+      "type": "food",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sporiatic_fruit_item"
+    },
+    {
+      "name": "VeinwoodTree",
+      "type": "structure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "veinwood_tree"
+    },
+    {
+      "name": "SangriaGel",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangria_gel"
+    },
+    {
+      "name": "SangriosapienRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangriosapien_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HemopineShrubOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemopine_shrub_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HemopineShrub",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemopine_shrub"
+    },
+    {
+      "name": "SporiaticFruitItemOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sporiatic_fruit_item_on_food_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HemopinePlanks",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemopine_planks"
+    },
+    {
+      "name": "HemoLogToPlanks",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_log_to_planks"
+    },
+    {
+      "name": "HemopineDoor",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemopine_door"
+    },
+    {
+      "name": "HemoPlanksToDoor",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hemo_planks_to_door"
+    },
+    {
+      "name": "BlueMebrisGrass",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_mebris_grass"
+    },
+    {
+      "name": "BlueMebrisLog",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_mebris_log"
+    },
+    {
+      "name": "BlueMebrisLeaves",
+      "type": "block",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_mebris_leaves"
+    },
+    {
+      "name": "MebrisDirt",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mebris_dirt"
+    },
+    {
+      "name": "BlueMebrisVine",
+      "type": "block",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_mebris_vine"
+    },
+    {
+      "name": "PurpleMebrisGrass",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_mebris_grass"
+    },
+    {
+      "name": "PurpleMebrisLog",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_mebris_log"
+    },
+    {
+      "name": "PurpleMebrisLeaves",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_mebris_leaves"
+    },
+    {
+      "name": "PurpleMebrisVine",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_mebris_vine"
+    },
+    {
+      "name": "SmoothMebrisDirt",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_mebris_dirt"
+    },
+    {
+      "name": "Plumesand",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plumesand"
+    },
+    {
+      "name": "AshlingEgg",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashling_egg"
+    },
+    {
+      "name": "WovenVeinwoodSticks",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "woven_veinwood_sticks"
+    },
+    {
+      "name": "Ashling",
+      "type": "mob",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashling"
+    },
+    {
+      "name": "Vascaetosapien",
+      "type": "mob",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vascaetosapien"
+    },
+    {
+      "name": "AcridWastes",
+      "type": "biome",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "acrid_wastes"
+    },
+    {
+      "name": "CharredStalagmite",
+      "type": "structure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charred_stalagmite"
+    },
+    {
+      "name": "PurpleMebrisForest",
+      "type": "biome",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_mebris_forest"
+    },
+    {
+      "name": "PurpleMebrisTree",
+      "type": "structure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_mebris_tree"
+    },
+    {
+      "name": "Purple2",
+      "type": "structure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_2"
+    },
+    {
+      "name": "Purple3",
+      "type": "structure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_3"
+    },
+    {
+      "name": "Purple4",
+      "type": "structure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_4"
+    },
+    {
+      "name": "Purple5",
+      "type": "structure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_5"
+    },
+    {
+      "name": "Purple6",
+      "type": "structure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_6"
+    },
+    {
+      "name": "Purple7",
+      "type": "structure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_7"
+    },
+    {
+      "name": "Purple8",
+      "type": "structure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_8"
+    },
+    {
+      "name": "Purple9",
+      "type": "structure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_9"
+    },
+    {
+      "name": "Purple10",
+      "type": "structure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_10"
+    },
+    {
+      "name": "UmbrisStone",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "umbris_stone"
+    },
+    {
+      "name": "Balucatheria",
+      "type": "dimension",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "balucatheria"
+    },
+    {
+      "name": "Stalagmite2",
+      "type": "structure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stalagmite_2"
+    },
+    {
+      "name": "Stalagmite3",
+      "type": "structure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stalagmite_3"
+    },
+    {
+      "name": "Stalagmite4",
+      "type": "structure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stalagmite_4"
+    },
+    {
+      "name": "Stalagmite5",
+      "type": "structure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stalagmite_5"
+    },
+    {
+      "name": "Stalagmite6",
+      "type": "structure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stalagmite_6"
+    },
+    {
+      "name": "Stalagmite7",
+      "type": "structure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stalagmite_7"
+    },
+    {
+      "name": "Stalagmite8",
+      "type": "structure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stalagmite_8"
+    },
+    {
+      "name": "Stalagmite9",
+      "type": "structure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stalagmite_9"
+    },
+    {
+      "name": "Stalagmite10",
+      "type": "structure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stalagmite_10"
+    },
+    {
+      "name": "BlueMebrisForest",
+      "type": "biome",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_mebris_forest"
+    },
+    {
+      "name": "BlueMebrisTree",
+      "type": "structure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_mebris_tree"
+    },
+    {
+      "name": "Blue2",
+      "type": "structure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_2"
+    },
+    {
+      "name": "Blue3",
+      "type": "structure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_3"
+    },
+    {
+      "name": "Blue4",
+      "type": "structure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_4"
+    },
+    {
+      "name": "Blue5",
+      "type": "structure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_5"
+    },
+    {
+      "name": "Blue6",
+      "type": "structure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_6"
+    },
+    {
+      "name": "Blue7",
+      "type": "structure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_7"
+    },
+    {
+      "name": "Blue8",
+      "type": "structure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_8"
+    },
+    {
+      "name": "Blue9",
+      "type": "structure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_9"
+    },
+    {
+      "name": "Blue10",
+      "type": "structure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_10"
+    },
+    {
+      "name": "Razorbird",
+      "type": "mob",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "razorbird"
+    },
+    {
+      "name": "ScleroticGrass",
+      "type": "block",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerotic_grass"
+    },
+    {
+      "name": "RawVascaetosapien",
+      "type": "food",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_vascaetosapien"
+    },
+    {
+      "name": "VascaetoLauncher",
+      "type": "gun",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vascaeto_launcher"
+    },
+    {
+      "name": "AshlingEggBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashling_egg_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ScleroticDirt",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerotic_dirt"
+    },
+    {
+      "name": "Gallstone",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gallstone"
+    },
+    {
+      "name": "SclerocalyptusLog",
+      "type": "block",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerocalyptus_log"
+    },
+    {
+      "name": "SclerocalyptusLeaves",
+      "type": "block",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerocalyptus_leaves"
+    },
+    {
+      "name": "ScleroticEyeLog",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerotic_eye_log"
+    },
+    {
+      "name": "RawVascaetosapienFoodEaten",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_vascaetosapien_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SightrusFruit",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sightrus_fruit"
+    },
+    {
+      "name": "ScleroticClearing",
+      "type": "biome",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerotic_clearing"
+    },
+    {
+      "name": "SclerocalyptusTree",
+      "type": "structure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerocalyptus_tree"
+    },
+    {
+      "name": "Sclerosia",
+      "type": "dimension",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerosia"
+    },
+    {
+      "name": "ScleroTree2",
+      "type": "structure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclero_tree_2"
+    },
+    {
+      "name": "ScleroTree3",
+      "type": "structure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclero_tree_3"
+    },
+    {
+      "name": "ScleroTree4",
+      "type": "structure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclero_tree_4"
+    },
+    {
+      "name": "ScleroTree5",
+      "type": "structure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclero_tree_5"
+    },
+    {
+      "name": "ScleroTree6",
+      "type": "structure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclero_tree_6"
+    },
+    {
+      "name": "ScleroTree7",
+      "type": "structure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclero_tree_7"
+    },
+    {
+      "name": "ScleroTree8",
+      "type": "structure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclero_tree_8"
+    },
+    {
+      "name": "ScleroTree9",
+      "type": "structure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclero_tree_9"
+    },
+    {
+      "name": "ScleroTree10",
+      "type": "structure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclero_tree_10"
+    },
+    {
+      "name": "DysenteriumDust",
+      "type": "item",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dysenterium_dust"
+    },
+    {
+      "name": "DysenteriumOre",
+      "type": "block",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dysenterium_ore"
+    },
+    {
+      "name": "DysenteriumOreBlock",
+      "type": "block",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dysenterium_ore_block"
+    },
+    {
+      "name": "DysenteriumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dysenterium_ore_block_recipe"
+    },
+    {
+      "name": "DysenteriumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dysenterium_block_ore_recipe"
+    },
+    {
+      "name": "DysenteriumOreSmelting",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dysenterium_ore_smelting"
+    },
+    {
+      "name": "CheripiteGem",
+      "type": "item",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cheripite_gem"
+    },
+    {
+      "name": "CheripiteOre",
+      "type": "block",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cheripite_ore"
+    },
+    {
+      "name": "CheripiteOreBlock",
+      "type": "block",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cheripite_ore_block"
+    },
+    {
+      "name": "CheripiteOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cheripite_ore_block_recipe"
+    },
+    {
+      "name": "CheripiteBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cheripite_block_ore_recipe"
+    },
+    {
+      "name": "CheripiteOreSmelting",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cheripite_ore_smelting"
+    },
+    {
+      "name": "SclerosianBrute",
+      "type": "mob",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerosian_brute"
+    },
+    {
+      "name": "Sclerotis258SurfaceRock",
+      "type": "block",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerotis_258_surface_rock"
+    },
+    {
+      "name": "Sclerotis258Snow",
+      "type": "block",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerotis_258_snow"
+    },
+    {
+      "name": "Hypotarantula",
+      "type": "mob",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hypotarantula"
+    },
+    {
+      "name": "HillyBarrens",
+      "type": "biome",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hilly_barrens"
+    },
+    {
+      "name": "SnowyHillyBarrens",
+      "type": "biome",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snowy_hilly_barrens"
+    },
+    {
+      "name": "Sclerotis258",
+      "type": "dimension",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerotis_258"
+    },
+    {
+      "name": "HypoglycemicSand",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hypoglycemic_sand"
+    },
+    {
+      "name": "HypoglycemicSandstone",
+      "type": "block",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hypoglycemic_sandstone"
+    },
+    {
+      "name": "SmoothHypoglycemicSandstone",
+      "type": "block",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_hypoglycemic_sandstone"
+    },
+    {
+      "name": "HypoglycemicDunes",
+      "type": "biome",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hypoglycemic_dunes"
+    },
+    {
+      "name": "Sclerotis261Regolith",
+      "type": "block",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerotis_261_regolith"
+    },
+    {
+      "name": "Sclerotis261Snow",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerotis_261_snow"
+    },
+    {
+      "name": "EczemicHillyBarrens",
+      "type": "biome",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eczemic_hilly_barrens"
+    },
+    {
+      "name": "EczemicSnowyHillyBarrens",
+      "type": "biome",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eczemic_snowy_hilly_barrens"
+    },
+    {
+      "name": "Sclerotis261Stone",
+      "type": "block",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerotis_261_stone"
+    },
+    {
+      "name": "Sclerotis261",
+      "type": "dimension",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sclerotis_261"
+    },
+    {
+      "name": "PolioniaGrass",
+      "type": "block",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polionia_grass"
+    },
+    {
+      "name": "Contemplator",
+      "type": "mob",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "contemplator"
+    },
+    {
+      "name": "PolioniaDirt",
+      "type": "block",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polionia_dirt"
+    },
+    {
+      "name": "PolioniaLog",
+      "type": "block",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polionia_log"
+    },
+    {
+      "name": "VolcanicGrassUpdateTick",
+      "type": "procedure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volcanic_grass_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PolioniaLeaves",
+      "type": "block",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polionia_leaves"
+    },
+    {
+      "name": "PolioniaFlatlands",
+      "type": "biome",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polionia_flatlands"
+    },
+    {
+      "name": "PolioniaSand",
+      "type": "block",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polionia_sand"
+    },
+    {
+      "name": "PolioniaTree",
+      "type": "structure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polionia_tree"
+    },
+    {
+      "name": "Polionia",
+      "type": "dimension",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polionia"
+    },
+    {
+      "name": "PolioTree2",
+      "type": "structure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_tree_2"
+    },
+    {
+      "name": "PolioTree3",
+      "type": "structure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_tree_3"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "entity.brute.death",
+      "file": "death",
+      "category": "master"
+    },
+    {
+      "name": "item.floppy_disk.use",
+      "file": "floppy_disk_use",
+      "category": "master"
+    },
+    {
+      "name": "entity.brute.hurt",
+      "file": "hit",
+      "category": "master"
+    },
+    {
+      "name": "entiy.brute.ambient",
+      "file": "living",
+      "category": "master"
+    },
+    {
+      "name": "entity.necromancer.music",
+      "file": "musicnecromancer",
+      "category": "master"
+    },
+    {
+      "name": "entity.unborn.breath",
+      "file": "unborn_breath",
+      "category": "master"
+    },
+    {
+      "name": "entity.unborn.death",
+      "file": "unborn_death",
+      "category": "master"
+    },
+    {
+      "name": "entity.unborn.hurt",
+      "file": "unborn_hurt",
+      "category": "master"
+    },
+    {
+      "name": "unborn_isles_ambience",
+      "file": "unborn_isles_ambienceogg",
+      "category": "master"
+    },
+    {
+      "name": "entity.unborn_mage.breath",
+      "file": "unborn_mage_breath",
+      "category": "master"
+    },
+    {
+      "name": "entity.unborn_mage.death",
+      "file": "unborn_mage_death",
+      "category": "master"
+    },
+    {
+      "name": "entity.unborn_mage.hurt",
+      "file": "unborn_mage_hurt",
+      "category": "master"
+    },
+    {
+      "name": "entity.unborn.vomit",
+      "file": "unborn_vomit",
+      "category": "master"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.nebulithic_ascension_rewritten.sclerotis_258": "Sclerotis 258 _ _ _",
+      "block.nebulithic_ascension_rewritten.plumesand": "Plumesand",
+      "entity.nebulithic_ascension_rewritten.razorbird": "Razorbird",
+      "block.nebulithic_ascension_rewritten.veinwood_log": "Veinwood Log",
+      "item.nebulithic_ascension_rewritten.raw_vascaetosapien": "Raw Vascaetosapien",
+      "block.nebulithic_ascension_rewritten.sporiaticfruit": "Sporiatic Fruit",
+      "block.nebulithic_ascension_rewritten.dysenterium_ore_block": "Block of Dysenterium",
+      "item.nebulithic_ascension_rewritten.mierrogenia": "Mierrogenia Realmstone",
+      "itemGroup.tabna_consumables": "Nebulthic Consumables",
+      "block.nebulithic_ascension_rewritten.sclerotic_grass": "Sclerotic Grass",
+      "block.nebulithic_ascension_rewritten.polionia_sand": "Plumesand",
+      "itemGroup.tabna_blocks": "Nebulthic Ascension Blocks",
+      "item.nebulithic_ascension_rewritten.sclerosia": "Sclerosia Realmstone",
+      "block.nebulithic_ascension_rewritten.purple_mebris_leaves": "Purple Mebris Leaves",
+      "block.nebulithic_ascension_rewritten.eye": "Eye",
+      "block.nebulithic_ascension_rewritten.dense_volcanic_matter": "Dense Volcanic Matter",
+      "block.nebulithic_ascension_rewritten.sclerotic_dirt": "Sclerotic Dirt",
+      "block.nebulithic_ascension_rewritten.sclerotis_261_snow": "Sclerotis 261 Snow",
+      "item.nebulithic_ascension_rewritten.sclerotis_261": "Sclerotis 261 Tome",
+      "block.nebulithic_ascension_rewritten.hemopine_door": "Hemopine Door",
+      "item.nebulithic_ascension_rewritten.ashling": "Ashling Spawn Egg",
+      "entity.nebulithic_ascension_rewritten.hypotarantula": "Hypotarantula",
+      "block.nebulithic_ascension_rewritten.hemopine_log": "Hemopine Log",
+      "item.nebulithic_ascension_rewritten.sangria_gel": "Sangria Gel",
+      "block.nebulithic_ascension_rewritten.hypoglycemic_sand": "Hypoglycemic Sand",
+      "block.nebulithic_ascension_rewritten.smooth_mebris_dirt": "Smooth Mebris Dirt",
+      "block.nebulithic_ascension_rewritten.smooth_hypoglycemic_sandstone": "Smooth Hypoglycemic Sandstone",
+      "block.nebulithic_ascension_rewritten.sclerotis_258_surface_rock": "Sclerotis 258 Surface Rock",
+      "item.nebulithic_ascension_rewritten.vascaeto_launcher": "Vascaeto Launcher",
+      "block.nebulithic_ascension_rewritten.woven_veinwood_sticks": "Woven Veinwood Sticks",
+      "entity.nebulithic_ascension_rewritten.ashling": "Ashling",
+      "item.nebulithic_ascension_rewritten.hypotarantula": "Hypotarantula Spawn Egg",
+      "block.nebulithic_ascension_rewritten.polionia_leaves": "Polionia Leaves",
+      "block.nebulithic_ascension_rewritten.veinwood_leaves": "Veinwood Leaves",
+      "block.nebulithic_ascension_rewritten.sclerocalyptus_log": "Sclerocalyptus Log",
+      "entity.nebulithic_ascension_rewritten.vascaetosapien": "Vascaetosapien",
+      "item.nebulithic_ascension_rewritten.razorbird": "Razorbird Spawn Egg",
+      "block.nebulithic_ascension_rewritten.purple_mebris_log": "Purple Mebris Log",
+      "block.nebulithic_ascension_rewritten.sclerotis_261_regolith": "Sclerotis 261 Regolith",
+      "item.nebulithic_ascension_rewritten.polionia": "Polionia Tome",
+      "block.nebulithic_ascension_rewritten.eye_stalk": "Eye Stalk",
+      "item.nebulithic_ascension_rewritten.balucatheria": "Balucatheria Realmstone",
+      "block.nebulithic_ascension_rewritten.blue_mebris_vine": "Blue Mebris Vine",
+      "block.nebulithic_ascension_rewritten.polionia_log": "Polionia Log",
+      "block.nebulithic_ascension_rewritten.hemopine_planks": "Hemopine Planks",
+      "block.nebulithic_ascension_rewritten.purple_mebris_grass": "Purple Mebris Grass",
+      "block.nebulithic_ascension_rewritten.sclerocalyptus_leaves": "Sclerocalyptus Leaves",
+      "block.nebulithic_ascension_rewritten.cheripite_ore_block": "Block of Cheripite",
+      "block.nebulithic_ascension_rewritten.ash": "Ash",
+      "block.nebulithic_ascension_rewritten.hemopine_leaves": "Hemopine Leaves",
+      "block.nebulithic_ascension_rewritten.sclerotis_261_stone": "Sclerotis 261 Stone",
+      "item.nebulithic_ascension_rewritten.vascaetosapien": "Vascaetosapien Spawn Egg",
+      "block.nebulithic_ascension_rewritten.hemopine_shrub": "Hemopine Shrub",
+      "block.nebulithic_ascension_rewritten.ashling_egg": "Ashling Egg",
+      "block.nebulithic_ascension_rewritten.cheripite_ore": "Cheripite Ore",
+      "block.nebulithic_ascension_rewritten.polionia_grass": "Polionia Grass",
+      "block.nebulithic_ascension_rewritten.blue_mebris_grass": "Blue Mebris Grass",
+      "item.nebulithic_ascension_rewritten.dysenterium_dust": "Dysenterium",
+      "block.nebulithic_ascension_rewritten.sclerotic_eye_log": "Sclerotic Eye Log",
+      "block.nebulithic_ascension_rewritten.umbris_stone": "Umbris Stone",
+      "item.nebulithic_ascension_rewritten.sclerosian_brute": "Sclerosian Brute Spawn Egg",
+      "block.nebulithic_ascension_rewritten.blue_mebris_log": "Blue Mebris Log",
+      "block.nebulithic_ascension_rewritten.sclerotis_258_snow": "Sclerotis 258 Snow",
+      "block.nebulithic_ascension_rewritten.volcanic_grass": "Volcanic Grass",
+      "block.nebulithic_ascension_rewritten.purple_mebris_vine": "Purple Mebris Vine",
+      "block.nebulithic_ascension_rewritten.mebris_dirt": "Mebris Dirt",
+      "block.nebulithic_ascension_rewritten.hypoglycemic_sandstone": "Hypoglycemic Sandstone",
+      "item.nebulithic_ascension_rewritten.contemplator": "Contemplator Spawn Egg",
+      "item.nebulithic_ascension_rewritten.sangriosapien": "Sangriosapien Spawn Egg",
+      "entity.nebulithic_ascension_rewritten.sclerosian_brute": "Sclerosian Brute",
+      "entity.nebulithic_ascension_rewritten.contemplator": "Contemplator",
+      "block.nebulithic_ascension_rewritten.polionia_dirt": "Polionia Dirt",
+      "itemGroup.tabna_items": "Nebulthic Ascension Items",
+      "block.nebulithic_ascension_rewritten.blue_mebris_leaves": "Blue Mebris Leaves",
+      "block.nebulithic_ascension_rewritten.firebloom": "Firebloom",
+      "item.nebulithic_ascension_rewritten.cheripite_gem": "Cheripite",
+      "entity.nebulithic_ascension_rewritten.sangriosapien": "Sangriosapien",
+      "block.nebulithic_ascension_rewritten.gallstone": "Gallstone",
+      "item.nebulithic_ascension_rewritten.sporiatic_fruit_item": "Sporiatic Fruit ",
+      "block.nebulithic_ascension_rewritten.dysenterium_ore": "Dysenterium Ore",
+      "block.nebulithic_ascension_rewritten.sightrus_fruit": "Sightrus Fruit"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "nebulithic_ascension_rewritten",
+    "modName": "Nebulithic Ascension ",
+    "version": "1.15.2-3.0.0beta1",
+    "description": "Explore unimaginable places in faraway galaxies",
+    "author": "AJ, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "com.varahunter.nebulithic",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000425621
+}

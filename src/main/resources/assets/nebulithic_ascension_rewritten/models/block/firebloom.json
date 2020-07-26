@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "nebulithic_ascension_rewritten:blocks/emberbloom",
+    "particle": "nebulithic_ascension_rewritten:blocks/emberbloom"
+  }
+}

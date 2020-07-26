@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "nebulithic_ascension_rewritten:blocks/celestial_matter",
+    "particle": "nebulithic_ascension_rewritten:blocks/celestial_matter"
+  }
+}

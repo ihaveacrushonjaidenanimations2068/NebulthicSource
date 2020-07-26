@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "nebulithic_ascension_rewritten:block/polionia_portal_ew"
+    },
+    "axis=x": {
+      "model": "nebulithic_ascension_rewritten:block/polionia_portal_ns"
+    }
+  }
+}

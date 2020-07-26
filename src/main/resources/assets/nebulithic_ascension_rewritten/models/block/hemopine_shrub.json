@@ -1,0 +1,9 @@
+{
+  "parent": "nebulithic_ascension_rewritten:custom/hemopine_shrub",
+  "textures": {
+    "all": "nebulithic_ascension_rewritten:blocks/hemopine_log_side",
+    "particle": "nebulithic_ascension_rewritten:blocks/hemopine_log_side",
+    "0": "nebulithic_ascension_rewritten:blocks/hemopine_leaves",
+    "1": "nebulithic_ascension_rewritten:blocks/hemopine_log_side"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "group": "nebulithic_ascension_rewritten",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "nebulithic_ascension_rewritten:hemopine_planks"
+    },
+    "1": {
+      "item": "nebulithic_ascension_rewritten:hemopine_planks"
+    },
+    "2": {
+      "item": "nebulithic_ascension_rewritten:hemopine_planks"
+    },
+    "3": {
+      "item": "nebulithic_ascension_rewritten:hemopine_planks"
+    },
+    "4": {
+      "item": "nebulithic_ascension_rewritten:hemopine_planks"
+    },
+    "5": {
+      "item": "nebulithic_ascension_rewritten:hemopine_planks"
+    }
+  },
+  "result": {
+    "item": "nebulithic_ascension_rewritten:hemopine_door",
+    "count": 1
+  }
+}

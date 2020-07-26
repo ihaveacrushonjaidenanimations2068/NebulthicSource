@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "schematic_reader_off"
+      },
+      "name": "default"
+    },
+    "on": {
+      "map": {
+        "0": "schematic_reader_on"
+      },
+      "name": "on"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "nebulithic_ascension_rewritten:blocks/polionus1leaves",
+    "particle": "nebulithic_ascension_rewritten:blocks/polionus1leaves"
+  }
+}

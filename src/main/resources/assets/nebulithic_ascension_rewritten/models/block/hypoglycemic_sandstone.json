@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nebulithic_ascension_rewritten:blocks/hypoglycemicstone",
+    "up": "nebulithic_ascension_rewritten:blocks/hypoglycemicsandstonetop",
+    "north": "nebulithic_ascension_rewritten:blocks/hypoglycemicsandstoneside",
+    "east": "nebulithic_ascension_rewritten:blocks/hypoglycemicsandstoneside",
+    "south": "nebulithic_ascension_rewritten:blocks/hypoglycemicsandstoneside",
+    "west": "nebulithic_ascension_rewritten:blocks/hypoglycemicsandstoneside",
+    "particle": "nebulithic_ascension_rewritten:blocks/hypoglycemicstone"
+  }
+}

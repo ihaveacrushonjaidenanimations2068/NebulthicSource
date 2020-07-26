@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "nebulithic_ascension_rewritten:block/balucatheria_portal_ew"
+    },
+    "axis=x": {
+      "model": "nebulithic_ascension_rewritten:block/balucatheria_portal_ns"
+    }
+  }
+}

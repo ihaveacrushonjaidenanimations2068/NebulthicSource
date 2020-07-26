@@ -1,0 +1,42 @@
+{
+  "group": "nebulithic_ascension_rewritten",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "nebulithic_ascension_rewritten:dysenterium_dust"
+    },
+    "1": {
+      "item": "nebulithic_ascension_rewritten:dysenterium_dust"
+    },
+    "2": {
+      "item": "nebulithic_ascension_rewritten:dysenterium_dust"
+    },
+    "3": {
+      "item": "nebulithic_ascension_rewritten:dysenterium_dust"
+    },
+    "4": {
+      "item": "nebulithic_ascension_rewritten:dysenterium_dust"
+    },
+    "5": {
+      "item": "nebulithic_ascension_rewritten:dysenterium_dust"
+    },
+    "6": {
+      "item": "nebulithic_ascension_rewritten:dysenterium_dust"
+    },
+    "7": {
+      "item": "nebulithic_ascension_rewritten:dysenterium_dust"
+    },
+    "8": {
+      "item": "nebulithic_ascension_rewritten:dysenterium_dust"
+    }
+  },
+  "result": {
+    "item": "nebulithic_ascension_rewritten:dysenterium_ore_block",
+    "count": 1
+  }
+}

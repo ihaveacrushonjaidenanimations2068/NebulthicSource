@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "crop": "missing_texture"
+      },
+      "name": "default"
+    },
+    "blue": {
+      "map": {
+        "crop": "blue_mebris_vines"
+      },
+      "name": "blue"
+    },
+    "purple": {
+      "map": {
+        "crop": "mebris_vines"
+      },
+      "name": "purple"
+    }
+  }
+}

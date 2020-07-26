@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nebulithic_ascension_rewritten:blocks/eyeblock_eye",
+    "up": "nebulithic_ascension_rewritten:blocks/eyeblock_back",
+    "north": "nebulithic_ascension_rewritten:blocks/eyeblock_side",
+    "east": "nebulithic_ascension_rewritten:blocks/eyeblock_side",
+    "south": "nebulithic_ascension_rewritten:blocks/eyeblock_side",
+    "west": "nebulithic_ascension_rewritten:blocks/eyeblock_side",
+    "particle": "nebulithic_ascension_rewritten:blocks/eyeblock_eye"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "nebulithic_ascension_rewritten",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nebulithic_ascension_rewritten:cheripite_ore_block"
+    }
+  ],
+  "result": {
+    "item": "nebulithic_ascension_rewritten:cheripite_gem",
+    "count": 9
+  }
+}

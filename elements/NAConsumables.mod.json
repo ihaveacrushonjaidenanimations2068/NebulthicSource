@@ -1,0 +1,11 @@
+{
+  "_fv": 10,
+  "_type": "tab",
+  "definition": {
+    "name": "Nebulthic Consumables",
+    "icon": {
+      "value": "CUSTOM:SporiaticFruitItem"
+    },
+    "showSearch": false
+  }
+}

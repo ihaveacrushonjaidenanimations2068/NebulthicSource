@@ -1,0 +1,25 @@
+{
+  "_fv": 10,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "raw",
+    "customModelName": "Normal",
+    "name": "Raw Vascaetosapien",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:NAConsumables"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "RawVascaetosapienFoodEaten"
+    }
+  }
+}

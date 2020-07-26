@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom_rh",
+  "textures": {
+    "bottom": "nebulithic_ascension_rewritten:blocks/hemopine_door_bottom",
+    "top": "nebulithic_ascension_rewritten:blocks/hemopine_door_top"
+  }
+}

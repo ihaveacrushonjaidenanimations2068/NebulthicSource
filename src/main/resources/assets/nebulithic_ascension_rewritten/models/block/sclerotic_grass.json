@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nebulithic_ascension_rewritten:blocks/sclerosia_dirt",
+    "up": "nebulithic_ascension_rewritten:blocks/sclerosia_grass_top",
+    "north": "nebulithic_ascension_rewritten:blocks/sclerosia_grass_side",
+    "east": "nebulithic_ascension_rewritten:blocks/sclerosia_grass_side",
+    "south": "nebulithic_ascension_rewritten:blocks/sclerosia_grass_side",
+    "west": "nebulithic_ascension_rewritten:blocks/sclerosia_grass_side",
+    "particle": "nebulithic_ascension_rewritten:blocks/sclerosia_dirt"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "nebulithic_ascension_rewritten",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "nebulithic_ascension_rewritten:cheripite_gem"
+    },
+    "1": {
+      "item": "nebulithic_ascension_rewritten:cheripite_gem"
+    },
+    "2": {
+      "item": "nebulithic_ascension_rewritten:cheripite_gem"
+    },
+    "3": {
+      "item": "nebulithic_ascension_rewritten:cheripite_gem"
+    },
+    "4": {
+      "item": "nebulithic_ascension_rewritten:cheripite_gem"
+    },
+    "5": {
+      "item": "nebulithic_ascension_rewritten:cheripite_gem"
+    },
+    "6": {
+      "item": "nebulithic_ascension_rewritten:cheripite_gem"
+    },
+    "7": {
+      "item": "nebulithic_ascension_rewritten:cheripite_gem"
+    },
+    "8": {
+      "item": "nebulithic_ascension_rewritten:cheripite_gem"
+    }
+  },
+  "result": {
+    "item": "nebulithic_ascension_rewritten:cheripite_ore_block",
+    "count": 1
+  }
+}

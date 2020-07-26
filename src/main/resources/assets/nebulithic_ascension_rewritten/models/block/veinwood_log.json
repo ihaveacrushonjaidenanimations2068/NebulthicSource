@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nebulithic_ascension_rewritten:blocks/veinwood_log_top",
+    "up": "nebulithic_ascension_rewritten:blocks/veinwood_log_top",
+    "north": "nebulithic_ascension_rewritten:blocks/veinwood_log_side_alt",
+    "east": "nebulithic_ascension_rewritten:blocks/veinwood_log_side_alt",
+    "south": "nebulithic_ascension_rewritten:blocks/veinwood_log_side_alt",
+    "west": "nebulithic_ascension_rewritten:blocks/veinwood_log_side_alt",
+    "particle": "nebulithic_ascension_rewritten:blocks/veinwood_log_top"
+  }
+}

@@ -1,0 +1,46 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "Documents/schematic_reader_off",
+		"particle": "Documents/schematic_reader_off"
+	},
+	"elements": [
+		{
+			"from": [0, 0, -9],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [3.125, 3.125, 5.125, 5.125], "texture": "#0"},
+				"east": {"uv": [0, 3.125, 3.125, 5.125], "texture": "#0"},
+				"south": {"uv": [8.25, 3.125, 10.25, 5.125], "texture": "#0"},
+				"west": {"uv": [5.125, 3.125, 8.25, 5.125], "texture": "#0"},
+				"up": {"uv": [5.125, 3.125, 3.125, 0], "texture": "#0"},
+				"down": {"uv": [7.125, 0, 5.125, 3.125], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 16, -16],
+			"to": [16, 18, 1],
+			"faces": {
+				"north": {"uv": [8, 9.125, 10, 9.375], "texture": "#0"},
+				"east": {"uv": [5.875, 9.125, 8, 9.375], "texture": "#0"},
+				"south": {"uv": [12.125, 9.125, 14.125, 9.375], "texture": "#0"},
+				"west": {"uv": [10, 9.125, 12.125, 9.375], "texture": "#0"},
+				"up": {"uv": [10, 9.125, 8, 7], "texture": "#0"},
+				"down": {"uv": [12, 7, 10, 9.125], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 16, 0],
+			"to": [16, 32, 16],
+			"faces": {
+				"north": {"uv": [2, 7.125, 4, 9.125], "texture": "#0"},
+				"east": {"uv": [0, 7.125, 2, 9.125], "texture": "#0"},
+				"south": {"uv": [6, 7.125, 8, 9.125], "texture": "#0"},
+				"west": {"uv": [4, 7.125, 6, 9.125], "texture": "#0"},
+				"up": {"uv": [4, 7.125, 2, 5.125], "texture": "#0"},
+				"down": {"uv": [6, 5.125, 4, 7.125], "texture": "#0"}
+			}
+		}
+	]
+}

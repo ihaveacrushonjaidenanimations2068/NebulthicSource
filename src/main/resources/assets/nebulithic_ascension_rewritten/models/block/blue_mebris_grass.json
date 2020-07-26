@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nebulithic_ascension_rewritten:blocks/nebugrassbottom",
+    "up": "nebulithic_ascension_rewritten:blocks/mebris_grass_top",
+    "north": "nebulithic_ascension_rewritten:blocks/blue_mebris_grass",
+    "east": "nebulithic_ascension_rewritten:blocks/blue_mebris_grass",
+    "south": "nebulithic_ascension_rewritten:blocks/blue_mebris_grass",
+    "west": "nebulithic_ascension_rewritten:blocks/blue_mebris_grass",
+    "particle": "nebulithic_ascension_rewritten:blocks/nebugrassbottom"
+  }
+}

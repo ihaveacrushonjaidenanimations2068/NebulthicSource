@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nebulithic_ascension_rewritten:blocks/logsolroot",
+    "up": "nebulithic_ascension_rewritten:blocks/logsolroot",
+    "north": "nebulithic_ascension_rewritten:blocks/logsolrootside",
+    "east": "nebulithic_ascension_rewritten:blocks/logsolrootside",
+    "south": "nebulithic_ascension_rewritten:blocks/logsolrootside",
+    "west": "nebulithic_ascension_rewritten:blocks/logsolrootside",
+    "particle": "nebulithic_ascension_rewritten:blocks/logsolroot"
+  }
+}

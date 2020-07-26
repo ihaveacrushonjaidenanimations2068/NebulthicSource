@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "closed_shockbloom_bud"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "_fv": 10,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "CUSTOM:Gallstone"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Sclerotis 258 _ _ _",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "missing_texture",
+    "portalTexture": "missing_texture",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:SnowyHillyBarrens"
+      },
+      {
+        "value": "CUSTOM:HillyBarrens"
+      },
+      {
+        "value": "CUSTOM:HypoglycemicDunes"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:Sclerotis258SurfaceRock"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "airColor": {
+      "value": -16711681,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "hasWeather": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false
+  }
+}

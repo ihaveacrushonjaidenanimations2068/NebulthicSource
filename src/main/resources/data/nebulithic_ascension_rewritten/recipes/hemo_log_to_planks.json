@@ -1,0 +1,13 @@
+{
+  "group": "nebulithic_ascension_rewritten",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nebulithic_ascension_rewritten:hemopine_log"
+    }
+  ],
+  "result": {
+    "item": "nebulithic_ascension_rewritten:hemopine_planks",
+    "count": 4
+  }
+}

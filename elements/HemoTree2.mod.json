@@ -1,0 +1,31 @@
+{
+  "_fv": 10,
+  "_type": "structure",
+  "definition": {
+    "structure": "hemopine_tree_2",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 10000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:Mierrogenia"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:Ash"
+      },
+      {
+        "value": "CUSTOM:VolcanicGrass"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:BloodForest"
+      }
+    ],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+  }
+}

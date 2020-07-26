@@ -1,0 +1,119 @@
+{
+  "entity.brute.death": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:death",
+        "stream": false
+      }
+    ]
+  },
+  "item.floppy_disk.use": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:floppy_disk_use",
+        "stream": false
+      }
+    ]
+  },
+  "entity.brute.hurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:hit",
+        "stream": false
+      }
+    ]
+  },
+  "entiy.brute.ambient": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:living",
+        "stream": false
+      }
+    ]
+  },
+  "entity.necromancer.music": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:musicnecromancer",
+        "stream": false
+      }
+    ]
+  },
+  "entity.unborn.breath": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:unborn_breath",
+        "stream": false
+      }
+    ]
+  },
+  "entity.unborn.death": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:unborn_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.unborn.hurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:unborn_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "unborn_isles_ambience": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:unborn_isles_ambienceogg",
+        "stream": false
+      }
+    ]
+  },
+  "entity.unborn_mage.breath": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:unborn_mage_breath",
+        "stream": false
+      }
+    ]
+  },
+  "entity.unborn_mage.death": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:unborn_mage_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.unborn_mage.hurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:unborn_mage_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "entity.unborn.vomit": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:unborn_vomit",
+        "stream": false
+      }
+    ]
+  }
+}

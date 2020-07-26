@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nebulithic_ascension_rewritten:blocks/sclerotic_log_top",
+    "up": "nebulithic_ascension_rewritten:blocks/sclerotic_log_top",
+    "north": "nebulithic_ascension_rewritten:blocks/scleroticeye_log",
+    "east": "nebulithic_ascension_rewritten:blocks/scleroticeye_log",
+    "south": "nebulithic_ascension_rewritten:blocks/scleroticeye_log",
+    "west": "nebulithic_ascension_rewritten:blocks/scleroticeye_log",
+    "particle": "nebulithic_ascension_rewritten:blocks/sclerotic_log_top"
+  }
+}

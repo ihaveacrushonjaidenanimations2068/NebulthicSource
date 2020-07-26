@@ -1,0 +1,12 @@
+{
+  "group": "nebulithic_ascension_rewritten",
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "nebulithic_ascension_rewritten:dysenterium_ore"
+  },
+  "result": {
+    "item": "nebulithic_ascension_rewritten:dysenterium_dust"
+  }
+}

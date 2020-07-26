@@ -1,0 +1,7 @@
+{
+  "parent": "nebulithic_ascension_rewritten:custom/jelly_launcher",
+  "textures": {
+    "0": "nebulithic_ascension_rewritten:blocks/launcher",
+    "particle": "nebulithic_ascension_rewritten:items/launcher"
+  }
+}
