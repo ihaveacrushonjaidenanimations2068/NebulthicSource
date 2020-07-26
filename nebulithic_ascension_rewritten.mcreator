@@ -1494,6 +1494,69 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "polio_tree_3"
+    },
+    {
+      "name": "PolioTree4",
+      "type": "structure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_tree_4"
+    },
+    {
+      "name": "PolioTree5",
+      "type": "structure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_tree_5"
+    },
+    {
+      "name": "PolioTree6",
+      "type": "structure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_tree_6"
+    },
+    {
+      "name": "PolioTree7",
+      "type": "structure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_tree_7"
+    },
+    {
+      "name": "PolioTree8",
+      "type": "structure",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_tree_8"
+    },
+    {
+      "name": "PolioTree9",
+      "type": "structure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_tree_9"
+    },
+    {
+      "name": "PolioTree10",
+      "type": "structure",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polio_tree_10"
     }
   ],
   "variable_elements": [],
