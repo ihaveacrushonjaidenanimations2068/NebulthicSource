@@ -1683,6 +1683,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "polio_cactus_10"
+    },
+    {
+      "name": "Cactrap",
+      "type": "mob",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cactrap"
     }
   ],
   "variable_elements": [],
@@ -1757,8 +1766,8 @@
     "en_us": {
       "item.nebulithic_ascension_rewritten.sclerotis_258": "Sclerotis 258 _ _ _",
       "block.nebulithic_ascension_rewritten.plumesand": "Plumesand",
-      "entity.nebulithic_ascension_rewritten.razorbird": "Razorbird",
       "block.nebulithic_ascension_rewritten.veinwood_log": "Veinwood Log",
+      "entity.nebulithic_ascension_rewritten.razorbird": "Razorbird",
       "item.nebulithic_ascension_rewritten.raw_vascaetosapien": "Raw Vascaetosapien",
       "block.nebulithic_ascension_rewritten.sporiaticfruit": "Sporiatic Fruit",
       "block.nebulithic_ascension_rewritten.dysenterium_ore_block": "Block of Dysenterium",
@@ -1768,6 +1777,7 @@
       "block.nebulithic_ascension_rewritten.polionia_sand": "Plumesand",
       "itemGroup.tabna_blocks": "Nebulthic Ascension Blocks",
       "item.nebulithic_ascension_rewritten.sclerosia": "Sclerosia Realmstone",
+      "entity.nebulithic_ascension_rewritten.cactrap": "Cactrap",
       "block.nebulithic_ascension_rewritten.purple_mebris_leaves": "Purple Mebris Leaves",
       "block.nebulithic_ascension_rewritten.eye": "Eye",
       "block.nebulithic_ascension_rewritten.dormant_cactrap": "Dormant Cactrap",
@@ -1783,6 +1793,7 @@
       "block.nebulithic_ascension_rewritten.hypoglycemic_sand": "Hypoglycemic Sand",
       "block.nebulithic_ascension_rewritten.smooth_mebris_dirt": "Smooth Mebris Dirt",
       "block.nebulithic_ascension_rewritten.smooth_hypoglycemic_sandstone": "Smooth Hypoglycemic Sandstone",
+      "item.nebulithic_ascension_rewritten.cactrap": "Cactrap Spawn Egg",
       "block.nebulithic_ascension_rewritten.sclerotis_258_surface_rock": "Sclerotis 258 Surface Rock",
       "item.nebulithic_ascension_rewritten.vascaeto_launcher": "Vascaeto Launcher",
       "block.nebulithic_ascension_rewritten.woven_veinwood_sticks": "Woven Veinwood Sticks",
@@ -1844,7 +1855,7 @@
   "workspaceSettings": {
     "modid": "nebulithic_ascension_rewritten",
     "modName": "Nebulithic Ascension ",
-    "version": "1.15.2-3.0.0beta1",
+    "version": "1.15.2-3.0.0beta1-git-",
     "description": "Explore unimaginable places in faraway galaxies",
     "author": "AJ, MCreator",
     "websiteURL": "https://mcreator.net",
