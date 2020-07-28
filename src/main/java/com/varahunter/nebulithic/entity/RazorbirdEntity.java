@@ -2,6 +2,7 @@
 package com.varahunter.nebulithic.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -20,6 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.pathfinding.FlyingPathNavigator;
+import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -106,6 +108,11 @@ public class RazorbirdEntity extends NebulithicAscensionRewrittenModElements.Mod
 		}
 
 		@Override
+		public IPacket<?> createSpawnPacket() {
+			return NetworkHooks.getEntitySpawningPacket(this);
+		}
+
+		@Override
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 0.8, 20) {
@@ -135,11 +142,6 @@ public class RazorbirdEntity extends NebulithicAscensionRewrittenModElements.Mod
 		}
 
 		@Override
-		public net.minecraft.util.SoundEvent getAmbientSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
-		}
-
-		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 		}
@@ -147,11 +149,6 @@ public class RazorbirdEntity extends NebulithicAscensionRewrittenModElements.Mod
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
-		}
-
-		@Override
-		protected float getSoundVolume() {
-			return 1.0F;
 		}
 
 		@Override

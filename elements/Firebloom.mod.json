@@ -6,6 +6,7 @@
     "texture": "emberbloom",
     "customModelName": "Cross model",
     "plantType": "normal",
+    "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "name": "Firebloom",
@@ -25,6 +26,8 @@
     },
     "dropAmount": 1,
     "forceTicking": false,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
     "isReplaceable": false,
     "colorOnMap": "TNT",
     "creativePickItem": {

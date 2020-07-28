@@ -22,7 +22,6 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
-import com.varahunter.nebulithic.itemgroup.NABlocksItemGroup;
 import com.varahunter.nebulithic.NebulithicAscensionRewrittenModElements;
 
 @NebulithicAscensionRewrittenModElements.ModElement.Tag
@@ -36,7 +35,7 @@ public class DormantCactrapMiddleBlock extends NebulithicAscensionRewrittenModEl
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(NABlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override

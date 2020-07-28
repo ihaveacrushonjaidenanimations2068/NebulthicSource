@@ -30,7 +30,10 @@ public class Sclerotis261Item extends Item {
 		if (!entity.canPlayerEdit(pos, context.getFace(), itemstack)) {
 			return ActionResultType.FAIL;
 		} else {
-			if (world.isAirBlock(pos))
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (world.isAirBlock(pos) && true)
 				Sclerotis261Dimension.portal.portalSpawn(world, pos);
 			itemstack.damageItem(1, entity, c -> c.sendBreakAnimation(context.getHand()));
 			return ActionResultType.SUCCESS;

@@ -5,6 +5,12 @@
         "0": "dormant_cactrap"
       },
       "name": "default"
+    },
+    "awake": {
+      "map": {
+        "0": "awake_cactrap"
+      },
+      "name": "awake"
     }
   }
 }

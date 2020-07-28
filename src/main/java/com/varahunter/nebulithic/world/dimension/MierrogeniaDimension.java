@@ -255,7 +255,7 @@ public class MierrogeniaDimension extends NebulithicAscensionRewrittenModElement
 
 		@Override
 		public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-			if (!entity.isPassenger() && !entity.isBeingRidden() && entity.isNonBoss() && !entity.world.isRemote) {
+			if (!entity.isPassenger() && !entity.isBeingRidden() && entity.isNonBoss() && !entity.world.isRemote && true) {
 				if (entity.timeUntilPortal > 0) {
 					entity.timeUntilPortal = entity.getPortalCooldown();
 				} else if (entity.dimension != type) {
@@ -417,7 +417,7 @@ public class MierrogeniaDimension extends NebulithicAscensionRewrittenModElement
 	@SubscribeEvent
 	public void registerPointOfInterest(RegistryEvent.Register<PointOfInterestType> event) {
 		try {
-			Method method = ObfuscationReflectionHelper.findMethod(PointOfInterestType.class, "register", String.class, Set.class, int.class,
+			Method method = ObfuscationReflectionHelper.findMethod(PointOfInterestType.class, "func_226359_a_", String.class, Set.class, int.class,
 					int.class);
 			method.setAccessible(true);
 			poi = (PointOfInterestType) method.invoke(null, "mierrogenia_portal",
@@ -752,7 +752,6 @@ public class MierrogeniaDimension extends NebulithicAscensionRewrittenModElement
 	}
 
 	public static class ChunkProviderModded extends OverworldChunkGenerator {
-		private static final int SEALEVEL = 63;
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new OverworldGenSettings() {
 				public BlockState getDefaultBlock() {
@@ -764,11 +763,6 @@ public class MierrogeniaDimension extends NebulithicAscensionRewrittenModElement
 				}
 			});
 			this.randomSeed.skip(5349);
-		}
-
-		@Override
-		public int getSeaLevel() {
-			return SEALEVEL;
 		}
 
 		@Override
@@ -785,17 +779,21 @@ public class MierrogeniaDimension extends NebulithicAscensionRewrittenModElement
 
 	public static class BiomeProviderCustom extends BiomeProvider {
 		private Layer genBiomes;
+		private static boolean biomesPatched = false;
 		public BiomeProviderCustom(World world) {
 			super(new HashSet<Biome>(Arrays.asList(dimensionBiomes)));
 			this.genBiomes = getBiomeLayer(world.getSeed());
-			for (Biome biome : this.biomes) {
-				biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
-					{
-						carvableBlocks = ImmutableSet.of(DenseVolcanicMatterBlock.block.getDefaultState().getBlock(),
-								biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
-								biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
-					}
-				}, new ProbabilityConfig(0.14285715f)));
+			if (!biomesPatched) {
+				for (Biome biome : this.biomes) {
+					biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
+						{
+							carvableBlocks = ImmutableSet.of(DenseVolcanicMatterBlock.block.getDefaultState().getBlock(),
+									biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
+									biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
+						}
+					}, new ProbabilityConfig(0.14285715f)));
+				}
+				biomesPatched = true;
 			}
 		}
 

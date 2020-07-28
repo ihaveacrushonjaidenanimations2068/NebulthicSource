@@ -3,6 +3,8 @@ package com.varahunter.nebulithic.world.biome;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
@@ -53,7 +55,7 @@ public class EczemicHillyBarrensBiome extends NebulithicAscensionRewrittenModEle
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0.5f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
-					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011)
+					.category(Biome.Category.NONE).waterColor(-14329397).waterFogColor(-14329397)
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Sclerotis261RegolithBlock.block.getDefaultState(),
 							Sclerotis261RegolithBlock.block.getDefaultState(), Sclerotis261RegolithBlock.block.getDefaultState())));
 			setRegistryName("eczemic_hilly_barrens");
@@ -71,6 +73,24 @@ public class EczemicHillyBarrensBiome extends NebulithicAscensionRewrittenModEle
 									new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()))).baseHeight(7)
 											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public int getGrassColor(double posX, double posZ) {
+			return -13261999;
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public int getFoliageColor() {
+			return -13261999;
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public int getSkyColor() {
+			return -5916161;
 		}
 	}
 

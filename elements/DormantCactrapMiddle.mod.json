@@ -11,6 +11,7 @@
     "renderType": 2,
     "customModelName": "cactrap_dormant_middle:default",
     "rotationMode": 0,
+    "emissiveRendering": false,
     "itemTexture": "missing_texture",
     "hasTransparency": true,
     "connectedSides": false,
@@ -27,7 +28,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:NABlocks"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -70,7 +71,6 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "particleSpawningCondition": "ALWAYS",
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

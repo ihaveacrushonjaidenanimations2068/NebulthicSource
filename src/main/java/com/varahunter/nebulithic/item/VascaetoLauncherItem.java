@@ -19,6 +19,7 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.ActionResult;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
+import net.minecraft.item.ShootableItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
@@ -29,8 +30,6 @@ import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
-import net.minecraft.enchantment.Enchantments;
-import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
@@ -97,32 +96,39 @@ public class VascaetoLauncherItem extends NebulithicAscensionRewrittenModElement
 		public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entityLiving, int timeLeft) {
 			if (!world.isRemote && entityLiving instanceof ServerPlayerEntity) {
 				ServerPlayerEntity entity = (ServerPlayerEntity) entityLiving;
-				int slotID = -1;
-				for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
-					ItemStack stack = entity.inventory.mainInventory.get(i);
-					if (stack != null && stack.getItem() == new ItemStack(RawVascaetosapienItem.block, (int) (1)).getItem()) {
-						slotID = i;
-						break;
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
+				if (true) {
+					ItemStack stack = ShootableItem.getHeldAmmo(entity,
+							e -> e.getItem() == new ItemStack(RawVascaetosapienItem.block, (int) (1)).getItem());
+					if (stack == ItemStack.EMPTY) {
+						for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
+							ItemStack teststack = entity.inventory.mainInventory.get(i);
+							if (teststack != null && teststack.getItem() == new ItemStack(RawVascaetosapienItem.block, (int) (1)).getItem()) {
+								stack = teststack;
+								break;
+							}
+						}
 					}
-				}
-				if (entity.abilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, itemstack) > 0 || slotID != -1) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 5, 5);
-					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
-					if (entity.abilities.isCreativeMode) {
-						entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
-					} else {
-						ItemStack stack = entity.inventory.getStackInSlot(slotID);
-						if (new ItemStack(RawVascaetosapienItem.block, (int) (1)).isDamageable()) {
-							if (stack.attemptDamageItem(1, random, entity)) {
+					if (entity.abilities.isCreativeMode || stack != ItemStack.EMPTY) {
+						ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 5, 5);
+						itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
+						if (entity.abilities.isCreativeMode) {
+							entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
+						} else {
+							if (new ItemStack(RawVascaetosapienItem.block, (int) (1)).isDamageable()) {
+								if (stack.attemptDamageItem(1, random, entity)) {
+									stack.shrink(1);
+									stack.setDamage(0);
+									if (stack.isEmpty())
+										entity.inventory.deleteStack(stack);
+								}
+							} else {
 								stack.shrink(1);
-								stack.setDamage(0);
 								if (stack.isEmpty())
 									entity.inventory.deleteStack(stack);
 							}
-						} else {
-							stack.shrink(1);
-							if (stack.isEmpty())
-								entity.inventory.deleteStack(stack);
 						}
 					}
 				}
@@ -173,9 +179,9 @@ public class VascaetoLauncherItem extends NebulithicAscensionRewrittenModElement
 		@Override
 		public void tick() {
 			super.tick();
-			int x = (int) this.getPosX();
-			int y = (int) this.getPosY();
-			int z = (int) this.getPosZ();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.getShooter();
 			if (this.inGround) {
@@ -289,7 +295,7 @@ public class VascaetoLauncherItem extends NebulithicAscensionRewrittenModElement
 		world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();
-		int z = (int) entity.getPosZ();
+		double z = entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
 				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.slime.jump")),
 				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
@@ -309,7 +315,7 @@ public class VascaetoLauncherItem extends NebulithicAscensionRewrittenModElement
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();
-		int z = (int) entity.getPosZ();
+		double z = entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
 				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.slime.jump")),
 				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));

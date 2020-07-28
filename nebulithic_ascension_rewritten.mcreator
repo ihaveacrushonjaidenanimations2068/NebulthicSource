@@ -1692,6 +1692,100 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "cactrap"
+    },
+    {
+      "name": "CactrapBarb",
+      "type": "gun",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cactrap_barb"
+    },
+    {
+      "name": "TargetDummy",
+      "type": "mob",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "target_dummy"
+    },
+    {
+      "name": "CactrapEntityDies",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cactrap_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MiniCactrap",
+      "type": "mob",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mini_cactrap"
+    },
+    {
+      "name": "AwakeCactrap",
+      "type": "block",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "awake_cactrap"
+    },
+    {
+      "name": "AwakeCactrapOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "awake_cactrap_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1766,9 +1860,10 @@
     "en_us": {
       "item.nebulithic_ascension_rewritten.sclerotis_258": "Sclerotis 258 _ _ _",
       "block.nebulithic_ascension_rewritten.plumesand": "Plumesand",
-      "block.nebulithic_ascension_rewritten.veinwood_log": "Veinwood Log",
       "entity.nebulithic_ascension_rewritten.razorbird": "Razorbird",
+      "block.nebulithic_ascension_rewritten.veinwood_log": "Veinwood Log",
       "item.nebulithic_ascension_rewritten.raw_vascaetosapien": "Raw Vascaetosapien",
+      "item.nebulithic_ascension_rewritten.cactrap_barb": "Cactrap Barb",
       "block.nebulithic_ascension_rewritten.sporiaticfruit": "Sporiatic Fruit",
       "block.nebulithic_ascension_rewritten.dysenterium_ore_block": "Block of Dysenterium",
       "item.nebulithic_ascension_rewritten.mierrogenia": "Mierrogenia Realmstone",
@@ -1789,6 +1884,7 @@
       "item.nebulithic_ascension_rewritten.ashling": "Ashling Spawn Egg",
       "entity.nebulithic_ascension_rewritten.hypotarantula": "Hypotarantula",
       "block.nebulithic_ascension_rewritten.hemopine_log": "Hemopine Log",
+      "entity.nebulithic_ascension_rewritten.mini_cactrap": "Mini Cactrap",
       "item.nebulithic_ascension_rewritten.sangria_gel": "Sangria Gel",
       "block.nebulithic_ascension_rewritten.hypoglycemic_sand": "Hypoglycemic Sand",
       "block.nebulithic_ascension_rewritten.smooth_mebris_dirt": "Smooth Mebris Dirt",
@@ -1800,6 +1896,7 @@
       "entity.nebulithic_ascension_rewritten.ashling": "Ashling",
       "item.nebulithic_ascension_rewritten.hypotarantula": "Hypotarantula Spawn Egg",
       "block.nebulithic_ascension_rewritten.polionia_leaves": "Polionia Leaves",
+      "item.nebulithic_ascension_rewritten.target_dummy": "Target Dummy Spawn Egg",
       "block.nebulithic_ascension_rewritten.veinwood_leaves": "Veinwood Leaves",
       "block.nebulithic_ascension_rewritten.sclerocalyptus_log": "Sclerocalyptus Log",
       "entity.nebulithic_ascension_rewritten.vascaetosapien": "Vascaetosapien",
@@ -1808,6 +1905,7 @@
       "block.nebulithic_ascension_rewritten.purple_mebris_log": "Purple Mebris Log",
       "block.nebulithic_ascension_rewritten.sclerotis_261_regolith": "Sclerotis 261 Regolith",
       "item.nebulithic_ascension_rewritten.polionia": "Polionia Tome",
+      "item.nebulithic_ascension_rewritten.mini_cactrap": "Mini Cactrap Spawn Egg",
       "block.nebulithic_ascension_rewritten.eye_stalk": "Eye Stalk",
       "item.nebulithic_ascension_rewritten.balucatheria": "Balucatheria Realmstone",
       "block.nebulithic_ascension_rewritten.blue_mebris_vine": "Blue Mebris Vine",
@@ -1827,9 +1925,11 @@
       "block.nebulithic_ascension_rewritten.polionia_grass": "Polionia Grass",
       "block.nebulithic_ascension_rewritten.blue_mebris_grass": "Blue Mebris Grass",
       "item.nebulithic_ascension_rewritten.dysenterium_dust": "Dysenterium",
+      "entity.nebulithic_ascension_rewritten.target_dummy": "Target Dummy",
       "block.nebulithic_ascension_rewritten.sclerotic_eye_log": "Sclerotic Eye Log",
       "block.nebulithic_ascension_rewritten.umbris_stone": "Umbris Stone",
       "item.nebulithic_ascension_rewritten.sclerosian_brute": "Sclerosian Brute Spawn Egg",
+      "block.nebulithic_ascension_rewritten.awake_cactrap": "Dormant Cactrap",
       "block.nebulithic_ascension_rewritten.blue_mebris_log": "Blue Mebris Log",
       "block.nebulithic_ascension_rewritten.sclerotis_258_snow": "Sclerotis 258 Snow",
       "block.nebulithic_ascension_rewritten.volcanic_grass": "Volcanic Grass",
@@ -1858,7 +1958,7 @@
     "version": "1.15.2-3.0.0beta1-git-",
     "description": "Explore unimaginable places in faraway galaxies",
     "author": "AJ, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/nebulithic-ascension",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -1870,5 +1970,5 @@
     "modElementsPackage": "com.varahunter.nebulithic",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000425621
+  "mcreatorVersion": 202000430417
 }

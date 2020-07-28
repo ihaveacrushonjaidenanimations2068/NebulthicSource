@@ -25,7 +25,9 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 import com.varahunter.nebulithic.procedures.HemopineShrubOnBlockRightClickedProcedure;
@@ -84,7 +86,7 @@ public class HemopineShrubBlock extends NebulithicAscensionRewrittenModElements.
 			int z = pos.getZ();
 			Direction direction = hit.getFace();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

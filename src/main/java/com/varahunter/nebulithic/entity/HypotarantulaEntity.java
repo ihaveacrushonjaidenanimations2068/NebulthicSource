@@ -2,6 +2,7 @@
 package com.varahunter.nebulithic.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -14,6 +15,7 @@ import net.minecraft.world.World;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -79,6 +81,11 @@ public class HypotarantulaEntity extends NebulithicAscensionRewrittenModElements
 		}
 
 		@Override
+		public IPacket<?> createSpawnPacket() {
+			return NetworkHooks.getEntitySpawningPacket(this);
+		}
+
+		@Override
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
@@ -110,11 +117,6 @@ public class HypotarantulaEntity extends NebulithicAscensionRewrittenModElements
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.spider.death"));
-		}
-
-		@Override
-		protected float getSoundVolume() {
-			return 1.0F;
 		}
 
 		@Override

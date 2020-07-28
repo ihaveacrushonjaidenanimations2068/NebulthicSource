@@ -2,6 +2,7 @@
 package com.varahunter.nebulithic.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -18,6 +19,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
+import net.minecraft.network.IPacket;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
@@ -40,6 +42,9 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
+
+import java.util.Map;
+import java.util.HashMap;
 
 import com.varahunter.nebulithic.procedures.SangriosapienRightClickedOnEntityProcedure;
 import com.varahunter.nebulithic.item.SporiaticFruitItemItem;
@@ -105,6 +110,11 @@ public class SangriosapienEntity extends NebulithicAscensionRewrittenModElements
 		}
 
 		@Override
+		public IPacket<?> createSpawnPacket() {
+			return NetworkHooks.getEntitySpawningPacket(this);
+		}
+
+		@Override
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1,
@@ -127,11 +137,6 @@ public class SangriosapienEntity extends NebulithicAscensionRewrittenModElements
 		}
 
 		@Override
-		public net.minecraft.util.SoundEvent getAmbientSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
-		}
-
-		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 		}
@@ -139,11 +144,6 @@ public class SangriosapienEntity extends NebulithicAscensionRewrittenModElements
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
-		}
-
-		@Override
-		protected float getSoundVolume() {
-			return 1.0F;
 		}
 
 		@Override
@@ -156,7 +156,7 @@ public class SangriosapienEntity extends NebulithicAscensionRewrittenModElements
 			double z = this.getPosZ();
 			Entity entity = this;
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				SangriosapienRightClickedOnEntityProcedure.executeProcedure($_dependencies);
 			}

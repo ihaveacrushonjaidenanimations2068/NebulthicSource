@@ -22,7 +22,9 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 import com.varahunter.nebulithic.procedures.AshlingEggBlockDestroyedByPlayerProcedure;
@@ -79,7 +81,7 @@ public class AshlingEggBlock extends NebulithicAscensionRewrittenModElements.Mod
 			int y = pos.getY();
 			int z = pos.getZ();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

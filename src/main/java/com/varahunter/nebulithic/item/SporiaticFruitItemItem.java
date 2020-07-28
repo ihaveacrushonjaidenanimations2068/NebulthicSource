@@ -12,6 +12,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.player.PlayerEntity;
 
+import java.util.Map;
+import java.util.HashMap;
+
 import com.varahunter.nebulithic.procedures.SporiaticFruitItemOnFoodRightClickedProcedure;
 import com.varahunter.nebulithic.itemgroup.NAConsumablesItemGroup;
 import com.varahunter.nebulithic.NebulithicAscensionRewrittenModElements;
@@ -48,7 +51,7 @@ public class SporiaticFruitItemItem extends NebulithicAscensionRewrittenModEleme
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
