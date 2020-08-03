@@ -1786,6 +1786,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Frostusk",
+      "type": "mob",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frostusk"
     }
   ],
   "variable_elements": [],
@@ -1907,6 +1916,7 @@
       "item.nebulithic_ascension_rewritten.polionia": "Polionia Tome",
       "item.nebulithic_ascension_rewritten.mini_cactrap": "Mini Cactrap Spawn Egg",
       "block.nebulithic_ascension_rewritten.eye_stalk": "Eye Stalk",
+      "item.nebulithic_ascension_rewritten.frostusk": "Frostusk Spawn Egg",
       "item.nebulithic_ascension_rewritten.balucatheria": "Balucatheria Realmstone",
       "block.nebulithic_ascension_rewritten.blue_mebris_vine": "Blue Mebris Vine",
       "block.nebulithic_ascension_rewritten.polionia_log": "Polionia Log",
@@ -1949,13 +1959,14 @@
       "block.nebulithic_ascension_rewritten.gallstone": "Gallstone",
       "item.nebulithic_ascension_rewritten.sporiatic_fruit_item": "Sporiatic Fruit ",
       "block.nebulithic_ascension_rewritten.dysenterium_ore": "Dysenterium Ore",
-      "block.nebulithic_ascension_rewritten.sightrus_fruit": "Sightrus Fruit"
+      "block.nebulithic_ascension_rewritten.sightrus_fruit": "Sightrus Fruit",
+      "entity.nebulithic_ascension_rewritten.frostusk": "Frostusk"
     }
   },
   "workspaceSettings": {
     "modid": "nebulithic_ascension_rewritten",
     "modName": "Nebulithic Ascension ",
-    "version": "1.15.2-3.0.0beta1-git-",
+    "version": "1.15.2-3.0.0beta1",
     "description": "Explore unimaginable places in faraway galaxies",
     "author": "AJ, MCreator",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/nebulithic-ascension",
@@ -1970,5 +1981,5 @@
     "modElementsPackage": "com.varahunter.nebulithic",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000430417
+  "mcreatorVersion": 202000432115
 }

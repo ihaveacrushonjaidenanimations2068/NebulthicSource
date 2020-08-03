@@ -19,7 +19,6 @@ import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.IWorld;
-import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
@@ -43,8 +42,8 @@ public class Blue8Structure extends NebulithicAscensionRewrittenModElements.ModE
 		Feature<NoFeatureConfig> feature = new Feature<NoFeatureConfig>(NoFeatureConfig::deserialize) {
 			@Override
 			public boolean place(IWorld world, ChunkGenerator generator, Random random, BlockPos pos, NoFeatureConfig config) {
-				int ci = (pos.getX() >> 4) * 16;
-				int ck = (pos.getZ() >> 4) * 16;
+				int ci = (pos.getX() >> 4) << 4;
+				int ck = (pos.getZ() >> 4) << 4;
 				DimensionType dimensionType = world.getDimension().getType();
 				boolean dimensionCriteria = false;
 				if (dimensionType == BalucatheriaDimension.type)
@@ -74,10 +73,8 @@ public class Blue8Structure extends NebulithicAscensionRewrittenModElements.ModE
 								.getTemplateDefaulted(new ResourceLocation("nebulithic_ascension_rewritten", "simple_blue_mebris_tree"));
 						if (template == null)
 							return false;
-						template.addBlocksToWorldChunk(world, spawnTo,
-								new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
-										.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk((ChunkPos) null)
-										.setIgnoreEntities(false));
+						template.addBlocksToWorld(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
+								.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false));
 					}
 				}
 				return true;
