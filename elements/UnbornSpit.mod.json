@@ -24,7 +24,7 @@
     "damageVsEntity": 0.0,
     "bulletPower": 1.0,
     "bulletDamage": 5.0,
-    "bulletKnockback": 5,
+    "bulletKnockback": 1,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
