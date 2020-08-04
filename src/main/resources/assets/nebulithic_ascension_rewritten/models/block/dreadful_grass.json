@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nebulithic_ascension_rewritten:blocks/new_dreadstone",
+    "up": "nebulithic_ascension_rewritten:blocks/new_dread_grass_top",
+    "north": "nebulithic_ascension_rewritten:blocks/newdreadgrassside",
+    "east": "nebulithic_ascension_rewritten:blocks/newdreadgrassside",
+    "south": "nebulithic_ascension_rewritten:blocks/newdreadgrassside",
+    "west": "nebulithic_ascension_rewritten:blocks/newdreadgrassside",
+    "particle": "nebulithic_ascension_rewritten:blocks/new_dreadstone"
+  }
+}

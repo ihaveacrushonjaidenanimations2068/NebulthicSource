@@ -21,13 +21,16 @@
     "enablePortal": true,
     "biomesInDimension": [
       {
-        "value": "CUSTOM:SnowyHillyBarrens"
-      },
-      {
         "value": "CUSTOM:HillyBarrens"
       },
       {
+        "value": "CUSTOM:SnowyHillyBarrens"
+      },
+      {
         "value": "CUSTOM:HypoglycemicDunes"
+      },
+      {
+        "value": "CUSTOM:Sclerotis258IceSpikes"
       }
     ],
     "worldGenType": "Normal world gen",

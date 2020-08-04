@@ -123,9 +123,10 @@ public class Sclerotis258Dimension extends NebulithicAscensionRewrittenModElemen
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:snowy_hilly_barrens")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:hilly_barrens")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:hypoglycemic_dunes")),};
+		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:hilly_barrens")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:snowy_hilly_barrens")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:hypoglycemic_dunes")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:sclerotis_258_ice_spikes")),};
 	}
 
 	@Override

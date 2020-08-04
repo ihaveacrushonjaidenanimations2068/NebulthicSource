@@ -1,0 +1,28 @@
+{
+  "_fv": 10,
+  "_type": "structure",
+  "definition": {
+    "structure": "sclerotis258_ice_mound_1",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 10000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:Sclerotis258"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:Sclerotis258Snow"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Sclerotis258IceSpikes"
+      }
+    ],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+  }
+}

@@ -3,7 +3,7 @@
   "_type": "biome",
   "definition": {
     "groundBlock": {
-      "value": "CUSTOM:Sclerotis258SurfaceRock"
+      "value": "CUSTOM:Sclerotis258Snow"
     },
     "undergroundBlock": {
       "value": "CUSTOM:Sclerotis258SurfaceRock"
@@ -25,18 +25,6 @@
     "treeFruits": {
       "value": "Blocks.AIR"
     },
-    "airColor": {
-      "value": -5916161,
-      "falpha": 0.0
-    },
-    "grassColor": {
-      "value": -13261999,
-      "falpha": 0.0
-    },
-    "waterColor": {
-      "value": -14329397,
-      "falpha": 0.0
-    },
     "treesPerChunk": 3,
     "grassPerChunk": 4,
     "flowersPerChunk": 4,
@@ -51,11 +39,11 @@
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": false,
-    "biomeWeight": 20,
+    "biomeWeight": 10,
     "biomeType": "ICY",
     "biomeCategory": "NONE",
     "parent": {
-      "value": "No parent"
+      "value": "CUSTOM:SnowyHillyBarrens"
     },
     "biomeDictionaryTypes": [],
     "spawnEntries": []

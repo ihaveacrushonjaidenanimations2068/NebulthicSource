@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "nebulithic_ascension_rewritten:block/dreadshroom_stem"
+    },
+    "facing=north": {
+      "model": "nebulithic_ascension_rewritten:block/dreadshroom_stem"
+    },
+    "facing=east": {
+      "model": "nebulithic_ascension_rewritten:block/dreadshroom_stem",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "nebulithic_ascension_rewritten:block/dreadshroom_stem",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "nebulithic_ascension_rewritten:block/dreadshroom_stem",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "nebulithic_ascension_rewritten:block/dreadshroom_stem",
+      "x": 90,
+      "y": 90
+    }
+  }
+}
