@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "nebulithic_ascension_rewritten:blocks/dreadstonre_bricks",
+    "top": "nebulithic_ascension_rewritten:blocks/dreadstonre_bricks",
+    "side": "nebulithic_ascension_rewritten:blocks/dreadstonre_bricks"
+  }
+}

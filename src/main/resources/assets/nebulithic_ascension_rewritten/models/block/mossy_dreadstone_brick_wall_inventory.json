@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "nebulithic_ascension_rewritten:blocks/mossy_draedstonebricks",
+    "particle": "nebulithic_ascension_rewritten:blocks/mossy_draedstonebricks"
+  }
+}

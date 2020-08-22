@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "nebulithic_ascension_rewritten:blocks/dreadstonre_bricks",
+    "particle": "nebulithic_ascension_rewritten:blocks/dreadstonre_bricks"
+  }
+}

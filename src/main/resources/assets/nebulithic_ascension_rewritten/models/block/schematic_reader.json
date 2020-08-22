@@ -1,0 +1,8 @@
+{
+  "parent": "nebulithic_ascension_rewritten:custom/schematic_reader",
+  "textures": {
+    "all": "nebulithic_ascension_rewritten:blocks/missing_texture",
+    "particle": "nebulithic_ascension_rewritten:blocks/missing_texture",
+    "0": "nebulithic_ascension_rewritten:blocks/schematic_reader_off"
+  }
+}

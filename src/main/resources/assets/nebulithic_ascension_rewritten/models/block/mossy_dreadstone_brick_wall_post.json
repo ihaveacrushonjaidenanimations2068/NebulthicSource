@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "nebulithic_ascension_rewritten:blocks/mossy_draedstonebricks",
+    "particle": "nebulithic_ascension_rewritten:blocks/mossy_draedstonebricks"
+  }
+}
