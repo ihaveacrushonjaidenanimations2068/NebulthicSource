@@ -1,0 +1,11 @@
+{
+  "_fv": 10,
+  "_type": "tab",
+  "definition": {
+    "name": "Nebulthic Research Tubes",
+    "icon": {
+      "value": "CUSTOM:ResearchTubeUnborn"
+    },
+    "showSearch": false
+  }
+}

@@ -9,10 +9,10 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "schematic_reader:default",
+    "customModelName": "schematic_reader:on",
     "rotationMode": 1,
     "emissiveRendering": false,
-    "itemTexture": "missing_texture",
+    "itemTexture": "",
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
@@ -28,7 +28,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:NAUtils"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -88,9 +88,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "SchematicReaderOnBlockRightClicked"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

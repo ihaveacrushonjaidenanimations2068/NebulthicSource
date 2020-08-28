@@ -1,0 +1,11 @@
+{
+  "_fv": 10,
+  "_type": "tab",
+  "definition": {
+    "name": "Nebulthic Utility Blocks",
+    "icon": {
+      "value": "CUSTOM:SchematicReader"
+    },
+    "showSearch": false
+  }
+}

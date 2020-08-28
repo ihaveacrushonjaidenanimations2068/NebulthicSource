@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "nebulithic_ascension_rewritten:block/active_schematic_reader"
+    },
+    "facing=east": {
+      "model": "nebulithic_ascension_rewritten:block/active_schematic_reader",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "nebulithic_ascension_rewritten:block/active_schematic_reader",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nebulithic_ascension_rewritten:block/active_schematic_reader",
+      "y": 270
+    }
+  }
+}

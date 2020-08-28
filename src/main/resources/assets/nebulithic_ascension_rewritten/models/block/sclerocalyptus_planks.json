@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "nebulithic_ascension_rewritten:blocks/sclerocalyptus_planks",
+    "particle": "nebulithic_ascension_rewritten:blocks/sclerocalyptus_planks"
+  }
+}

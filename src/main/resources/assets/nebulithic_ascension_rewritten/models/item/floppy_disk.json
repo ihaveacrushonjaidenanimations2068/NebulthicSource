@@ -1,0 +1,7 @@
+{
+  "parent": "nebulithic_ascension_rewritten:custom/floppy_disk",
+  "textures": {
+    "0": "nebulithic_ascension_rewritten:blocks/floppy_disk",
+    "particle": "nebulithic_ascension_rewritten:items/floppy_disk"
+  }
+}
