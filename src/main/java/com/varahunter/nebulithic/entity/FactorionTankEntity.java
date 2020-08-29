@@ -11,10 +11,13 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.server.ServerBossInfo;
 import net.minecraft.world.World;
+import net.minecraft.world.BossInfo;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -148,6 +151,29 @@ public class FactorionTankEntity extends NebulithicAscensionRewrittenModElements
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+		}
+
+		@Override
+		public boolean isNonBoss() {
+			return false;
+		}
+		private final ServerBossInfo bossInfo = new ServerBossInfo(this.getDisplayName(), BossInfo.Color.PINK, BossInfo.Overlay.PROGRESS);
+		@Override
+		public void addTrackingPlayer(ServerPlayerEntity player) {
+			super.addTrackingPlayer(player);
+			this.bossInfo.addPlayer(player);
+		}
+
+		@Override
+		public void removeTrackingPlayer(ServerPlayerEntity player) {
+			super.removeTrackingPlayer(player);
+			this.bossInfo.removePlayer(player);
+		}
+
+		@Override
+		public void updateAITasks() {
+			super.updateAITasks();
+			this.bossInfo.setPercent(this.getHealth() / this.getMaxHealth());
 		}
 	}
 

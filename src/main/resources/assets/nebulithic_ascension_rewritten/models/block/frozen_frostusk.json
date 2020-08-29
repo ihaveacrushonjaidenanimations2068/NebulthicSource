@@ -1,0 +1,9 @@
+{
+  "parent": "nebulithic_ascension_rewritten:custom/frozen_frostusk",
+  "textures": {
+    "all": "nebulithic_ascension_rewritten:blocks/nebulatedice",
+    "particle": "nebulithic_ascension_rewritten:blocks/nebulatedice",
+    "0": "nebulithic_ascension_rewritten:blocks/nebulatedice",
+    "1": "nebulithic_ascension_rewritten:blocks/frostusk_skeleton"
+  }
+}

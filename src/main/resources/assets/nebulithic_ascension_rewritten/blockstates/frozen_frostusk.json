@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "nebulithic_ascension_rewritten:block/frozen_frostusk"
+    },
+    "facing=east": {
+      "model": "nebulithic_ascension_rewritten:block/frozen_frostusk",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "nebulithic_ascension_rewritten:block/frozen_frostusk",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nebulithic_ascension_rewritten:block/frozen_frostusk",
+      "y": 270
+    }
+  }
+}

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry output="bin/main" kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
@@ -29,6 +28,7 @@
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:\Users\AJ\MCreatorWorkspaces\nebulithic_ascension_rewritten\build\natives"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry sourcepath="C:/Users/AJ/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-sources.jar" kind="lib" path="C:/Users/AJ/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar">
 		<attributes>
@@ -41,11 +41,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/AJ/.mcreator/gradle/caches/forge_gradle/minecraft_repo/versions/1.15.2/client-extra.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/accesstransformers/2.1.1/c71c342554f6f9c23224b8b3fc33eea9305b119c/accesstransformers-2.1.1-sources.jar" kind="lib" path="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/accesstransformers/2.1.1/1d1e439ef345ab5fd76df679de70a0c35f03bf4a/accesstransformers-2.1.1-shadowed.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -65,12 +60,17 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/5.1.0/d1f99f11c4ca22a3c563861eb7b7269a5758fa1e/modlauncher-5.1.0-sources.jar" kind="lib" path="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/5.1.0/b9caea28c3fd15fd2c971cb41c44855767f7dbc8/modlauncher-5.1.0.jar">
+	<classpathentry sourcepath="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/accesstransformers/2.1.1/c71c342554f6f9c23224b8b3fc33eea9305b119c/accesstransformers-2.1.1-sources.jar" kind="lib" path="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/accesstransformers/2.1.1/1d1e439ef345ab5fd76df679de70a0c35f03bf4a/accesstransformers-2.1.1-shadowed.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/5.1.0/d1f99f11c4ca22a3c563861eb7b7269a5758fa1e/modlauncher-5.1.0-sources.jar" kind="lib" path="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/5.1.0/1033a85fb0f675efa503c3e7d5009c22c215299e/modlauncher-5.1.0-api.jar">
+	<classpathentry sourcepath="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/5.1.2/110baceef75b8939408935b6ab71cef70ba346d8/modlauncher-5.1.2-sources.jar" kind="lib" path="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/5.1.2/42f764429585b8a12ba42d43a02c0c9018710052/modlauncher-5.1.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/5.1.2/110baceef75b8939408935b6ab71cef70ba346d8/modlauncher-5.1.2-sources.jar" kind="lib" path="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/5.1.2/63c817b0e96e6accbb602e7de7c938fc444025f3/modlauncher-5.1.2-api.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

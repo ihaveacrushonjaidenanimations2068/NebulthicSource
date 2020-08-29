@@ -2,22 +2,22 @@
   "_fv": 10,
   "_type": "mob",
   "definition": {
-    "mobName": "Scleroptera",
+    "mobName": "Unborn Traveller",
     "mobLabel": "",
-    "mobModelName": "ModelScleroptera",
-    "mobModelTexture": "scleroptera.png",
+    "mobModelName": "ModelUnbornTraveller",
+    "mobModelTexture": "unborn_traveller.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
-    "modelHeight": 1.8,
+    "modelHeight": 2.1,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16724737,
+      "value": -6710887,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16724788,
+      "value": -65281,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -50,7 +50,7 @@
     "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 10,
+    "health": 49,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -73,13 +73,13 @@
       "value": ""
     },
     "livingSound": {
-      "value": ""
+      "value": "CUSTOM:entity.unborn.breath"
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "CUSTOM:entity.unborn.hurt"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "CUSTOM:entity.unborn.death"
     },
     "stepSound": {
       "value": ""
@@ -91,8 +91,8 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "onMobTickUpdate": {
-      "name": "ScleropteraSmallOnEntityTickUpdate"
+    "whenMobIsHurt": {
+      "name": "UnbornTravellerEntityIsHurt"
     },
     "hasAI": true,
     "aiBase": "(none)",
@@ -106,16 +106,12 @@
     },
     "rangedItemType": "Default item",
     "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:ScleroticClearing"
-      }
-    ],
+    "restrictionBiomes": [],
     "spawnInDungeons": false
   }
 }

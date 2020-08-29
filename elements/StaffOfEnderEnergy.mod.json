@@ -1,0 +1,39 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "staff_of_ender_energy",
+    "customModelName": "Normal",
+    "name": "Staff Of Ender Energy",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:NAItems"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:OrbInactive"
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:OrbInactive"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "StaffOfEnderEnergyBulletHitsBlock"
+    }
+  }
+}

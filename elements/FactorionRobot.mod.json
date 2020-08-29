@@ -23,7 +23,7 @@
     "creativeTab": {
       "value": "MISC"
     },
-    "isBoss": false,
+    "isBoss": true,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {

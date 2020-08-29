@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "nebulatedice",
+        "1": "frostusk_skeleton"
+      },
+      "name": "default"
+    }
+  }
+}

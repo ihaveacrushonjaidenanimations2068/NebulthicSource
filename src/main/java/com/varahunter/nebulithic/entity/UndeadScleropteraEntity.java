@@ -22,13 +22,18 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
+import net.minecraft.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.IRangedAttackMob;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
@@ -38,41 +43,33 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-import java.util.Map;
-import java.util.HashMap;
-
-import com.varahunter.nebulithic.procedures.ScleropteraSmallOnEntityTickUpdateProcedure;
+import com.varahunter.nebulithic.item.UnbornSpitItem;
 import com.varahunter.nebulithic.NebulithicAscensionRewrittenModElements;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @NebulithicAscensionRewrittenModElements.ModElement.Tag
-public class ScleropteraSmallEntity extends NebulithicAscensionRewrittenModElements.ModElement {
+public class UndeadScleropteraEntity extends NebulithicAscensionRewrittenModElements.ModElement {
 	public static EntityType entity = null;
-	public ScleropteraSmallEntity(NebulithicAscensionRewrittenModElements instance) {
-		super(instance, 226);
+	public UndeadScleropteraEntity(NebulithicAscensionRewrittenModElements instance) {
+		super(instance, 246);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("scleroptera_small")
-						.setRegistryName("scleroptera_small");
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("undead_scleroptera")
+						.setRegistryName("undead_scleroptera");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -16724737, -16724788, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("scleroptera_small"));
+		elements.items.add(() -> new SpawnEggItem(entity, -16724737, -6750055, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("undead_scleroptera"));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("nebulithic_ascension_rewritten:sclerotic_clearing")))
-				biomeCriteria = true;
-			if (!biomeCriteria)
-				continue;
 			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 20, 4, 4));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
@@ -86,12 +83,12 @@ public class ScleropteraSmallEntity extends NebulithicAscensionRewrittenModEleme
 			return new MobRenderer(renderManager, new ModelScleroptera(), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("nebulithic_ascension_rewritten:textures/scleroptera.png");
+					return new ResourceLocation("nebulithic_ascension_rewritten:textures/scleroptera_undead.png");
 				}
 			};
 		});
 	}
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends MonsterEntity implements IRangedAttackMob {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -100,6 +97,7 @@ public class ScleropteraSmallEntity extends NebulithicAscensionRewrittenModEleme
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
+			enablePersistence();
 		}
 
 		@Override
@@ -110,16 +108,28 @@ public class ScleropteraSmallEntity extends NebulithicAscensionRewrittenModEleme
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(5, new SwimGoal(this));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(6, new SwimGoal(this));
+			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
+				@Override
+				public boolean shouldContinueExecuting() {
+					return this.shouldExecute();
+				}
+			});
 		}
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		@Override
+		public boolean canDespawn(double distanceToClosestPlayer) {
+			return false;
 		}
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
@@ -137,24 +147,6 @@ public class ScleropteraSmallEntity extends NebulithicAscensionRewrittenModEleme
 		}
 
 		@Override
-		public void baseTick() {
-			super.baseTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ScleropteraSmallOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
@@ -166,6 +158,10 @@ public class ScleropteraSmallEntity extends NebulithicAscensionRewrittenModEleme
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+		}
+
+		public void attackEntityWithRangedAttack(LivingEntity target, float flval) {
+			UnbornSpitItem.shoot(this, target);
 		}
 	}
 
