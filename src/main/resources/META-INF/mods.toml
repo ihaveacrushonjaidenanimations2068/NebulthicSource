@@ -3,11 +3,11 @@ loaderVersion="[31,)"
 
 [[mods]]
 modId="nebulithic_ascension_rewritten"
-version="1.15.2-3.0.0"
+version="1.15.2-3.0.1"
 displayName="Nebulithic Ascension "
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/nebulithic-ascension"
-authors="AJ, MCreator"
+authors="AJ"
 description='''
 Explore unimaginable places in faraway galaxies
 '''

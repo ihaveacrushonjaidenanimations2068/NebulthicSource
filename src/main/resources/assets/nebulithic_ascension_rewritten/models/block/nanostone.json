@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "nebulithic_ascension_rewritten:blocks/nanosian_stone",
+    "particle": "nebulithic_ascension_rewritten:blocks/nanosian_stone"
+  }
+}
