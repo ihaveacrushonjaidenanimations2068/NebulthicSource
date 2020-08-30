@@ -2873,6 +2873,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "BasicBodyConstruct",
+      "type": "mob",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "basic_body_construct"
     }
   ],
   "variable_elements": [],
@@ -2950,7 +2959,7 @@
       "item.nebulithic_ascension_rewritten.cactrap_barb": "Cactrap Barb",
       "item.nebulithic_ascension_rewritten.scleroptera_adult": "Scleroptera Spawn Egg",
       "itemGroup.tabna_consumables": "Nebulthic Consumables",
-      "entity.nebulithic_ascension_rewritten.pulverizer_construct": "Nanosian",
+      "entity.nebulithic_ascension_rewritten.pulverizer_construct": "Pulverizer Construct",
       "entity.nebulithic_ascension_rewritten.factorion_tank": "Factorion ",
       "entity.nebulithic_ascension_rewritten.cactrap": "Cactrap",
       "block.nebulithic_ascension_rewritten.dormant_cactrap": "Dormant Cactrap",
@@ -3054,7 +3063,7 @@
       "item.nebulithic_ascension_rewritten.unborn_spit": "Unborn Spit",
       "item.nebulithic_ascension_rewritten.unborn_traveller": "Unborn Traveller Spawn Egg",
       "item.nebulithic_ascension_rewritten.hypotarantula": "Hypotarantula Spawn Egg",
-      "item.nebulithic_ascension_rewritten.pulverizer_construct": "Nanosian Spawn Egg",
+      "item.nebulithic_ascension_rewritten.pulverizer_construct": "Pulverizer Construct Spawn Egg",
       "item.nebulithic_ascension_rewritten.target_dummy": "Target Dummy Spawn Egg",
       "item.nebulithic_ascension_rewritten.scleroptera_small": "Scleroptera Spawn Egg",
       "block.nebulithic_ascension_rewritten.veinwood_leaves": "Veinwood Leaves",
@@ -3064,6 +3073,7 @@
       "entity.nebulithic_ascension_rewritten.lithosaurus": "Lithosaurus",
       "block.nebulithic_ascension_rewritten.sclerocalyptus_planks": "Sclerocalyptus Planks",
       "item.nebulithic_ascension_rewritten.frostusk": "Frostusk Spawn Egg",
+      "item.nebulithic_ascension_rewritten.basic_body_construct": "Basic Body Construct Spawn Egg",
       "item.nebulithic_ascension_rewritten.balucatheria": "Balucatheria Realmstone",
       "block.nebulithic_ascension_rewritten.blue_mebris_vine": "Blue Mebris Vine",
       "block.nebulithic_ascension_rewritten.polionia_log": "Polionia Log",
@@ -3084,6 +3094,7 @@
       "block.nebulithic_ascension_rewritten.sclerotis_258_snow": "Sclerotis 258 Snow",
       "block.nebulithic_ascension_rewritten.volcanic_grass": "Volcanic Grass",
       "entity.nebulithic_ascension_rewritten.sclerosian_brute": "Sclerosian Brute",
+      "entity.nebulithic_ascension_rewritten.basic_body_construct": "Basic Body Construct",
       "entity.nebulithic_ascension_rewritten.factorion_robot": "Factorion ",
       "itemGroup.tabna_items": "Nebulthic Items",
       "block.nebulithic_ascension_rewritten.placed_satellite_i_nfo_pad": "Placed Satellite I Nfo Pad",
