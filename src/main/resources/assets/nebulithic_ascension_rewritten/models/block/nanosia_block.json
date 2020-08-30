@@ -1,0 +1,8 @@
+{
+  "parent": "nebulithic_ascension_rewritten:custom/nanosia",
+  "textures": {
+    "all": "nebulithic_ascension_rewritten:blocks/nanosian_stone",
+    "particle": "nebulithic_ascension_rewritten:blocks/nanosian_stone",
+    "0": "nebulithic_ascension_rewritten:blocks/nanosian_stone"
+  }
+}

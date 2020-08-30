@@ -73,6 +73,8 @@ public class NebulithicAscensionRewrittenModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("nebulithic_ascension_rewritten", "entity.unborn_mage.hurt")));
 		sounds.put(new ResourceLocation("nebulithic_ascension_rewritten", "entity.unborn.vomit"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("nebulithic_ascension_rewritten", "entity.unborn.vomit")));
+		sounds.put(new ResourceLocation("nebulithic_ascension_rewritten", "item.ray_gun_use"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nebulithic_ascension_rewritten", "item.ray_gun_use")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("nebulithic_ascension_rewritten").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

@@ -2882,6 +2882,84 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "basic_body_construct"
+    },
+    {
+      "name": "NanostoneBricks",
+      "type": "block",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nanostone_bricks"
+    },
+    {
+      "name": "AbandonedShack",
+      "type": "structure",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "abandoned_shack"
+    },
+    {
+      "name": "PersonalRayGunWeaponMode",
+      "type": "gun",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "personal_ray_gun_weapon_mode"
+    },
+    {
+      "name": "NanosiaBlock",
+      "type": "block",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nanosia_block"
+    },
+    {
+      "name": "PersonalRayGunShrinkModeRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "personal_ray_gun_shrink_mode_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PersonalRayGunShrinkMode",
+      "type": "item",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "personal_ray_gun_shrink_mode"
     }
   ],
   "variable_elements": [],
@@ -2949,6 +3027,11 @@
     {
       "name": "entity.unborn.vomit",
       "file": "unborn_vomit",
+      "category": "master"
+    },
+    {
+      "name": "item.ray_gun_use",
+      "file": "raygun_fire",
       "category": "master"
     }
   ],
@@ -3064,6 +3147,7 @@
       "item.nebulithic_ascension_rewritten.unborn_traveller": "Unborn Traveller Spawn Egg",
       "item.nebulithic_ascension_rewritten.hypotarantula": "Hypotarantula Spawn Egg",
       "item.nebulithic_ascension_rewritten.pulverizer_construct": "Pulverizer Construct Spawn Egg",
+      "block.nebulithic_ascension_rewritten.nanostone_bricks": "Nanostone Bricks",
       "item.nebulithic_ascension_rewritten.target_dummy": "Target Dummy Spawn Egg",
       "item.nebulithic_ascension_rewritten.scleroptera_small": "Scleroptera Spawn Egg",
       "block.nebulithic_ascension_rewritten.veinwood_leaves": "Veinwood Leaves",
@@ -3072,6 +3156,7 @@
       "item.nebulithic_ascension_rewritten.undead_scleroptera": "Scleroptera Spawn Egg",
       "entity.nebulithic_ascension_rewritten.lithosaurus": "Lithosaurus",
       "block.nebulithic_ascension_rewritten.sclerocalyptus_planks": "Sclerocalyptus Planks",
+      "item.nebulithic_ascension_rewritten.personal_ray_gun_weapon_mode": "Personal Ray Gun (Weapon Mode)",
       "item.nebulithic_ascension_rewritten.frostusk": "Frostusk Spawn Egg",
       "item.nebulithic_ascension_rewritten.basic_body_construct": "Basic Body Construct Spawn Egg",
       "item.nebulithic_ascension_rewritten.balucatheria": "Balucatheria Realmstone",
@@ -3079,6 +3164,7 @@
       "block.nebulithic_ascension_rewritten.polionia_log": "Polionia Log",
       "block.nebulithic_ascension_rewritten.hemopine_planks": "Hemopine Planks",
       "item.nebulithic_ascension_rewritten.nanosia": "Nanosia Portal Igniter",
+      "item.nebulithic_ascension_rewritten.personal_ray_gun_shrink_mode": "Personal Ray Gun (Shrink Mode)",
       "block.nebulithic_ascension_rewritten.cheripite_ore_block": "Block of Cheripite",
       "block.nebulithic_ascension_rewritten.ash": "Ash",
       "itemGroup.tabna_research_tubes": "Nebulthic Research Tubes",
@@ -3089,6 +3175,7 @@
       "item.nebulithic_ascension_rewritten.dysenterium_dust": "Dysenterium",
       "block.nebulithic_ascension_rewritten.blue_mebris_grass": "Blue Mebris Grass",
       "item.nebulithic_ascension_rewritten.staff_of_ender_energy": "Staff Of Ender Energy",
+      "block.nebulithic_ascension_rewritten.nanosia_block": "Nanosia ",
       "block.nebulithic_ascension_rewritten.schematic_reader": "Schematic Reader",
       "block.nebulithic_ascension_rewritten.blue_mebris_log": "Blue Mebris Log",
       "block.nebulithic_ascension_rewritten.sclerotis_258_snow": "Sclerotis 258 Snow",
@@ -3126,7 +3213,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "ZapSplat- For sound effects, Blockbench- For block models",
     "modElementsPackage": "com.varahunter.nebulithic",
     "lockBaseModFiles": false
   },

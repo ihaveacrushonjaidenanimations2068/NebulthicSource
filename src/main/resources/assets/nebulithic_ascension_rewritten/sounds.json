@@ -115,5 +115,14 @@
         "stream": false
       }
     ]
+  },
+  "item.ray_gun_use": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:raygun_fire",
+        "stream": false
+      }
+    ]
   }
 }
