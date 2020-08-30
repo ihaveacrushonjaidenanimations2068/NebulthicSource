@@ -2678,6 +2678,201 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "nanosia"
+    },
+    {
+      "name": "GuiOrderFromSatellite",
+      "type": "gui",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gui_order_from_satellite"
+    },
+    {
+      "name": "WhenOrderButtonClicked",
+      "type": "procedure",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "when_order_button_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OrderMenuOnKeyPressed",
+      "type": "procedure",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "order_menu_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OrderMenu",
+      "type": "keybind",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "order_menu"
+    },
+    {
+      "name": "StandardIssuePod",
+      "type": "block",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "standard_issue_pod"
+    },
+    {
+      "name": "PulverizerConstruct",
+      "type": "mob",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pulverizer_construct"
+    },
+    {
+      "name": "SatelliteInfo",
+      "type": "gui",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "satellite_info"
+    },
+    {
+      "name": "PlacedSatelliteINfoPad",
+      "type": "block",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placed_satellite_i_nfo_pad"
+    },
+    {
+      "name": "WhenOtherOrderButtonIsClicked",
+      "type": "procedure",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "when_other_order_button_is_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SatelliteInformationPad",
+      "type": "item",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "satellite_information_pad"
+    },
+    {
+      "name": "PlacedSatelliteINfoPadOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placed_satellite_i_nfo_pad_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2755,12 +2950,13 @@
       "item.nebulithic_ascension_rewritten.cactrap_barb": "Cactrap Barb",
       "item.nebulithic_ascension_rewritten.scleroptera_adult": "Scleroptera Spawn Egg",
       "itemGroup.tabna_consumables": "Nebulthic Consumables",
+      "entity.nebulithic_ascension_rewritten.pulverizer_construct": "Nanosian",
       "entity.nebulithic_ascension_rewritten.factorion_tank": "Factorion ",
       "entity.nebulithic_ascension_rewritten.cactrap": "Cactrap",
       "block.nebulithic_ascension_rewritten.dormant_cactrap": "Dormant Cactrap",
       "entity.nebulithic_ascension_rewritten.undead_scleroptera": "Scleroptera",
-      "block.nebulithic_ascension_rewritten.dense_volcanic_matter": "Dense Volcanic Matter",
       "block.nebulithic_ascension_rewritten.sclerotic_dirt": "Sclerotic Dirt",
+      "block.nebulithic_ascension_rewritten.dense_volcanic_matter": "Dense Volcanic Matter",
       "entity.nebulithic_ascension_rewritten.unborn_mage": "Unborn Mage",
       "block.nebulithic_ascension_rewritten.hemopine_door": "Hemopine Door",
       "item.nebulithic_ascension_rewritten.ashling": "Ashling Spawn Egg",
@@ -2788,6 +2984,7 @@
       "entity.nebulithic_ascension_rewritten.nanosian": "Nanosian",
       "block.nebulithic_ascension_rewritten.eye_stalk": "Eye Stalk",
       "block.nebulithic_ascension_rewritten.purple_mebris_grass": "Purple Mebris Grass",
+      "block.nebulithic_ascension_rewritten.standard_issue_pod": "Standard Issue Pod",
       "block.nebulithic_ascension_rewritten.sclerocalyptus_leaves": "Sclerocalyptus Leaves",
       "block.nebulithic_ascension_rewritten.sclerotis_261_stone": "Sclerotis 261 Stone",
       "block.nebulithic_ascension_rewritten.hemopine_leaves": "Hemopine Leaves",
@@ -2816,6 +3013,7 @@
       "block.nebulithic_ascension_rewritten.polionia_dirt": "Polionia Dirt",
       "entity.nebulithic_ascension_rewritten.contemplator": "Contemplator",
       "item.nebulithic_ascension_rewritten.sangriosapien": "Sangriosapien Spawn Egg",
+      "key.mcreator.order_menu": "Order Menu",
       "block.nebulithic_ascension_rewritten.dreadful_wart_block": "Dreadful Wart Block",
       "block.nebulithic_ascension_rewritten.dreadstone_brick_stairs": "Dreadstone Brick Stairs",
       "block.nebulithic_ascension_rewritten.frozen_frostusk": "Frozen Frostusk",
@@ -2856,10 +3054,12 @@
       "item.nebulithic_ascension_rewritten.unborn_spit": "Unborn Spit",
       "item.nebulithic_ascension_rewritten.unborn_traveller": "Unborn Traveller Spawn Egg",
       "item.nebulithic_ascension_rewritten.hypotarantula": "Hypotarantula Spawn Egg",
+      "item.nebulithic_ascension_rewritten.pulverizer_construct": "Nanosian Spawn Egg",
       "item.nebulithic_ascension_rewritten.target_dummy": "Target Dummy Spawn Egg",
       "item.nebulithic_ascension_rewritten.scleroptera_small": "Scleroptera Spawn Egg",
       "block.nebulithic_ascension_rewritten.veinwood_leaves": "Veinwood Leaves",
       "item.nebulithic_ascension_rewritten.razorbird": "Razorbird Spawn Egg",
+      "item.nebulithic_ascension_rewritten.satellite_information_pad": "Satellite Information Pad",
       "item.nebulithic_ascension_rewritten.undead_scleroptera": "Scleroptera Spawn Egg",
       "entity.nebulithic_ascension_rewritten.lithosaurus": "Lithosaurus",
       "block.nebulithic_ascension_rewritten.sclerocalyptus_planks": "Sclerocalyptus Planks",
@@ -2886,6 +3086,7 @@
       "entity.nebulithic_ascension_rewritten.sclerosian_brute": "Sclerosian Brute",
       "entity.nebulithic_ascension_rewritten.factorion_robot": "Factorion ",
       "itemGroup.tabna_items": "Nebulthic Items",
+      "block.nebulithic_ascension_rewritten.placed_satellite_i_nfo_pad": "Placed Satellite I Nfo Pad",
       "item.nebulithic_ascension_rewritten.unborn_mage": "Unborn Mage Spawn Egg",
       "block.nebulithic_ascension_rewritten.firebloom": "Firebloom",
       "block.nebulithic_ascension_rewritten.mossy_dreadstone_brick_wall": "Mossy Dreadstone Brick Wall",

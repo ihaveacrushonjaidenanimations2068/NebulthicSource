@@ -1,0 +1,30 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "satellite_information_pad",
+    "customModelName": "Normal",
+    "name": "Satellite Information Pad",
+    "creativeTab": {
+      "value": "CUSTOM:NAUtils"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Serves as your communication with the Satellite"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "SatelliteInfo",
+    "inventorySize": 0,
+    "inventoryStackSize": 64
+  }
+}

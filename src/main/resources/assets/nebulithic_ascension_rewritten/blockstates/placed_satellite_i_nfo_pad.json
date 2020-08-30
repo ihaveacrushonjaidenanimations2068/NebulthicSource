@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "nebulithic_ascension_rewritten:block/placed_satellite_i_nfo_pad"
+    },
+    "facing=east": {
+      "model": "nebulithic_ascension_rewritten:block/placed_satellite_i_nfo_pad",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "nebulithic_ascension_rewritten:block/placed_satellite_i_nfo_pad",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nebulithic_ascension_rewritten:block/placed_satellite_i_nfo_pad",
+      "y": 270
+    }
+  }
+}

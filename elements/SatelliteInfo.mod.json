@@ -1,0 +1,104 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Overworld",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Overworld",
+          "x": 369,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current Position:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Current Position:",
+          "x": 259,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "X:0 Y:1280 Z:0",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "X:0 Y:1280 Z:0",
+          "x": 426,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Has Fabrication Center:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Has Fabrication Center:",
+          "x": 264,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "True",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "True",
+          "x": 498,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Status:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Status:",
+          "x": 264,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Waiting",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Waiting",
+          "x": 354,
+          "y": 186
+        }
+      }
+    ]
+  }
+}

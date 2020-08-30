@@ -1,0 +1,54 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 510,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Available Options",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Available Options",
+          "x": 336,
+          "y": 78
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Standard-Issue Construct Pod",
+          "onClick": {
+            "name": "WhenOrderButtonClicked"
+          },
+          "width": 560,
+          "height": 40,
+          "name": "Standard-Issue Construct Pod",
+          "x": 156,
+          "y": 114
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Satellite Information Pad ",
+          "onClick": {
+            "name": "WhenOtherOrderButtonIsClicked"
+          },
+          "width": 520,
+          "height": 40,
+          "name": "Satellite Information Pad ",
+          "x": 167,
+          "y": 164
+        }
+      }
+    ]
+  }
+}

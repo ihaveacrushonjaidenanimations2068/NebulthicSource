@@ -1,0 +1,12 @@
+{
+  "_fv": 10,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "O",
+    "keyBindingName": "Order Menu",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "OrderMenuOnKeyPressed"
+    }
+  }
+}
