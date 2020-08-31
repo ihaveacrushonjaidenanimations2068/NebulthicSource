@@ -43,7 +43,7 @@ public class StarswimmerConstructItemRightClickedOnBlockProcedure extends Nebuli
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof World && !world.getWorld().isRemote) {
 			Entity entityToSpawn = new StarswimmerConstructEntity.CustomEntity(StarswimmerConstructEntity.entity, world.getWorld());
-			entityToSpawn.setLocationAndAngles(x, y, z, (float) 0, (float) 0);
+			entityToSpawn.setLocationAndAngles(x, (y + 1), z, (float) 0, (float) 0);
 			entityToSpawn.setMotion(0, 0, 0);
 			if (entityToSpawn instanceof MobEntity)
 				((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
