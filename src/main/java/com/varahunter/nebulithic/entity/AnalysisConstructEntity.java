@@ -46,31 +46,31 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @NebulithicAscensionRewrittenModElements.ModElement.Tag
-public class PulverizerConstructEntity extends NebulithicAscensionRewrittenModElements.ModElement {
+public class AnalysisConstructEntity extends NebulithicAscensionRewrittenModElements.ModElement {
 	public static EntityType entity = null;
-	public PulverizerConstructEntity(NebulithicAscensionRewrittenModElements instance) {
-		super(instance, 262);
+	public AnalysisConstructEntity(NebulithicAscensionRewrittenModElements instance) {
+		super(instance, 280);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("pulverizer_construct")
-						.setRegistryName("pulverizer_construct");
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("analysis_construct")
+						.setRegistryName("analysis_construct");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -16750900, -16711681, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("pulverizer_construct"));
+				.setRegistryName("analysis_construct"));
 	}
 
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
-			return new MobRenderer(renderManager, new ModelPulverizerConstruct(), 0.5f) {
+			return new MobRenderer(renderManager, new ModelAnalysisConstruct(), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("nebulithic_ascension_rewritten:textures/pulverizerconstruct.png");
+					return new ResourceLocation("nebulithic_ascension_rewritten:textures/analysisconstruct.png");
 				}
 			};
 		});
@@ -191,51 +191,56 @@ public class PulverizerConstructEntity extends NebulithicAscensionRewrittenModEl
 	// Made with Blockbench 3.5.4
 	// Exported for Minecraft version 1.15
 	// Paste this class into your mod and generate all required imports
-	public static class ModelPulverizerConstruct extends EntityModel<Entity> {
+	public static class ModelAnalysisConstruct extends EntityModel<Entity> {
 		private final ModelRenderer bone;
-		private final ModelRenderer legLeft;
-		private final ModelRenderer bone5;
-		private final ModelRenderer legRight;
+		private final ModelRenderer bone2;
 		private final ModelRenderer bone6;
 		private final ModelRenderer bone4;
+		private final ModelRenderer bone5;
+		private final ModelRenderer bone3;
 		private final ModelRenderer bone7;
-		public ModelPulverizerConstruct() {
-			textureWidth = 128;
-			textureHeight = 128;
+		private final ModelRenderer bone8;
+		public ModelAnalysisConstruct() {
+			textureWidth = 64;
+			textureHeight = 64;
 			bone = new ModelRenderer(this);
 			bone.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bone.setTextureOffset(0, 37).addBox(-9.0F, -28.0F, -7.0F, 19.0F, 17.0F, 14.0F, 0.0F, false);
-			legLeft = new ModelRenderer(this);
-			legLeft.setRotationPoint(10.0F, -12.0F, 4.5F);
-			bone.addChild(legLeft);
-			legLeft.setTextureOffset(66, 37).addBox(-1.0F, 0.0F, -2.5F, 6.0F, 12.0F, 6.0F, 0.0F, false);
-			bone5 = new ModelRenderer(this);
-			bone5.setRotationPoint(-11.0F, -2.0F, -4.5F);
-			legLeft.addChild(bone5);
-			bone5.setTextureOffset(26, 68).addBox(10.0F, 12.0F, -5.0F, 6.0F, 2.0F, 7.0F, 0.0F, false);
-			legRight = new ModelRenderer(this);
-			legRight.setRotationPoint(-8.5F, -12.0F, 4.5F);
-			bone.addChild(legRight);
-			legRight.setTextureOffset(60, 62).addBox(-5.5F, 0.0F, -2.5F, 6.0F, 12.0F, 6.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(-6.0F, -22.0F, -6.0F, 12.0F, 13.0F, 15.0F, 0.0F, false);
+			bone2 = new ModelRenderer(this);
+			bone2.setRotationPoint(0.0F, -6.0F, -2.0F);
+			bone.addChild(bone2);
+			bone2.setTextureOffset(21, 32).addBox(-11.0F, -4.0F, -13.0F, 5.0F, 4.0F, 11.0F, 0.0F, false);
 			bone6 = new ModelRenderer(this);
-			bone6.setRotationPoint(-15.5F, -2.0F, -4.5F);
-			legRight.addChild(bone6);
-			bone6.setTextureOffset(0, 68).addBox(10.0F, 12.0F, -5.0F, 6.0F, 2.0F, 7.0F, 0.0F, false);
+			bone6.setRotationPoint(8.5147F, 0.0F, -4.5858F);
+			bone2.addChild(bone6);
+			bone6.setTextureOffset(42, 28).addBox(-19.5F, -4.0F, -13.4F, 5.0F, 4.0F, 5.0F, 0.0F, false);
 			bone4 = new ModelRenderer(this);
-			bone4.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bone4.setTextureOffset(0, 0).addBox(-9.0F, -28.0F, -27.0F, 19.0F, 17.0F, 20.0F, 0.0F, false);
+			bone4.setRotationPoint(16.0F, -6.0F, 0.0F);
+			bone.addChild(bone4);
+			bone4.setTextureOffset(39, 0).addBox(-10.0F, -14.0F, -10.0F, 5.0F, 11.0F, 4.0F, 0.0F, false);
+			bone5 = new ModelRenderer(this);
+			bone5.setRotationPoint(0.0F, 0.0F, 0.0F);
+			bone4.addChild(bone5);
+			bone5.setTextureOffset(0, 43).addBox(-10.0F, -14.0F, -15.0F, 5.0F, 4.0F, 5.0F, 0.0F, false);
+			bone3 = new ModelRenderer(this);
+			bone3.setRotationPoint(0.0F, -14.5F, -3.0F);
+			bone.addChild(bone3);
+			setRotationAngle(bone3, 0.0F, 0.7854F, 0.0F);
+			bone3.setTextureOffset(0, 28).addBox(-1.8787F, -6.5F, -6.1213F, 8.0F, 7.0F, 8.0F, 0.0F, false);
 			bone7 = new ModelRenderer(this);
-			bone7.setRotationPoint(0.5F, -28.5F, -8.0F);
-			bone4.addChild(bone7);
-			setRotationAngle(bone7, 0.6981F, 0.0F, 0.0F);
-			bone7.setTextureOffset(58, 0).addBox(-9.5F, -14.5F, -1.0F, 19.0F, 15.0F, 2.0F, 0.0F, false);
+			bone7.setRotationPoint(0.0F, 24.0F, 0.0F);
+			bone7.setTextureOffset(15, 47).addBox(1.0F, -9.0F, 3.0F, 5.0F, 1.0F, 5.0F, 0.0F, false);
+			bone8 = new ModelRenderer(this);
+			bone8.setRotationPoint(-6.0F, 24.0F, 0.0F);
+			bone8.setTextureOffset(42, 37).addBox(0.0F, -9.0F, 3.0F, 5.0F, 1.0F, 5.0F, 0.0F, false);
 		}
 
 		@Override
 		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
 				float alpha) {
 			bone.render(matrixStack, buffer, packedLight, packedOverlay);
-			bone4.render(matrixStack, buffer, packedLight, packedOverlay);
+			bone7.render(matrixStack, buffer, packedLight, packedOverlay);
+			bone8.render(matrixStack, buffer, packedLight, packedOverlay);
 		}
 
 		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
@@ -245,8 +250,6 @@ public class PulverizerConstructEntity extends NebulithicAscensionRewrittenModEl
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
-			this.legRight.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-			this.legLeft.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
 		}
 	}
 }

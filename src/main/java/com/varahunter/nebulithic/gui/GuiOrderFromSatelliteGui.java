@@ -33,6 +33,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.varahunter.nebulithic.procedures.WhenOtherOtherOrderButtonClickedProcedure;
 import com.varahunter.nebulithic.procedures.WhenOtherOrderButtonIsClickedProcedure;
 import com.varahunter.nebulithic.procedures.WhenOrderButtonClickedProcedure;
 import com.varahunter.nebulithic.NebulithicAscensionRewrittenModElements;
@@ -172,6 +173,10 @@ public class GuiOrderFromSatelliteGui extends NebulithicAscensionRewrittenModEle
 				NebulithicAscensionRewrittenMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
 			}));
+			this.addButton(new Button(this.guiLeft + 44, this.guiTop + 71, 160, 20, "Personal Ray Gun", e -> {
+				NebulithicAscensionRewrittenMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
+				handleButtonAction(entity, 2, x, y, z);
+			}));
 		}
 	}
 
@@ -281,6 +286,17 @@ public class GuiOrderFromSatelliteGui extends NebulithicAscensionRewrittenModEle
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				WhenOtherOrderButtonIsClickedProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 2) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				WhenOtherOtherOrderButtonClickedProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

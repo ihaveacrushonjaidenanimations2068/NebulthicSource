@@ -48,6 +48,20 @@
           "x": 167,
           "y": 164
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Personal Ray Gun",
+          "onClick": {
+            "name": "WhenOtherOtherOrderButtonClicked"
+          },
+          "width": 320,
+          "height": 40,
+          "name": "Personal Ray Gun",
+          "x": 260,
+          "y": 215
+        }
       }
     ]
   }

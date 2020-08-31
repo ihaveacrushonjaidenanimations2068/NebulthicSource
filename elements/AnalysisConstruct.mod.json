@@ -2,10 +2,10 @@
   "_fv": 10,
   "_type": "mob",
   "definition": {
-    "mobName": "Pulverizer Construct",
+    "mobName": "Basic Body Construct",
     "mobLabel": "",
-    "mobModelName": "ModelPulverizerConstruct",
-    "mobModelTexture": "pulverizerconstruct.png",
+    "mobModelName": "ModelAnalysisConstruct",
+    "mobModelTexture": "analysisconstruct.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,

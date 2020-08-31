@@ -1,0 +1,13 @@
+{
+  "group": "nebulithic_ascension_rewritten",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nebulithic_ascension_rewritten:personal_ray_gun_weapon_mode"
+    }
+  ],
+  "result": {
+    "item": "nebulithic_ascension_rewritten:personal_ray_gun_shrink_mode",
+    "count": 1
+  }
+}

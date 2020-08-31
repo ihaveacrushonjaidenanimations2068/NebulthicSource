@@ -2,10 +2,10 @@
   "_fv": 10,
   "_type": "mob",
   "definition": {
-    "mobName": "Pulverizer Construct",
+    "mobName": "Analysis Construct",
     "mobLabel": "",
-    "mobModelName": "ModelPulverizerConstruct",
-    "mobModelTexture": "pulverizerconstruct.png",
+    "mobModelName": "ModelAnalysisConstruct",
+    "mobModelTexture": "analysisconstructhacked.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -17,7 +17,7 @@
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16711681,
+      "value": -52429,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -58,9 +58,9 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
-    "ridable": true,
-    "canControlForward": true,
-    "canControlStrafe": true,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
     "immuneToFire": false,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
@@ -70,7 +70,7 @@
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": "CUSTOM:ConstructCore"
+      "value": ""
     },
     "livingSound": {
       "value": ""
@@ -91,17 +91,20 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
+    "whenMobDies": {
+      "name": "AnalysisConstructHackedEntityDies"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">CUSTOM:Sangriosapien</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
-    "ranged": false,
+    "ranged": true,
     "rangedAttackItem": {
       "value": ""
     },
-    "rangedItemType": "Default item",
+    "rangedItemType": "PersonalRayGunWeaponMode",
     "spawnThisMob": false,
     "doesDespawnWhenIdle": false,
     "spawningProbability": 4,

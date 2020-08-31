@@ -2960,6 +2960,295 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "personal_ray_gun_shrink_mode"
+    },
+    {
+      "name": "PersonalRayGunTile",
+      "type": "block",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "personal_ray_gun_tile"
+    },
+    {
+      "name": "WhenOtherOtherOrderButtonClicked",
+      "type": "procedure",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "when_other_other_order_button_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PersonalRayGunTileOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "personal_ray_gun_tile_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WtoS",
+      "type": "recipe",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wto_s"
+    },
+    {
+      "name": "StoW",
+      "type": "recipe",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sto_w"
+    },
+    {
+      "name": "ConstructCore",
+      "type": "block",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "construct_core"
+    },
+    {
+      "name": "AnalysisConstruct",
+      "type": "mob",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "analysis_construct"
+    },
+    {
+      "name": "PulverizerConstructHacked",
+      "type": "mob",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pulverizer_construct_hacked"
+    },
+    {
+      "name": "BasicBodyConstructHacked",
+      "type": "mob",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "basic_body_construct_hacked"
+    },
+    {
+      "name": "AnalysisConstructHacked",
+      "type": "mob",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "analysis_construct_hacked"
+    },
+    {
+      "name": "PulverizerConstructHackedEntityDies",
+      "type": "procedure",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pulverizer_construct_hacked_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BasicBodyConstructHackedEntityDies",
+      "type": "procedure",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "basic_body_construct_hacked_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AnalysisConstructHackedEntityDies",
+      "type": "procedure",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "analysis_construct_hacked_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AnalysisConstructFly",
+      "type": "procedure",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "analysis_construct_fly",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StarswimmerConstruct",
+      "type": "mob",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "starswimmer_construct"
+    },
+    {
+      "name": "StarswimmerConstructItemRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "starswimmer_construct_item_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StarswimmerConstructItem",
+      "type": "item",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "starswimmer_construct_item"
     }
   ],
   "variable_elements": [],
@@ -3037,6 +3326,7 @@
   ],
   "language_map": {
     "en_us": {
+      "item.nebulithic_ascension_rewritten.basic_body_construct_hacked": "Basic Body Construct Spawn Egg",
       "block.nebulithic_ascension_rewritten.veinwood_log": "Veinwood Log",
       "entity.nebulithic_ascension_rewritten.razorbird": "Razorbird",
       "item.nebulithic_ascension_rewritten.cactrap_barb": "Cactrap Barb",
@@ -3057,6 +3347,7 @@
       "block.nebulithic_ascension_rewritten.hemopine_log": "Hemopine Log",
       "entity.nebulithic_ascension_rewritten.mini_cactrap": "Mini Cactrap",
       "block.nebulithic_ascension_rewritten.hypoglycemic_sand": "Hypoglycemic Sand",
+      "block.nebulithic_ascension_rewritten.personal_ray_gun_tile": "Personal Ray Gun Tile",
       "item.nebulithic_ascension_rewritten.cactrap": "Cactrap Spawn Egg",
       "block.nebulithic_ascension_rewritten.smooth_mebris_dirt": "Smooth Mebris Dirt",
       "block.nebulithic_ascension_rewritten.sclerotis_258_surface_rock": "Sclerotis 258 Surface Rock",
@@ -3069,6 +3360,7 @@
       "block.nebulithic_ascension_rewritten.dormant_cactrap_middle": "Dormant Cactrap",
       "entity.nebulithic_ascension_rewritten.vascaetosapien": "Vascaetosapien",
       "item.nebulithic_ascension_rewritten.factorion_robot": "Factorion  Spawn Egg",
+      "entity.nebulithic_ascension_rewritten.analysis_construct": "Basic Body Construct",
       "block.nebulithic_ascension_rewritten.purple_mebris_log": "Purple Mebris Log",
       "block.nebulithic_ascension_rewritten.sclerotis_261_regolith": "Sclerotis 261 Regolith",
       "item.nebulithic_ascension_rewritten.polionia": "Polionia Tome",
@@ -3087,8 +3379,10 @@
       "entity.nebulithic_ascension_rewritten.scleroptera_adult": "Scleroptera",
       "block.nebulithic_ascension_rewritten.polionia_grass": "Polionia Grass",
       "entity.nebulithic_ascension_rewritten.target_dummy": "Target Dummy",
+      "item.nebulithic_ascension_rewritten.analysis_construct": "Basic Body Construct Spawn Egg",
       "itemGroup.tabna_utils": "Nebulthic Utility Blocks",
       "block.nebulithic_ascension_rewritten.sclerotic_eye_log": "Sclerotic Eye Log",
+      "item.nebulithic_ascension_rewritten.starswimmer_construct_item": "Starswimmer Construct",
       "block.nebulithic_ascension_rewritten.umbris_stone": "Umbris Stone",
       "item.nebulithic_ascension_rewritten.factorion_tank": "Factorion  Spawn Egg",
       "item.nebulithic_ascension_rewritten.sclerosian_brute": "Sclerosian Brute Spawn Egg",
@@ -3099,6 +3393,7 @@
       "item.nebulithic_ascension_rewritten.nanosian": "Nanosian Spawn Egg",
       "block.nebulithic_ascension_rewritten.hypoglycemic_sandstone": "Hypoglycemic Sandstone",
       "item.nebulithic_ascension_rewritten.lithosaurus": "Lithosaurus Spawn Egg",
+      "entity.nebulithic_ascension_rewritten.basic_body_construct_hacked": "Basic Body Construct",
       "item.nebulithic_ascension_rewritten.contemplator": "Contemplator Spawn Egg",
       "block.nebulithic_ascension_rewritten.fertillum_ore": "Fertillum Ore",
       "block.nebulithic_ascension_rewritten.dreadshroom_stem": "Dreadshroom Stem",
@@ -3110,6 +3405,7 @@
       "block.nebulithic_ascension_rewritten.dreadstone_brick_stairs": "Dreadstone Brick Stairs",
       "block.nebulithic_ascension_rewritten.frozen_frostusk": "Frozen Frostusk",
       "block.nebulithic_ascension_rewritten.blue_mebris_leaves": "Blue Mebris Leaves",
+      "entity.nebulithic_ascension_rewritten.analysis_construct_hacked": "Analysis Construct",
       "block.nebulithic_ascension_rewritten.dreadstone_brick_wall": "Dreadstone Brick Wall",
       "entity.nebulithic_ascension_rewritten.sangriosapien": "Sangriosapien",
       "item.nebulithic_ascension_rewritten.orb_inactive": "Orb of Ender Energy",
@@ -3124,6 +3420,7 @@
       "block.nebulithic_ascension_rewritten.dreadstone_bricks": "Dreadstone Bricks",
       "item.nebulithic_ascension_rewritten.mierrogenia": "Mierrogenia Realmstone",
       "block.nebulithic_ascension_rewritten.dysenterium_ore_block": "Block of Dysenterium",
+      "block.nebulithic_ascension_rewritten.construct_core": "Construct Core",
       "block.nebulithic_ascension_rewritten.sclerotic_grass": "Sclerotic Grass",
       "block.nebulithic_ascension_rewritten.polionia_sand": "Plumesand",
       "itemGroup.tabna_blocks": "Nebulthic Blocks",
@@ -3142,6 +3439,7 @@
       "item.nebulithic_ascension_rewritten.unborn": "Unborn Spawn Egg",
       "block.nebulithic_ascension_rewritten.woven_veinwood_sticks": "Woven Veinwood Sticks",
       "item.nebulithic_ascension_rewritten.floppy_disk": "Floppy Disk",
+      "item.nebulithic_ascension_rewritten.analysis_construct_hacked": "Analysis Construct Spawn Egg",
       "entity.nebulithic_ascension_rewritten.unborn_traveller": "Unborn Traveller",
       "item.nebulithic_ascension_rewritten.unborn_spit": "Unborn Spit",
       "item.nebulithic_ascension_rewritten.unborn_traveller": "Unborn Traveller Spawn Egg",
@@ -3166,6 +3464,7 @@
       "item.nebulithic_ascension_rewritten.nanosia": "Nanosia Portal Igniter",
       "item.nebulithic_ascension_rewritten.personal_ray_gun_shrink_mode": "Personal Ray Gun (Shrink Mode)",
       "block.nebulithic_ascension_rewritten.cheripite_ore_block": "Block of Cheripite",
+      "entity.nebulithic_ascension_rewritten.pulverizer_construct_hacked": "Pulverizer Construct",
       "block.nebulithic_ascension_rewritten.ash": "Ash",
       "itemGroup.tabna_research_tubes": "Nebulthic Research Tubes",
       "block.nebulithic_ascension_rewritten.ashling_egg": "Ashling Egg",
@@ -3185,7 +3484,9 @@
       "entity.nebulithic_ascension_rewritten.factorion_robot": "Factorion ",
       "itemGroup.tabna_items": "Nebulthic Items",
       "block.nebulithic_ascension_rewritten.placed_satellite_i_nfo_pad": "Placed Satellite I Nfo Pad",
+      "entity.nebulithic_ascension_rewritten.starswimmer_construct": "Starswimmer Construct",
       "item.nebulithic_ascension_rewritten.unborn_mage": "Unborn Mage Spawn Egg",
+      "item.nebulithic_ascension_rewritten.pulverizer_construct_hacked": "Pulverizer Construct Spawn Egg",
       "block.nebulithic_ascension_rewritten.firebloom": "Firebloom",
       "block.nebulithic_ascension_rewritten.mossy_dreadstone_brick_wall": "Mossy Dreadstone Brick Wall",
       "item.nebulithic_ascension_rewritten.cheripite_gem": "Cheripite",
@@ -3193,6 +3494,7 @@
       "block.nebulithic_ascension_rewritten.sclerotis_258_ice": "Sclerotis 258 Ice",
       "block.nebulithic_ascension_rewritten.dreadshroom_spores": "Dreadshroom Spores",
       "block.nebulithic_ascension_rewritten.dysenterium_ore": "Dysenterium Ore",
+      "item.nebulithic_ascension_rewritten.starswimmer_construct": "Starswimmer Construct Spawn Egg",
       "item.nebulithic_ascension_rewritten.unborn_isles": "Unborn Isles Tome",
       "block.nebulithic_ascension_rewritten.sightrus_fruit": "Sightrus Fruit",
       "entity.nebulithic_ascension_rewritten.frostusk": "Frostusk",

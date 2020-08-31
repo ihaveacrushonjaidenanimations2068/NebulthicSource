@@ -70,7 +70,7 @@
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:ConstructCore"
     },
     "livingSound": {
       "value": ""

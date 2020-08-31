@@ -1,0 +1,8 @@
+{
+  "parent": "nebulithic_ascension_rewritten:custom/personal_raygun_tile",
+  "textures": {
+    "all": "nebulithic_ascension_rewritten:blocks/personal_ray_gun",
+    "particle": "nebulithic_ascension_rewritten:blocks/personal_ray_gun",
+    "0": "nebulithic_ascension_rewritten:blocks/personal_ray_gun"
+  }
+}

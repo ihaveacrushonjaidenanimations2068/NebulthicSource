@@ -39,6 +39,7 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
+import com.varahunter.nebulithic.block.ConstructCoreBlock;
 import com.varahunter.nebulithic.NebulithicAscensionRewrittenModElements;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
@@ -113,6 +114,7 @@ public class BasicBodyConstructEntity extends NebulithicAscensionRewrittenModEle
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(ConstructCoreBlock.block, (int) (1)));
 		}
 
 		@Override
