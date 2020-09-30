@@ -3249,6 +3249,53 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "starswimmer_construct_item"
+    },
+    {
+      "name": "SatelliteConstructBossEntityIsHurt",
+      "type": "procedure",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "satellite_construct_boss_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SatelliteConstructBoss",
+      "type": "mob",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "satellite_construct_boss"
+    },
+    {
+      "name": "TerraformedNanostone",
+      "type": "block",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terraformed_nanostone"
     }
   ],
   "variable_elements": [],
@@ -3351,6 +3398,7 @@
       "item.nebulithic_ascension_rewritten.cactrap": "Cactrap Spawn Egg",
       "block.nebulithic_ascension_rewritten.smooth_mebris_dirt": "Smooth Mebris Dirt",
       "block.nebulithic_ascension_rewritten.sclerotis_258_surface_rock": "Sclerotis 258 Surface Rock",
+      "block.nebulithic_ascension_rewritten.terraformed_nanostone": "Terraformed Nanostone",
       "item.nebulithic_ascension_rewritten.vascaeto_launcher": "Vascaeto Launcher",
       "block.nebulithic_ascension_rewritten.sclerocalyptus_stairs": "Sclerocalyptus Planks",
       "entity.nebulithic_ascension_rewritten.ashling": "Ashling",
@@ -3467,6 +3515,7 @@
       "entity.nebulithic_ascension_rewritten.pulverizer_construct_hacked": "Pulverizer Construct",
       "block.nebulithic_ascension_rewritten.ash": "Ash",
       "itemGroup.tabna_research_tubes": "Nebulthic Research Tubes",
+      "item.nebulithic_ascension_rewritten.satellite_construct_boss": "Satellite Construct  Spawn Egg",
       "block.nebulithic_ascension_rewritten.ashling_egg": "Ashling Egg",
       "block.nebulithic_ascension_rewritten.nanostone": "Nanostone",
       "block.nebulithic_ascension_rewritten.dormant_cactrap_bottom": "Dormant Cactrap",
@@ -3490,6 +3539,7 @@
       "block.nebulithic_ascension_rewritten.firebloom": "Firebloom",
       "block.nebulithic_ascension_rewritten.mossy_dreadstone_brick_wall": "Mossy Dreadstone Brick Wall",
       "item.nebulithic_ascension_rewritten.cheripite_gem": "Cheripite",
+      "entity.nebulithic_ascension_rewritten.satellite_construct_boss": "Satellite Construct ",
       "block.nebulithic_ascension_rewritten.gallstone": "Gallstone",
       "block.nebulithic_ascension_rewritten.sclerotis_258_ice": "Sclerotis 258 Ice",
       "block.nebulithic_ascension_rewritten.dreadshroom_spores": "Dreadshroom Spores",
@@ -3504,7 +3554,7 @@
   "workspaceSettings": {
     "modid": "nebulithic_ascension_rewritten",
     "modName": "Nebulithic Ascension ",
-    "version": "1.15.2-3.0.1",
+    "version": "1.15.2-3.1.0beta1",
     "description": "Explore unimaginable places in faraway galaxies",
     "author": "AJ",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/nebulithic-ascension",

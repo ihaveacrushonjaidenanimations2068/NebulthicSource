@@ -2,31 +2,31 @@
   "_fv": 10,
   "_type": "block",
   "definition": {
-    "texture": "missing_texture",
+    "texture": "terraformed_nanostone",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 2,
-    "customModelName": "construct_pod:default",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
-    "emissiveRendering": true,
-    "itemTexture": "missing_texture",
-    "hasTransparency": true,
+    "emissiveRendering": false,
+    "itemTexture": "",
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,
     "Mx": 1.0,
-    "My": 2.0,
+    "My": 1.0,
     "Mz": 1.0,
-    "name": "Standard Issue Pod",
+    "name": "Terraformed Nanostone",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
-    "hasGravity": true,
+    "hasGravity": false,
     "creativeTab": {
       "value": "CUSTOM:NABlocks"
     },
@@ -39,9 +39,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 0,
+    "lightOpacity": 255,
     "material": {
-      "value": "ANVIL"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -59,7 +59,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "STONE"
     },
     "luminance": 0.0,
     "unbreakable": false,

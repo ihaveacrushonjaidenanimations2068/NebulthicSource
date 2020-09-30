@@ -8,6 +8,9 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -65,6 +68,11 @@ public class StandardIssuePodBlock extends NebulithicAscensionRewrittenModElemen
 		@Override
 		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
 			return true;
+		}
+
+		@Override
+		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+			return VoxelShapes.create(0D, 0D, 0D, 1D, 2D, 1D);
 		}
 
 		@Override
