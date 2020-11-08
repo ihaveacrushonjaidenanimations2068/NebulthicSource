@@ -59,7 +59,7 @@
     "inventoryStackSize": 64,
     "disableCollisions": false,
     "ridable": true,
-    "canControlForward": false,
+    "canControlForward": true,
     "canControlStrafe": true,
     "immuneToFire": false,
     "immuneToArrows": false,

@@ -40,17 +40,17 @@ public class HemopineShrubOnBlockRightClickedProcedure extends NebulithicAscensi
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((Math.random() == 0)) {
+		if ((Math.random() == 0.5)) {
 			if (!world.getWorld().isRemote) {
 				Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-						.getTemplateDefaulted(new ResourceLocation("nebulithic_ascension_rewritten", "hemopine_tree"));
+						.getTemplateDefaulted(new ResourceLocation("nebulithic_ascension_rewritten", "hemopine_tree_3"));
 				if (template != null) {
 					template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) z),
 							new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
 				}
 			}
 		}
-		if ((Math.random() == 1)) {
+		if ((Math.random() == 0.5)) {
 			if (!world.getWorld().isRemote) {
 				Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 						.getTemplateDefaulted(new ResourceLocation("nebulithic_ascension_rewritten", "hemopine_tree_2"));
@@ -62,7 +62,7 @@ public class HemopineShrubOnBlockRightClickedProcedure extends NebulithicAscensi
 		} else {
 			if (!world.getWorld().isRemote) {
 				Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-						.getTemplateDefaulted(new ResourceLocation("nebulithic_ascension_rewritten", "hemopine_tree_3"));
+						.getTemplateDefaulted(new ResourceLocation("nebulithic_ascension_rewritten", "hemopine_tree"));
 				if (template != null) {
 					template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) z),
 							new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));

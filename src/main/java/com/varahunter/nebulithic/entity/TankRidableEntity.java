@@ -183,7 +183,7 @@ public class TankRidableEntity extends NebulithicAscensionRewrittenModElements.M
 				this.stepHeight = 1.0F;
 				if (entity instanceof LivingEntity) {
 					this.setAIMoveSpeed((float) this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getValue());
-					float forward = 0;
+					float forward = ((LivingEntity) entity).moveForward;
 					float strafe = ((LivingEntity) entity).moveStrafing;
 					super.travel(new Vec3d(strafe, 0, forward));
 				}
