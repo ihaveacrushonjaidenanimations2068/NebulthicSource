@@ -68,8 +68,8 @@ public class SangriosapienEntity extends NebulithicAscensionRewrittenModElements
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("sangriosapien")
 						.setRegistryName("sangriosapien");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -52429, -6750208, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("sangriosapien"));
+		elements.items.add(() -> new SpawnEggItem(entity, -52429, -6750208, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("sangriosapien_spawn_egg"));
 	}
 
 	@Override

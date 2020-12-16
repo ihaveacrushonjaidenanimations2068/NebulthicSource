@@ -53,8 +53,8 @@ public class HypotarantulaEntity extends NebulithicAscensionRewrittenModElements
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("hypotarantula")
 						.setRegistryName("hypotarantula");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -1, -16711732, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("hypotarantula"));
+		elements.items.add(() -> new SpawnEggItem(entity, -1, -16711732, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("hypotarantula_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -98,10 +98,6 @@ public class HypotarantulaEntity extends NebulithicAscensionRewrittenModElements
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

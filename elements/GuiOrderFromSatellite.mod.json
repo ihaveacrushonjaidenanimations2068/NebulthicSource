@@ -1,10 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 510,
-    "height": 332,
+    "width": 255,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": true,
     "components": [
@@ -17,8 +19,8 @@
             "falpha": 0.0
           },
           "name": "Available Options",
-          "x": 336,
-          "y": 78
+          "x": 168,
+          "y": 39
         }
       },
       {
@@ -28,11 +30,11 @@
           "onClick": {
             "name": "WhenOrderButtonClicked"
           },
-          "width": 560,
-          "height": 40,
+          "width": 280,
+          "height": 20,
           "name": "Standard-Issue Construct Pod",
-          "x": 156,
-          "y": 114
+          "x": 78,
+          "y": 57
         }
       },
       {
@@ -42,11 +44,11 @@
           "onClick": {
             "name": "WhenOtherOrderButtonIsClicked"
           },
-          "width": 520,
-          "height": 40,
+          "width": 260,
+          "height": 20,
           "name": "Satellite Information Pad ",
-          "x": 167,
-          "y": 164
+          "x": 84,
+          "y": 82
         }
       },
       {
@@ -56,11 +58,11 @@
           "onClick": {
             "name": "WhenOtherOtherOrderButtonClicked"
           },
-          "width": 320,
-          "height": 40,
+          "width": 160,
+          "height": 20,
           "name": "Personal Ray Gun",
-          "x": 260,
-          "y": 215
+          "x": 130,
+          "y": 108
         }
       }
     ]

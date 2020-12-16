@@ -28,23 +28,28 @@ public class PersonalRayGunShrinkModeRightClickedOnBlockProcedure extends Nebuli
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure PersonalRayGunShrinkModeRightClickedOnBlock!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure PersonalRayGunShrinkModeRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure PersonalRayGunShrinkModeRightClickedOnBlock!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure PersonalRayGunShrinkModeRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure PersonalRayGunShrinkModeRightClickedOnBlock!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure PersonalRayGunShrinkModeRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure PersonalRayGunShrinkModeRightClickedOnBlock!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure PersonalRayGunShrinkModeRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure PersonalRayGunShrinkModeRightClickedOnBlock!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure PersonalRayGunShrinkModeRightClickedOnBlock!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

@@ -57,7 +57,8 @@ public class FrostuskEntity extends NebulithicAscensionRewrittenModElements.ModE
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 0.8f)).build("frostusk")
 						.setRegistryName("frostusk");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1, -16724788, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("frostusk"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -1, -16724788, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("frostusk_spawn_egg"));
 	}
 
 	@Override
@@ -117,10 +118,6 @@ public class FrostuskEntity extends NebulithicAscensionRewrittenModElements.ModE
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEAD;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

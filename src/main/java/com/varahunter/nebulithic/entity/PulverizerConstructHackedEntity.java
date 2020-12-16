@@ -60,7 +60,7 @@ public class PulverizerConstructHackedEntity extends NebulithicAscensionRewritte
 						.build("pulverizer_construct_hacked").setRegistryName("pulverizer_construct_hacked");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -16750900, -52429, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("pulverizer_construct_hacked"));
+				.setRegistryName("pulverizer_construct_hacked_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -111,10 +111,6 @@ public class PulverizerConstructHackedEntity extends NebulithicAscensionRewritte
 		@Override
 		public boolean canDespawn(double distanceToClosestPlayer) {
 			return false;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

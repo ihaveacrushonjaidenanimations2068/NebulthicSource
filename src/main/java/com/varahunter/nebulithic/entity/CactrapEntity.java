@@ -63,7 +63,8 @@ public class CactrapEntity extends NebulithicAscensionRewrittenModElements.ModEl
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("cactrap")
 						.setRegistryName("cactrap");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -13369549, -256, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("cactrap"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -13369549, -256, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("cactrap_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -121,10 +122,6 @@ public class CactrapEntity extends NebulithicAscensionRewrittenModElements.ModEl
 		@Override
 		public boolean canDespawn(double distanceToClosestPlayer) {
 			return false;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

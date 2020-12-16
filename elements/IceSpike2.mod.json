@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "structure",
   "definition": {
     "structure": "sclerotis_258_ice_spike",
@@ -10,6 +10,8 @@
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
     "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
     "spawnWorldTypes": [
       "CUSTOM:Sclerotis258"
     ],

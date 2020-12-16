@@ -62,7 +62,7 @@ public class ScleropteraSmallEntity extends NebulithicAscensionRewrittenModEleme
 						.setRegistryName("scleroptera_small");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -16724737, -16724788, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("scleroptera_small"));
+				.setRegistryName("scleroptera_small_spawn_egg"));
 	}
 
 	@Override
@@ -120,10 +120,6 @@ public class ScleropteraSmallEntity extends NebulithicAscensionRewrittenModEleme
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

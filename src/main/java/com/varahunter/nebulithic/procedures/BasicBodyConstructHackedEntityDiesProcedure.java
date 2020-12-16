@@ -22,19 +22,23 @@ public class BasicBodyConstructHackedEntityDiesProcedure extends NebulithicAscen
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure BasicBodyConstructHackedEntityDies!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure BasicBodyConstructHackedEntityDies!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure BasicBodyConstructHackedEntityDies!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure BasicBodyConstructHackedEntityDies!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure BasicBodyConstructHackedEntityDies!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure BasicBodyConstructHackedEntityDies!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure BasicBodyConstructHackedEntityDies!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure BasicBodyConstructHackedEntityDies!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
@@ -44,6 +48,7 @@ public class BasicBodyConstructHackedEntityDiesProcedure extends NebulithicAscen
 		if (world instanceof World && !world.getWorld().isRemote) {
 			Entity entityToSpawn = new BasicBodyConstructEntity.CustomEntity(BasicBodyConstructEntity.entity, world.getWorld());
 			entityToSpawn.setLocationAndAngles(x, y, z, (float) 0, (float) 0);
+			entityToSpawn.setRenderYawOffset((float) 0);
 			if (entityToSpawn instanceof MobEntity)
 				((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);

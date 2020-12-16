@@ -145,7 +145,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/net.jodah/typetools/0.8.1/d12de898d333cb7eb0e39a35db03c1e09d92d595/typetools-0.8.1.jar">
+	<classpathentry kind="lib" path="C:/Users/AJ/.mcreator/gradle/caches/modules-2/files-2.1/net.jodah/typetools/0.8.3/98f84f353457629e81cc6827224871b1a8faa7af/typetools-0.8.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

@@ -92,6 +92,7 @@ public class PersonalRayGunTileBlock extends NebulithicAscensionRewrittenModElem
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
+			;
 			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
 		}
 

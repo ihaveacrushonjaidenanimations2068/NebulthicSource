@@ -83,6 +83,7 @@ public class ActiveSchematicReaderBlock extends NebulithicAscensionRewrittenModE
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
+			;
 			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
 		}
 

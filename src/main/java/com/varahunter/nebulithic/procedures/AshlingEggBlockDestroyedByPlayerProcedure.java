@@ -22,19 +22,23 @@ public class AshlingEggBlockDestroyedByPlayerProcedure extends NebulithicAscensi
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure AshlingEggBlockDestroyedByPlayer!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure AshlingEggBlockDestroyedByPlayer!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure AshlingEggBlockDestroyedByPlayer!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure AshlingEggBlockDestroyedByPlayer!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure AshlingEggBlockDestroyedByPlayer!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure AshlingEggBlockDestroyedByPlayer!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure AshlingEggBlockDestroyedByPlayer!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure AshlingEggBlockDestroyedByPlayer!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
@@ -44,6 +48,7 @@ public class AshlingEggBlockDestroyedByPlayerProcedure extends NebulithicAscensi
 		if (world instanceof World && !world.getWorld().isRemote) {
 			Entity entityToSpawn = new AshlingEntity.CustomEntity(AshlingEntity.entity, world.getWorld());
 			entityToSpawn.setLocationAndAngles(x, y, z, (float) 0, (float) 0);
+			entityToSpawn.setRenderYawOffset((float) 0);
 			entityToSpawn.setMotion(0, 0, 0);
 			if (entityToSpawn instanceof MobEntity)
 				((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),

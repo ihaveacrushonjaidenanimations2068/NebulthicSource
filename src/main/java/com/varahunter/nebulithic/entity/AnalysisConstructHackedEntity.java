@@ -62,7 +62,7 @@ public class AnalysisConstructHackedEntity extends NebulithicAscensionRewrittenM
 						.build("analysis_construct_hacked").setRegistryName("analysis_construct_hacked");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -16750900, -52429, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("analysis_construct_hacked"));
+				.setRegistryName("analysis_construct_hacked_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -119,10 +119,6 @@ public class AnalysisConstructHackedEntity extends NebulithicAscensionRewrittenM
 		@Override
 		public boolean canDespawn(double distanceToClosestPlayer) {
 			return false;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

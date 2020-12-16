@@ -57,8 +57,8 @@ public class UnbornTravellerEntity extends NebulithicAscensionRewrittenModElemen
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 2.1f)).build("unborn_traveller")
 						.setRegistryName("unborn_traveller");
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -6710887, -65281, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("unborn_traveller"));
+		elements.items.add(() -> new SpawnEggItem(entity, -6710887, -65281, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("unborn_traveller_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -102,10 +102,6 @@ public class UnbornTravellerEntity extends NebulithicAscensionRewrittenModElemen
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

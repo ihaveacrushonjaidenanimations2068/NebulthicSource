@@ -1,11 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "orb_frame_1",
     "customModelName": "Normal",
     "name": "Orb of Ender Energy",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:NAItems"
     },

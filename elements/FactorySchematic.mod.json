@@ -1,11 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "labyrinth_plans",
     "customModelName": "Normal",
     "name": "Factory Schematic",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:NAItems"
     },

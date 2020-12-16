@@ -60,7 +60,7 @@ public class UndeadScleropteraEntity extends NebulithicAscensionRewrittenModElem
 						.setRegistryName("undead_scleroptera");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -16724737, -6750055, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("undead_scleroptera"));
+				.setRegistryName("undead_scleroptera_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -111,10 +111,6 @@ public class UndeadScleropteraEntity extends NebulithicAscensionRewrittenModElem
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

@@ -124,11 +124,11 @@ public class SatelliteInfoGui extends NebulithicAscensionRewrittenModElements.Mo
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override
@@ -149,11 +149,11 @@ public class SatelliteInfoGui extends NebulithicAscensionRewrittenModElements.Mo
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
 			this.font.drawString("Overworld", 59, 1, -16777216);
 			this.font.drawString("Current Position:", 4, 21, -16777216);
-			this.font.drawString("X:0 Y:1280 Z:0", 88, 20, -16777216);
-			this.font.drawString("Has Fabrication Center:", 7, 38, -16777216);
-			this.font.drawString("True", 124, 38, -16777216);
-			this.font.drawString("Status:", 7, 56, -16777216);
-			this.font.drawString("Waiting", 52, 56, -16777216);
+			this.font.drawString("X:0 Y:1280 Z:0", 87, 20, -16777216);
+			this.font.drawString("Has Fabrication Center:", 6, 38, -16777216);
+			this.font.drawString("True", 123, 38, -16777216);
+			this.font.drawString("Status:", 6, 56, -16777216);
+			this.font.drawString("Waiting", 51, 56, -16777216);
 		}
 
 		@Override

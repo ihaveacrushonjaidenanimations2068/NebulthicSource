@@ -17,6 +17,9 @@
  */
 package com.varahunter.nebulithic;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import net.minecraftforge.fml.network.simple.SimpleChannel;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -41,6 +44,7 @@ import java.util.function.Supplier;
 
 @Mod("nebulithic_ascension_rewritten")
 public class NebulithicAscensionRewrittenMod {
+	public static final Logger LOGGER = LogManager.getLogger(NebulithicAscensionRewrittenMod.class);
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(
 			new ResourceLocation("nebulithic_ascension_rewritten", "nebulithic_ascension_rewritten"), () -> PROTOCOL_VERSION,

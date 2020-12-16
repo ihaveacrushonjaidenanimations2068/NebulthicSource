@@ -57,8 +57,8 @@ public class ContemplatorEntity extends NebulithicAscensionRewrittenModElements.
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("contemplator")
 						.setRegistryName("contemplator");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -65281, -13369549, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("contemplator"));
+		elements.items.add(() -> new SpawnEggItem(entity, -65281, -13369549, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("contemplator_spawn_egg"));
 	}
 
 	@Override
@@ -118,10 +118,6 @@ public class ContemplatorEntity extends NebulithicAscensionRewrittenModElements.
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

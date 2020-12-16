@@ -58,8 +58,8 @@ public class LithosaurusEntity extends NebulithicAscensionRewrittenModElements.M
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("lithosaurus")
 						.setRegistryName("lithosaurus");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -6710887, -3355444, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("lithosaurus"));
+		elements.items.add(() -> new SpawnEggItem(entity, -6710887, -3355444, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("lithosaurus_spawn_egg"));
 	}
 
 	@Override
@@ -118,10 +118,6 @@ public class LithosaurusEntity extends NebulithicAscensionRewrittenModElements.M
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

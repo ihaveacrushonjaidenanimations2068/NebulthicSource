@@ -53,8 +53,8 @@ public class AutomatonEntity extends NebulithicAscensionRewrittenModElements.Mod
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 2f)).build("automaton")
 						.setRegistryName("automaton");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -10066330, -52429, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("automaton"));
+		elements.items.add(() -> new SpawnEggItem(entity, -10066330, -52429, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("automaton_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -104,10 +104,6 @@ public class AutomatonEntity extends NebulithicAscensionRewrittenModElements.Mod
 		@Override
 		public boolean canDespawn(double distanceToClosestPlayer) {
 			return false;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

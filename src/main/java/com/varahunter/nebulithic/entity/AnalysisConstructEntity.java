@@ -60,7 +60,7 @@ public class AnalysisConstructEntity extends NebulithicAscensionRewrittenModElem
 						.setRegistryName("analysis_construct");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -16750900, -16711681, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("analysis_construct"));
+				.setRegistryName("analysis_construct_spawn_egg"));
 	}
 
 	@SubscribeEvent

@@ -63,8 +63,8 @@ public class UnbornMageEntity extends NebulithicAscensionRewrittenModElements.Mo
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f))
 						.build("unborn_mage").setRegistryName("unborn_mage");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -16724788, -65281, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("unborn_mage"));
+		elements.items.add(() -> new SpawnEggItem(entity, -16724788, -65281, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("unborn_mage_spawn_egg"));
 	}
 
 	@SubscribeEvent

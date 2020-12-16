@@ -57,8 +57,8 @@ public class SclerosianBruteEntity extends NebulithicAscensionRewrittenModElemen
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("sclerosian_brute")
 						.setRegistryName("sclerosian_brute");
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -16724788, -65281, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("sclerosian_brute"));
+		elements.items.add(() -> new SpawnEggItem(entity, -16724788, -65281, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("sclerosian_brute_spawn_egg"));
 	}
 
 	@Override
@@ -116,10 +116,6 @@ public class SclerosianBruteEntity extends NebulithicAscensionRewrittenModElemen
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

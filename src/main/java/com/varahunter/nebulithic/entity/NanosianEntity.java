@@ -53,8 +53,8 @@ public class NanosianEntity extends NebulithicAscensionRewrittenModElements.ModE
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("nanosian")
 						.setRegistryName("nanosian");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -16750900, -13369549, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("nanosian"));
+		elements.items.add(() -> new SpawnEggItem(entity, -16750900, -13369549, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("nanosian_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -104,10 +104,6 @@ public class NanosianEntity extends NebulithicAscensionRewrittenModElements.ModE
 		@Override
 		public boolean canDespawn(double distanceToClosestPlayer) {
 			return false;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override
