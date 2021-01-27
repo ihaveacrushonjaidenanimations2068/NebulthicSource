@@ -12,7 +12,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Hand;
@@ -26,11 +25,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
@@ -39,38 +38,42 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-import com.varahunter.nebulithic.block.ConstructCoreBlock;
+import java.util.Map;
+import java.util.HashMap;
+
+import com.varahunter.nebulithic.procedures.SangriosapienRightClickedOnEntityProcedure;
+import com.varahunter.nebulithic.item.SangriaGelItem;
 import com.varahunter.nebulithic.NebulithicAscensionRewrittenModElements;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @NebulithicAscensionRewrittenModElements.ModElement.Tag
-public class PulverizerConstructEntity extends NebulithicAscensionRewrittenModElements.ModElement {
+public class ControlledSangriosapienEntity extends NebulithicAscensionRewrittenModElements.ModElement {
 	public static EntityType entity = null;
-	public PulverizerConstructEntity(NebulithicAscensionRewrittenModElements instance) {
-		super(instance, 262);
+	public ControlledSangriosapienEntity(NebulithicAscensionRewrittenModElements instance) {
+		super(instance, 296);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("pulverizer_construct")
-						.setRegistryName("pulverizer_construct");
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f))
+						.build("controlled_sangriosapien").setRegistryName("controlled_sangriosapien");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -16750900, -16711681, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("pulverizer_construct_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -52429, -3407668, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("controlled_sangriosapien_spawn_egg"));
 	}
 
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
-			return new MobRenderer(renderManager, new ModelPulverizerConstruct(), 0.5f) {
+			return new MobRenderer(renderManager, new ModelSangriosapien(), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("nebulithic_ascension_rewritten:textures/pulverizerconstruct.png");
+					return new ResourceLocation("nebulithic_ascension_rewritten:textures/sangriosapien_controlled.png");
 				}
 			};
 		});
@@ -95,11 +98,13 @@ public class PulverizerConstructEntity extends NebulithicAscensionRewrittenModEl
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(5, new SwimGoal(this));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, SangriosapienEntity.CustomEntity.class, false, false));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(7, new SwimGoal(this));
 		}
 
 		@Override
@@ -114,7 +119,7 @@ public class PulverizerConstructEntity extends NebulithicAscensionRewrittenModEl
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(ConstructCoreBlock.block, (int) (1)));
+			this.entityDropItem(new ItemStack(SangriaGelItem.block, (int) (1)));
 		}
 
 		@Override
@@ -132,11 +137,15 @@ public class PulverizerConstructEntity extends NebulithicAscensionRewrittenModEl
 			ItemStack itemstack = sourceentity.getHeldItem(hand);
 			boolean retval = true;
 			super.processInteract(sourceentity, hand);
-			sourceentity.startRiding(this);
 			double x = this.getPosX();
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				SangriosapienRightClickedOnEntityProcedure.executeProcedure($_dependencies);
+			}
 			return retval;
 		}
 
@@ -154,90 +163,44 @@ public class PulverizerConstructEntity extends NebulithicAscensionRewrittenModEl
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK);
-			this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(10D);
-		}
-
-		@Override
-		public void travel(Vec3d dir) {
-			Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
-			if (this.isBeingRidden()) {
-				this.rotationYaw = entity.rotationYaw;
-				this.prevRotationYaw = this.rotationYaw;
-				this.rotationPitch = entity.rotationPitch * 0.5F;
-				this.setRotation(this.rotationYaw, this.rotationPitch);
-				this.jumpMovementFactor = this.getAIMoveSpeed() * 0.15F;
-				this.renderYawOffset = entity.rotationYaw;
-				this.rotationYawHead = entity.rotationYaw;
-				this.stepHeight = 1.0F;
-				if (entity instanceof LivingEntity) {
-					this.setAIMoveSpeed((float) this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getValue());
-					float forward = ((LivingEntity) entity).moveForward;
-					float strafe = ((LivingEntity) entity).moveStrafing;
-					super.travel(new Vec3d(strafe, 0, forward));
-				}
-				this.prevLimbSwingAmount = this.limbSwingAmount;
-				double d1 = this.getPosX() - this.prevPosX;
-				double d0 = this.getPosZ() - this.prevPosZ;
-				float f1 = MathHelper.sqrt(d1 * d1 + d0 * d0) * 4.0F;
-				if (f1 > 1.0F)
-					f1 = 1.0F;
-				this.limbSwingAmount += (f1 - this.limbSwingAmount) * 0.4F;
-				this.limbSwing += this.limbSwingAmount;
-				return;
-			}
-			this.stepHeight = 0.5F;
-			this.jumpMovementFactor = 0.02F;
-			super.travel(dir);
+			this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(5D);
 		}
 	}
 
 	// Made with Blockbench 3.5.4
 	// Exported for Minecraft version 1.15
 	// Paste this class into your mod and generate all required imports
-	public static class ModelPulverizerConstruct extends EntityModel<Entity> {
+	public static class ModelSangriosapien extends EntityModel<Entity> {
 		private final ModelRenderer bone;
-		private final ModelRenderer legLeft;
-		private final ModelRenderer bone5;
-		private final ModelRenderer legRight;
-		private final ModelRenderer bone6;
+		private final ModelRenderer bone2;
+		private final ModelRenderer bone3;
 		private final ModelRenderer bone4;
-		private final ModelRenderer bone7;
-		public ModelPulverizerConstruct() {
+		public ModelSangriosapien() {
 			textureWidth = 128;
 			textureHeight = 128;
 			bone = new ModelRenderer(this);
 			bone.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bone.setTextureOffset(0, 37).addBox(-9.0F, -28.0F, -7.0F, 19.0F, 17.0F, 14.0F, 0.0F, false);
-			legLeft = new ModelRenderer(this);
-			legLeft.setRotationPoint(10.0F, -12.0F, 4.5F);
-			bone.addChild(legLeft);
-			legLeft.setTextureOffset(66, 37).addBox(-1.0F, 0.0F, -2.5F, 6.0F, 12.0F, 6.0F, 0.0F, false);
-			bone5 = new ModelRenderer(this);
-			bone5.setRotationPoint(-11.0F, -2.0F, -4.5F);
-			legLeft.addChild(bone5);
-			bone5.setTextureOffset(26, 68).addBox(10.0F, 12.0F, -5.0F, 6.0F, 2.0F, 7.0F, 0.0F, false);
-			legRight = new ModelRenderer(this);
-			legRight.setRotationPoint(-8.5F, -12.0F, 4.5F);
-			bone.addChild(legRight);
-			legRight.setTextureOffset(60, 62).addBox(-5.5F, 0.0F, -2.5F, 6.0F, 12.0F, 6.0F, 0.0F, false);
-			bone6 = new ModelRenderer(this);
-			bone6.setRotationPoint(-15.5F, -2.0F, -4.5F);
-			legRight.addChild(bone6);
-			bone6.setTextureOffset(0, 68).addBox(10.0F, 12.0F, -5.0F, 6.0F, 2.0F, 7.0F, 0.0F, false);
+			bone.setTextureOffset(0, 0).addBox(-9.0F, -1.0F, -8.0F, 17.0F, 1.0F, 16.0F, 0.0F, false);
+			bone.setTextureOffset(0, 17).addBox(-8.0F, -10.0F, -7.0F, 15.0F, 9.0F, 14.0F, 0.0F, false);
+			bone2 = new ModelRenderer(this);
+			bone2.setRotationPoint(-2.0F, 14.0F, 7.0F);
+			bone2.setTextureOffset(0, 40).addBox(-6.0F, -6.0F, -14.0F, 15.0F, 6.0F, 14.0F, 0.0F, false);
+			bone3 = new ModelRenderer(this);
+			bone3.setRotationPoint(7.0F, 14.0F, 1.0F);
+			setRotationAngle(bone3, 0.0F, 0.0F, 0.6981F);
+			bone3.setTextureOffset(44, 17).addBox(0.0F, -1.0F, -2.0F, 7.0F, 3.0F, 4.0F, 0.0F, false);
 			bone4 = new ModelRenderer(this);
-			bone4.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bone4.setTextureOffset(0, 0).addBox(-9.0F, -28.0F, -27.0F, 19.0F, 17.0F, 20.0F, 0.0F, false);
-			bone7 = new ModelRenderer(this);
-			bone7.setRotationPoint(0.5F, -28.5F, -8.0F);
-			bone4.addChild(bone7);
-			setRotationAngle(bone7, 0.6981F, 0.0F, 0.0F);
-			bone7.setTextureOffset(58, 0).addBox(-9.5F, -14.5F, -1.0F, 19.0F, 15.0F, 2.0F, 0.0F, false);
+			bone4.setRotationPoint(-9.0F, 14.0F, 0.0F);
+			setRotationAngle(bone4, 0.0F, 0.0F, -0.6981F);
+			bone4.setTextureOffset(44, 44).addBox(-6.0F, -1.0F, -1.0F, 7.0F, 3.0F, 4.0F, 0.0F, false);
 		}
 
 		@Override
 		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
 				float alpha) {
 			bone.render(matrixStack, buffer, packedLight, packedOverlay);
+			bone2.render(matrixStack, buffer, packedLight, packedOverlay);
+			bone3.render(matrixStack, buffer, packedLight, packedOverlay);
 			bone4.render(matrixStack, buffer, packedLight, packedOverlay);
 		}
 
@@ -248,8 +211,9 @@ public class PulverizerConstructEntity extends NebulithicAscensionRewrittenModEl
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
-			this.legRight.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-			this.legLeft.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+			this.bone3.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
+			this.bone2.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
+			this.bone4.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 		}
 	}
 }

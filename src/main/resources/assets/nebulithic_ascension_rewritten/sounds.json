@@ -71,15 +71,6 @@
       }
     ]
   },
-  "unborn_isles_ambience": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "nebulithic_ascension_rewritten:unborn_isles_ambienceogg",
-        "stream": false
-      }
-    ]
-  },
   "entity.unborn_mage.breath": {
     "category": "master",
     "sounds": [
@@ -121,6 +112,24 @@
     "sounds": [
       {
         "name": "nebulithic_ascension_rewritten:raygun_fire",
+        "stream": false
+      }
+    ]
+  },
+  "enity.cognitohopper.step": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:cognitohopper_step",
+        "stream": false
+      }
+    ]
+  },
+  "unborn_isles_ambience": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:unborn_isles_ambienceogg",
         "stream": false
       }
     ]

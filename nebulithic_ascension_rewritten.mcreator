@@ -3305,6 +3305,91 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "grassy_terraformed_nanostone"
+    },
+    {
+      "name": "Cognitohopper",
+      "type": "mob",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cognitohopper"
+    },
+    {
+      "name": "CognitohopperCreateSecretions",
+      "type": "procedure",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cognitohopper_create_secretions",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cognitacid",
+      "type": "block",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cognitacid"
+    },
+    {
+      "name": "ControlledSangriosapien",
+      "type": "mob",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "controlled_sangriosapien"
+    },
+    {
+      "name": "CognitohopperEntityDies",
+      "type": "procedure",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cognitohopper_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3366,13 +3451,6 @@
       "category": "master"
     },
     {
-      "name": "unborn_isles_ambience",
-      "files": [
-        "unborn_isles_ambienceogg"
-      ],
-      "category": "master"
-    },
-    {
       "name": "entity.unborn_mage.breath",
       "files": [
         "unborn_mage_breath"
@@ -3406,29 +3484,44 @@
         "raygun_fire"
       ],
       "category": "master"
+    },
+    {
+      "name": "enity.cognitohopper.step",
+      "files": [
+        "cognitohopper_step"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "unborn_isles_ambience",
+      "files": [
+        "unborn_isles_ambienceogg"
+      ],
+      "category": "master"
     }
   ],
   "language_map": {
     "en_us": {
-      "entity.nebulithic_ascension_rewritten.razorbird": "Razorbird",
       "block.nebulithic_ascension_rewritten.veinwood_log": "Veinwood Log",
-      "item.nebulithic_ascension_rewritten.nanosian_spawn_egg": "Nanosian Spawn Egg",
+      "entity.nebulithic_ascension_rewritten.razorbird": "Razorbird",
       "item.nebulithic_ascension_rewritten.cactrap_barb": "Cactrap Barb",
+      "item.nebulithic_ascension_rewritten.nanosian_spawn_egg": "Nanosian Spawn Egg",
       "item.nebulithic_ascension_rewritten.scleroptera_adult": "Scleroptera Spawn Egg",
       "entity.nebulithic_ascension_rewritten.pulverizer_construct": "Pulverizer Construct",
       "entity.nebulithic_ascension_rewritten.cactrap": "Cactrap",
       "block.nebulithic_ascension_rewritten.dormant_cactrap": "Dormant Cactrap",
       "entity.nebulithic_ascension_rewritten.undead_scleroptera": "Scleroptera",
-      "block.nebulithic_ascension_rewritten.dense_volcanic_matter": "Dense Volcanic Matter",
       "block.nebulithic_ascension_rewritten.sclerotic_dirt": "Sclerotic Dirt",
+      "block.nebulithic_ascension_rewritten.dense_volcanic_matter": "Dense Volcanic Matter",
       "block.nebulithic_ascension_rewritten.hemopine_door": "Hemopine Door",
       "block.nebulithic_ascension_rewritten.hemopine_log": "Hemopine Log",
       "entity.nebulithic_ascension_rewritten.mini_cactrap": "Mini Cactrap",
       "biome.nebulithic_ascension_rewritten.purple_mebris_forest": "Purple Mebris Forest",
       "block.nebulithic_ascension_rewritten.personal_ray_gun_tile": "Personal Ray Gun Tile",
       "block.nebulithic_ascension_rewritten.smooth_mebris_dirt": "Smooth Mebris Dirt",
-      "block.nebulithic_ascension_rewritten.terraformed_nanostone": "Terraformed Nanostone",
       "block.nebulithic_ascension_rewritten.sclerotis_258_surface_rock": "Sclerotis 258 Surface Rock",
+      "block.nebulithic_ascension_rewritten.terraformed_nanostone": "Terraformed Nanostone",
       "item.nebulithic_ascension_rewritten.vascaeto_launcher": "Vascaeto Launcher",
       "entity.nebulithic_ascension_rewritten.ashling": "Ashling",
       "block.nebulithic_ascension_rewritten.polionia_leaves": "Polionia Leaves",
@@ -3447,6 +3540,7 @@
       "item.nebulithic_ascension_rewritten.automaton": "Automaton Spawn Egg",
       "block.nebulithic_ascension_rewritten.polionia_grass": "Polionia Grass",
       "biome.nebulithic_ascension_rewritten.snowy_hilly_barrens": "Snowy Hilly Barrens",
+      "block.nebulithic_ascension_rewritten.cognitacid": "Cognitacid",
       "biome.nebulithic_ascension_rewritten.untouched_fields": "Untouched Fields",
       "item.nebulithic_ascension_rewritten.starswimmer_construct_item": "Starswimmer Construct",
       "biome.nebulithic_ascension_rewritten.eczemic_hilly_barrens": "Eczemic Hilly Barrens",
@@ -3455,10 +3549,10 @@
       "item.nebulithic_ascension_rewritten.target_dummy_spawn_egg": "Target Dummy Spawn Egg",
       "block.nebulithic_ascension_rewritten.awake_cactrap": "Dormant Cactrap",
       "block.nebulithic_ascension_rewritten.mossy_dreadstone_bricks": "Mossy Dreadstone Bricks",
-      "block.nebulithic_ascension_rewritten.purple_mebris_vine": "Purple Mebris Vine",
       "block.nebulithic_ascension_rewritten.mebris_dirt": "Mebris Dirt",
-      "entity.nebulithic_ascension_rewritten.basic_body_construct_hacked": "Basic Body Construct",
+      "block.nebulithic_ascension_rewritten.purple_mebris_vine": "Purple Mebris Vine",
       "block.nebulithic_ascension_rewritten.hypoglycemic_sandstone": "Hypoglycemic Sandstone",
+      "entity.nebulithic_ascension_rewritten.basic_body_construct_hacked": "Basic Body Construct",
       "item.nebulithic_ascension_rewritten.contemplator": "Contemplator Spawn Egg",
       "block.nebulithic_ascension_rewritten.fertillum_ore": "Fertillum Ore",
       "block.nebulithic_ascension_rewritten.dreadshroom_stem": "Dreadshroom Stem",
@@ -3481,8 +3575,8 @@
       "block.nebulithic_ascension_rewritten.dysenterium_ore_block": "Block of Dysenterium",
       "block.nebulithic_ascension_rewritten.sclerotic_grass": "Sclerotic Grass",
       "block.nebulithic_ascension_rewritten.polionia_sand": "Plumesand",
-      "item.nebulithic_ascension_rewritten.scleroptera_adult_spawn_egg": "Scleroptera Spawn Egg",
       "entity.nebulithic_ascension_rewritten.tank_ridable": "Factorion ",
+      "item.nebulithic_ascension_rewritten.scleroptera_adult_spawn_egg": "Scleroptera Spawn Egg",
       "block.nebulithic_ascension_rewritten.dreadstone": "Dreadstone",
       "itemGroup.tabna_mounts": "Nebulthic Mounts",
       "block.nebulithic_ascension_rewritten.purple_mebris_leaves": "Purple Mebris Leaves",
@@ -3508,10 +3602,12 @@
       "block.nebulithic_ascension_rewritten.cheripite_ore_block": "Block of Cheripite",
       "block.nebulithic_ascension_rewritten.ash": "Ash",
       "itemGroup.tabna_research_tubes": "Nebulthic Research Tubes",
+      "entity.nebulithic_ascension_rewritten.cognitohopper": "Cognitohopper",
       "block.nebulithic_ascension_rewritten.ashling_egg": "Ashling Egg",
       "biome.nebulithic_ascension_rewritten.polionia_flatlands": "Polionia Flatlands",
       "block.nebulithic_ascension_rewritten.dormant_cactrap_bottom": "Dormant Cactrap",
       "item.nebulithic_ascension_rewritten.basic_body_construct_spawn_egg": "Basic Body Construct Spawn Egg",
+      "item.nebulithic_ascension_rewritten.controlled_sangriosapien_spawn_egg": "Sangriosapien Spawn Egg",
       "biome.nebulithic_ascension_rewritten.hilly_barrens": "Hilly Barrens",
       "item.nebulithic_ascension_rewritten.razorbird_spawn_egg": "Razorbird Spawn Egg",
       "biome.nebulithic_ascension_rewritten.fungal_growths": "Fungal Growths",
@@ -3576,6 +3672,7 @@
       "entity.nebulithic_ascension_rewritten.unborn": "Unborn",
       "itemGroup.tabna_blocks": "Nebulthic Blocks",
       "item.nebulithic_ascension_rewritten.sclerosia": "Sclerosia Realmstone",
+      "item.nebulithic_ascension_rewritten.cognitohopper_spawn_egg": "Cognitohopper Spawn Egg",
       "item.nebulithic_ascension_rewritten.factorion_tank_spawn_egg": "Factorion  Spawn Egg",
       "block.nebulithic_ascension_rewritten.sclerotis_261_snow": "Sclerotis 261 Snow",
       "item.nebulithic_ascension_rewritten.frostusk_spawn_egg": "Frostusk Spawn Egg",
@@ -3584,12 +3681,14 @@
       "item.nebulithic_ascension_rewritten.factorion_robot_spawn_egg": "Factorion  Spawn Egg",
       "item.nebulithic_ascension_rewritten.unborn": "Unborn Spawn Egg",
       "item.nebulithic_ascension_rewritten.unborn_mage_spawn_egg": "Unborn Mage Spawn Egg",
+      "subtitles.enity.cognitohopper.step": "",
       "item.nebulithic_ascension_rewritten.floppy_disk": "Floppy Disk",
       "item.nebulithic_ascension_rewritten.analysis_construct_hacked": "Analysis Construct Spawn Egg",
       "entity.nebulithic_ascension_rewritten.unborn_traveller": "Unborn Traveller",
       "item.nebulithic_ascension_rewritten.unborn_spit": "Unborn Spit",
       "item.nebulithic_ascension_rewritten.unborn_traveller": "Unborn Traveller Spawn Egg",
       "item.nebulithic_ascension_rewritten.pulverizer_construct": "Pulverizer Construct Spawn Egg",
+      "entity.nebulithic_ascension_rewritten.controlled_sangriosapien": "Sangriosapien",
       "block.nebulithic_ascension_rewritten.veinwood_leaves": "Veinwood Leaves",
       "entity.nebulithic_ascension_rewritten.lithosaurus": "Lithosaurus",
       "block.nebulithic_ascension_rewritten.sclerocalyptus_planks": "Sclerocalyptus Planks",

@@ -1,0 +1,8 @@
+{
+  "parent": "nebulithic_ascension_rewritten:custom/cognitacid",
+  "textures": {
+    "all": "nebulithic_ascension_rewritten:blocks/cognitacid",
+    "particle": "nebulithic_ascension_rewritten:blocks/cognitacid",
+    "0": "nebulithic_ascension_rewritten:blocks/cognitacid"
+  }
+}

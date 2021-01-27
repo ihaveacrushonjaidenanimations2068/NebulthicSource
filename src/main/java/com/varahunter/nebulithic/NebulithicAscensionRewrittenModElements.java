@@ -63,8 +63,6 @@ public class NebulithicAscensionRewrittenModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("nebulithic_ascension_rewritten", "entity.unborn.death")));
 		sounds.put(new ResourceLocation("nebulithic_ascension_rewritten", "entity.unborn.hurt"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("nebulithic_ascension_rewritten", "entity.unborn.hurt")));
-		sounds.put(new ResourceLocation("nebulithic_ascension_rewritten", "unborn_isles_ambience"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("nebulithic_ascension_rewritten", "unborn_isles_ambience")));
 		sounds.put(new ResourceLocation("nebulithic_ascension_rewritten", "entity.unborn_mage.breath"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("nebulithic_ascension_rewritten", "entity.unborn_mage.breath")));
 		sounds.put(new ResourceLocation("nebulithic_ascension_rewritten", "entity.unborn_mage.death"),
@@ -75,6 +73,10 @@ public class NebulithicAscensionRewrittenModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("nebulithic_ascension_rewritten", "entity.unborn.vomit")));
 		sounds.put(new ResourceLocation("nebulithic_ascension_rewritten", "item.ray_gun_use"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("nebulithic_ascension_rewritten", "item.ray_gun_use")));
+		sounds.put(new ResourceLocation("nebulithic_ascension_rewritten", "enity.cognitohopper.step"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nebulithic_ascension_rewritten", "enity.cognitohopper.step")));
+		sounds.put(new ResourceLocation("nebulithic_ascension_rewritten", "unborn_isles_ambience"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nebulithic_ascension_rewritten", "unborn_isles_ambience")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("nebulithic_ascension_rewritten").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
