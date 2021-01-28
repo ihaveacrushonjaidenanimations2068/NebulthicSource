@@ -18,6 +18,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.particles.ParticleTypes;
@@ -45,6 +46,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.block.BlockState;
 
 import java.util.Random;
 import java.util.Map;
@@ -121,11 +123,12 @@ public class CognitohopperEntity extends NebulithicAscensionRewrittenModElements
 		protected void registerGoals() {
 			super.registerGoals();
 			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, false));
-			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, true));
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(6, new SwimGoal(this));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, SymbiceliumEntity.CustomEntity.class, true, false));
+			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, true));
+			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(7, new SwimGoal(this));
 		}
 
 		@Override
@@ -134,14 +137,15 @@ public class CognitohopperEntity extends NebulithicAscensionRewrittenModElements
 		}
 
 		@Override
-		public net.minecraft.util.SoundEvent getAmbientSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-					.getValue(new ResourceLocation("nebulithic_ascension_rewritten:enity.cognitohopper.step"));
+		public void playStepSound(BlockPos pos, BlockState blockIn) {
+			this.playSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+					.getValue(new ResourceLocation("nebulithic_ascension_rewritten:enity.cognitohopper.step")), 0.15f, 1);
 		}
 
 		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+					.getValue(new ResourceLocation("nebulithic_ascension_rewritten:entity.cognitohopper.hurt"));
 		}
 
 		@Override

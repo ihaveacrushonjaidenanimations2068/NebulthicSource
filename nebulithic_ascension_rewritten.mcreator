@@ -3390,6 +3390,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Symbicelium",
+      "type": "mob",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "symbicelium"
     }
   ],
   "variable_elements": [],
@@ -3499,6 +3508,14 @@
         "unborn_isles_ambienceogg"
       ],
       "category": "master"
+    },
+    {
+      "name": "entity.cognitohopper.hurt",
+      "files": [
+        "cognitohopper_hurt"
+      ],
+      "category": "master",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -3536,6 +3553,7 @@
       "block.nebulithic_ascension_rewritten.sclerocalyptus_leaves": "Sclerocalyptus Leaves",
       "item.nebulithic_ascension_rewritten.vascaetosapien": "Vascaetosapien Spawn Egg",
       "item.nebulithic_ascension_rewritten.tank_ridable": "Factorion  Spawn Egg",
+      "subtitles.entity.cognitohopper.hurt": "",
       "block.nebulithic_ascension_rewritten.hemopine_shrub": "Hemopine Shrub",
       "item.nebulithic_ascension_rewritten.automaton": "Automaton Spawn Egg",
       "block.nebulithic_ascension_rewritten.polionia_grass": "Polionia Grass",
@@ -3577,6 +3595,7 @@
       "block.nebulithic_ascension_rewritten.polionia_sand": "Plumesand",
       "entity.nebulithic_ascension_rewritten.tank_ridable": "Factorion ",
       "item.nebulithic_ascension_rewritten.scleroptera_adult_spawn_egg": "Scleroptera Spawn Egg",
+      "entity.nebulithic_ascension_rewritten.symbicelium": "Symbicelium",
       "block.nebulithic_ascension_rewritten.dreadstone": "Dreadstone",
       "itemGroup.tabna_mounts": "Nebulthic Mounts",
       "block.nebulithic_ascension_rewritten.purple_mebris_leaves": "Purple Mebris Leaves",
@@ -3649,6 +3668,7 @@
       "block.nebulithic_ascension_rewritten.sclerotis_261_stone": "Sclerotis 261 Stone",
       "block.nebulithic_ascension_rewritten.hemopine_leaves": "Hemopine Leaves",
       "entity.nebulithic_ascension_rewritten.scleroptera_adult": "Scleroptera",
+      "item.nebulithic_ascension_rewritten.symbicelium_spawn_egg": "Symbicelium Spawn Egg",
       "entity.nebulithic_ascension_rewritten.target_dummy": "Target Dummy",
       "item.nebulithic_ascension_rewritten.analysis_construct": "Basic Body Construct Spawn Egg",
       "itemGroup.tabna_utils": "Nebulthic Utility Blocks",
@@ -3737,7 +3757,7 @@
   "workspaceSettings": {
     "modid": "nebulithic_ascension_rewritten",
     "modName": "Nebulithic Ascension ",
-    "version": "1.15.2-3.1.0beta1",
+    "version": "1.15.2-4.0.0beta1",
     "description": "Explore unimaginable places in faraway galaxies",
     "author": "AJ",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/nebulithic-ascension",

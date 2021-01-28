@@ -133,5 +133,14 @@
         "stream": false
       }
     ]
+  },
+  "entity.cognitohopper.hurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nebulithic_ascension_rewritten:cognitohopper_hurt",
+        "stream": false
+      }
+    ]
   }
 }
