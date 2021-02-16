@@ -3,16 +3,13 @@ package com.varahunter.nebulithic.world.biome;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.IPlacementConfig;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.feature.structure.MineshaftStructure;
-import net.minecraft.world.gen.feature.structure.MineshaftConfig;
-import net.minecraft.world.gen.feature.IFeatureConfig;
+import net.minecraft.world.gen.feature.SeaGrassConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
@@ -27,7 +24,6 @@ import net.minecraft.util.math.MutableBoundingBox;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
@@ -36,17 +32,16 @@ import net.minecraft.block.Block;
 import java.util.Set;
 import java.util.Random;
 
-import com.varahunter.nebulithic.entity.SangriosapienEntity;
-import com.varahunter.nebulithic.block.VolcanicGrassBlock;
-import com.varahunter.nebulithic.block.AshBlock;
+import com.varahunter.nebulithic.block.SeismiteSiltBlock;
+import com.varahunter.nebulithic.block.SeismiteBlock;
 import com.varahunter.nebulithic.NebulithicAscensionRewrittenModElements;
 
 @NebulithicAscensionRewrittenModElements.ModElement.Tag
-public class BloodForestBiome extends NebulithicAscensionRewrittenModElements.ModElement {
-	@ObjectHolder("nebulithic_ascension_rewritten:blood_forest")
+public class SeismiteCanyonBiome extends NebulithicAscensionRewrittenModElements.ModElement {
+	@ObjectHolder("nebulithic_ascension_rewritten:seismite_canyon")
 	public static final CustomBiome biome = null;
-	public BloodForestBiome(NebulithicAscensionRewrittenModElements instance) {
-		super(instance, 8);
+	public SeismiteCanyonBiome(NebulithicAscensionRewrittenModElements instance) {
+		super(instance, 302);
 	}
 
 	@Override
@@ -59,40 +54,20 @@ public class BloodForestBiome extends NebulithicAscensionRewrittenModElements.Mo
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
-			super(new Biome.Builder().downfall(0.5f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
-					.category(Biome.Category.NONE).waterColor(-14329397).waterFogColor(-14329397)
-					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(VolcanicGrassBlock.block.getDefaultState(),
-							AshBlock.block.getDefaultState(), AshBlock.block.getDefaultState())));
-			setRegistryName("blood_forest");
+			super(new Biome.Builder().downfall(0.5f).depth(0.1f).scale(1.2f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
+					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011)
+					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(SeismiteSiltBlock.block.getDefaultState(),
+							SeismiteBlock.block.getDefaultState(), SeismiteBlock.block.getDefaultState())));
+			setRegistryName("seismite_canyon");
 			DefaultBiomeFeatures.addCarvers(this);
-			this.addStructure(Feature.STRONGHOLD.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-			this.addStructure(Feature.MINESHAFT.withConfiguration(new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL)));
-			this.addStructure(Feature.PILLAGER_OUTPOST.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(20, 0.3D))
+					.withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 					new CustomTreeFeature()
 							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()),
 									new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()))).baseHeight(7)
 											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
-			this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(SangriosapienEntity.entity, 20, 4, 4));
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public int getGrassColor(double posX, double posZ) {
-			return -13261999;
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public int getFoliageColor() {
-			return -13261999;
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public int getSkyColor() {
-			return -5916161;
 		}
 	}
 
@@ -133,13 +108,14 @@ public class BloodForestBiome extends NebulithicAscensionRewrittenModElements.Mo
 				} else {
 					Block ground = world.getBlockState(position.add(0, -1, 0)).getBlock();
 					Block ground2 = world.getBlockState(position.add(0, -2, 0)).getBlock();
-					if (!((ground == VolcanicGrassBlock.block.getDefaultState().getBlock() || ground == AshBlock.block.getDefaultState().getBlock())
-							&& (ground2 == VolcanicGrassBlock.block.getDefaultState().getBlock()
-									|| ground2 == AshBlock.block.getDefaultState().getBlock())))
+					if (!((ground == SeismiteSiltBlock.block.getDefaultState().getBlock()
+							|| ground == SeismiteBlock.block.getDefaultState().getBlock())
+							&& (ground2 == SeismiteSiltBlock.block.getDefaultState().getBlock()
+									|| ground2 == SeismiteBlock.block.getDefaultState().getBlock())))
 						return false;
 					BlockState state = world.getBlockState(position.down());
 					if (position.getY() < world.getHeight() - height - 1) {
-						setTreeBlockState(changedBlocks, world, position.down(), AshBlock.block.getDefaultState(), bbox);
+						setTreeBlockState(changedBlocks, world, position.down(), SeismiteBlock.block.getDefaultState(), bbox);
 						for (int genh = position.getY() - 3 + height; genh <= position.getY() + height; genh++) {
 							int i4 = genh - (position.getY() + height);
 							int j1 = (int) (1 - i4 * 0.5);
@@ -199,8 +175,8 @@ public class BloodForestBiome extends NebulithicAscensionRewrittenModElements.Mo
 
 		private boolean canGrowInto(Block blockType) {
 			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.AIR.getDefaultState().getBlock()
-					|| blockType == Blocks.AIR.getDefaultState().getBlock() || blockType == VolcanicGrassBlock.block.getDefaultState().getBlock()
-					|| blockType == AshBlock.block.getDefaultState().getBlock();
+					|| blockType == Blocks.AIR.getDefaultState().getBlock() || blockType == SeismiteSiltBlock.block.getDefaultState().getBlock()
+					|| blockType == SeismiteBlock.block.getDefaultState().getBlock();
 		}
 
 		private boolean isReplaceable(IWorld world, BlockPos pos) {

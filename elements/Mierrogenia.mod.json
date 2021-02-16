@@ -22,11 +22,17 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:BloodForest"
+      },
+      {
+        "value": "CUSTOM:MierrogenianFlatlands"
+      },
+      {
+        "value": "CUSTOM:SeismiteCanyon"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:DenseVolcanicMatter"
+      "value": "CUSTOM:Seismite"
     },
     "fluidBlock": {
       "value": "Blocks.FLOWING_LAVA"

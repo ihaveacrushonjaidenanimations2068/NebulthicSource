@@ -87,7 +87,7 @@ import java.util.Arrays;
 import java.lang.reflect.Method;
 
 import com.varahunter.nebulithic.item.MierrogeniaItem;
-import com.varahunter.nebulithic.block.DenseVolcanicMatterBlock;
+import com.varahunter.nebulithic.block.SeismiteBlock;
 import com.varahunter.nebulithic.NebulithicAscensionRewrittenModElements;
 
 import com.google.common.collect.Sets;
@@ -123,7 +123,9 @@ public class MierrogeniaDimension extends NebulithicAscensionRewrittenModElement
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:blood_forest")),};
+		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:blood_forest")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:mierrogenian_flatlands")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("nebulithic_ascension_rewritten:seismite_canyon")),};
 	}
 
 	@Override
@@ -755,7 +757,7 @@ public class MierrogeniaDimension extends NebulithicAscensionRewrittenModElement
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new OverworldGenSettings() {
 				public BlockState getDefaultBlock() {
-					return DenseVolcanicMatterBlock.block.getDefaultState();
+					return SeismiteBlock.block.getDefaultState();
 				}
 
 				public BlockState getDefaultFluid() {
@@ -787,7 +789,7 @@ public class MierrogeniaDimension extends NebulithicAscensionRewrittenModElement
 				for (Biome biome : this.biomes) {
 					biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
 						{
-							carvableBlocks = ImmutableSet.of(DenseVolcanicMatterBlock.block.getDefaultState().getBlock(),
+							carvableBlocks = ImmutableSet.of(SeismiteBlock.block.getDefaultState().getBlock(),
 									biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
 									biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
 						}

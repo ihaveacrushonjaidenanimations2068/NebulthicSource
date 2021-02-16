@@ -9,10 +9,9 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.IPlacementConfig;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.feature.structure.MineshaftStructure;
-import net.minecraft.world.gen.feature.structure.MineshaftConfig;
-import net.minecraft.world.gen.feature.IFeatureConfig;
+import net.minecraft.world.gen.feature.SeaGrassConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
@@ -27,7 +26,6 @@ import net.minecraft.util.math.MutableBoundingBox;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
@@ -36,17 +34,16 @@ import net.minecraft.block.Block;
 import java.util.Set;
 import java.util.Random;
 
-import com.varahunter.nebulithic.entity.SangriosapienEntity;
 import com.varahunter.nebulithic.block.VolcanicGrassBlock;
 import com.varahunter.nebulithic.block.AshBlock;
 import com.varahunter.nebulithic.NebulithicAscensionRewrittenModElements;
 
 @NebulithicAscensionRewrittenModElements.ModElement.Tag
-public class BloodForestBiome extends NebulithicAscensionRewrittenModElements.ModElement {
-	@ObjectHolder("nebulithic_ascension_rewritten:blood_forest")
+public class MierrogenianFlatlandsBiome extends NebulithicAscensionRewrittenModElements.ModElement {
+	@ObjectHolder("nebulithic_ascension_rewritten:mierrogenian_flatlands")
 	public static final CustomBiome biome = null;
-	public BloodForestBiome(NebulithicAscensionRewrittenModElements instance) {
-		super(instance, 8);
+	public MierrogenianFlatlandsBiome(NebulithicAscensionRewrittenModElements instance) {
+		super(instance, 300);
 	}
 
 	@Override
@@ -60,39 +57,25 @@ public class BloodForestBiome extends NebulithicAscensionRewrittenModElements.Mo
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0.5f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
-					.category(Biome.Category.NONE).waterColor(-14329397).waterFogColor(-14329397)
+					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011).parent("nebulithic_ascension_rewritten:blood_forest")
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(VolcanicGrassBlock.block.getDefaultState(),
 							AshBlock.block.getDefaultState(), AshBlock.block.getDefaultState())));
-			setRegistryName("blood_forest");
+			setRegistryName("mierrogenian_flatlands");
 			DefaultBiomeFeatures.addCarvers(this);
-			this.addStructure(Feature.STRONGHOLD.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-			this.addStructure(Feature.MINESHAFT.withConfiguration(new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL)));
-			this.addStructure(Feature.PILLAGER_OUTPOST.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(20, 0.3D))
+					.withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 					new CustomTreeFeature()
 							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()),
 									new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()))).baseHeight(7)
 											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
-			this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(SangriosapienEntity.entity, 20, 4, 4));
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public int getGrassColor(double posX, double posZ) {
-			return -13261999;
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public int getFoliageColor() {
-			return -13261999;
 		}
 
 		@OnlyIn(Dist.CLIENT)
 		@Override
 		public int getSkyColor() {
-			return -5916161;
+			return -65536;
 		}
 	}
 
@@ -173,7 +156,7 @@ public class BloodForestBiome extends NebulithicAscensionRewrittenModElements.Mo
 									if (rand.nextInt(4 - hlevel) == 0) {
 										Direction dir = Direction.getOpposite();
 										setTreeBlockState(changedBlocks, world, position.add(dir.getXOffset(), height - 5 + hlevel, dir.getZOffset()),
-												Blocks.AIR.getDefaultState(), bbox);
+												Blocks.CAVE_AIR.getDefaultState(), bbox);
 									}
 								}
 							}

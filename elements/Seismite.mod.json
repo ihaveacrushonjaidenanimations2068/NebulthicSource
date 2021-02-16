@@ -2,7 +2,7 @@
   "_fv": 13,
   "_type": "block",
   "definition": {
-    "texture": "draconiccrystalblock",
+    "texture": "seismite",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -24,7 +24,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Dense Volcanic Matter",
+    "name": "Seismite",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -33,7 +33,7 @@
     "creativeTab": {
       "value": "CUSTOM:NABlocks"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -97,15 +97,12 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:BloodForest"
-      },
-      {
-        "value": "CUSTOM:SeismiteCanyon"
+        "value": "CUSTOM:MierrogenianFlatlands"
       }
     ],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:Seismite"
+        "value": "CUSTOM:VolcanicGrass"
       }
     ],
     "frequencyPerChunks": 10,

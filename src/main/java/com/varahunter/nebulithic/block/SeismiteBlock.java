@@ -4,6 +4,7 @@ package com.varahunter.nebulithic.block;
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.gen.placement.Placement;
@@ -34,11 +35,11 @@ import com.varahunter.nebulithic.itemgroup.NABlocksItemGroup;
 import com.varahunter.nebulithic.NebulithicAscensionRewrittenModElements;
 
 @NebulithicAscensionRewrittenModElements.ModElement.Tag
-public class DenseVolcanicMatterBlock extends NebulithicAscensionRewrittenModElements.ModElement {
-	@ObjectHolder("nebulithic_ascension_rewritten:dense_volcanic_matter")
+public class SeismiteBlock extends NebulithicAscensionRewrittenModElements.ModElement {
+	@ObjectHolder("nebulithic_ascension_rewritten:seismite")
 	public static final Block block = null;
-	public DenseVolcanicMatterBlock(NebulithicAscensionRewrittenModElements instance) {
-		super(instance, 6);
+	public SeismiteBlock(NebulithicAscensionRewrittenModElements instance) {
+		super(instance, 299);
 	}
 
 	@Override
@@ -48,8 +49,9 @@ public class DenseVolcanicMatterBlock extends NebulithicAscensionRewrittenModEle
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("dense_volcanic_matter");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(1)
+					.harvestTool(ToolType.PICKAXE));
+			setRegistryName("seismite");
 		}
 
 		@Override
@@ -64,9 +66,7 @@ public class DenseVolcanicMatterBlock extends NebulithicAscensionRewrittenModEle
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
 			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("nebulithic_ascension_rewritten:blood_forest")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("nebulithic_ascension_rewritten:seismite_canyon")))
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("nebulithic_ascension_rewritten:mierrogenian_flatlands")))
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
@@ -81,13 +81,12 @@ public class DenseVolcanicMatterBlock extends NebulithicAscensionRewrittenModEle
 						return false;
 					return super.place(world, generator, rand, pos, config);
 				}
-			}.withConfiguration(
-					new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("dense_volcanic_matter", "dense_volcanic_matter", blockAt -> {
-						boolean blockCriteria = false;
-						if (blockAt.getBlock() == SeismiteBlock.block.getDefaultState().getBlock())
-							blockCriteria = true;
-						return blockCriteria;
-					}), block.getDefaultState(), 16)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 64))));
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("seismite", "seismite", blockAt -> {
+				boolean blockCriteria = false;
+				if (blockAt.getBlock() == VolcanicGrassBlock.block.getDefaultState().getBlock())
+					blockCriteria = true;
+				return blockCriteria;
+			}), block.getDefaultState(), 16)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 64))));
 		}
 	}
 }
