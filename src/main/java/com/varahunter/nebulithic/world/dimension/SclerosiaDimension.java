@@ -87,8 +87,8 @@ import java.util.Arrays;
 import java.lang.reflect.Method;
 
 import com.varahunter.nebulithic.item.SclerosiaItem;
-import com.varahunter.nebulithic.block.UmbrisStoneBlock;
 import com.varahunter.nebulithic.block.GallstoneBlock;
+import com.varahunter.nebulithic.block.DenseVolcanicMatterBlock;
 import com.varahunter.nebulithic.NebulithicAscensionRewrittenModElements;
 
 import com.google.common.collect.Sets;
@@ -327,13 +327,13 @@ public class SclerosiaDimension extends NebulithicAscensionRewrittenModElements.
 				int i;
 				for (i = 0; i < 22; ++i) {
 					BlockPos blockpos = pos.offset(directionIn, i);
-					if (!this.func_196900_a(this.world.getBlockState(blockpos))
-							|| !(this.world.getBlockState(blockpos.down()).getBlock() == UmbrisStoneBlock.block.getDefaultState().getBlock())) {
+					if (!this.func_196900_a(this.world.getBlockState(blockpos)) || !(this.world.getBlockState(blockpos.down())
+							.getBlock() == DenseVolcanicMatterBlock.block.getDefaultState().getBlock())) {
 						break;
 					}
 				}
 				BlockPos framePos = pos.offset(directionIn, i);
-				return (this.world.getBlockState(framePos).getBlock() == UmbrisStoneBlock.block.getDefaultState().getBlock()) ? i : 0;
+				return (this.world.getBlockState(framePos).getBlock() == DenseVolcanicMatterBlock.block.getDefaultState().getBlock()) ? i : 0;
 			}
 
 			public int getHeight() {
@@ -358,12 +358,12 @@ public class SclerosiaDimension extends NebulithicAscensionRewrittenModElements.
 						}
 						if (i == 0) {
 							BlockPos framePos = blockpos.offset(this.leftDir);
-							if (!(this.world.getBlockState(framePos).getBlock() == UmbrisStoneBlock.block.getDefaultState().getBlock())) {
+							if (!(this.world.getBlockState(framePos).getBlock() == DenseVolcanicMatterBlock.block.getDefaultState().getBlock())) {
 								break label56;
 							}
 						} else if (i == this.width - 1) {
 							BlockPos framePos = blockpos.offset(this.rightDir);
-							if (!(this.world.getBlockState(framePos).getBlock() == UmbrisStoneBlock.block.getDefaultState().getBlock())) {
+							if (!(this.world.getBlockState(framePos).getBlock() == DenseVolcanicMatterBlock.block.getDefaultState().getBlock())) {
 								break label56;
 							}
 						}
@@ -371,7 +371,7 @@ public class SclerosiaDimension extends NebulithicAscensionRewrittenModElements.
 				}
 				for (int j = 0; j < this.width; ++j) {
 					BlockPos framePos = this.bottomLeft.offset(this.rightDir, j).up(this.height);
-					if (!(this.world.getBlockState(framePos).getBlock() == UmbrisStoneBlock.block.getDefaultState().getBlock())) {
+					if (!(this.world.getBlockState(framePos).getBlock() == DenseVolcanicMatterBlock.block.getDefaultState().getBlock())) {
 						this.height = 0;
 						break;
 					}
@@ -596,7 +596,9 @@ public class SclerosiaDimension extends NebulithicAscensionRewrittenModElements.
 							boolean flag = i9 < 0;
 							blockpos$mutable.setPos(l9, j10, l10);
 							this.world.setBlockState(blockpos$mutable,
-									flag ? UmbrisStoneBlock.block.getDefaultState().getBlock().getDefaultState() : Blocks.AIR.getDefaultState());
+									flag
+											? DenseVolcanicMatterBlock.block.getDefaultState().getBlock().getDefaultState()
+											: Blocks.AIR.getDefaultState());
 						}
 					}
 				}
@@ -605,7 +607,7 @@ public class SclerosiaDimension extends NebulithicAscensionRewrittenModElements.
 				for (int j8 = -1; j8 < 4; ++j8) {
 					if (k7 == -1 || k7 == 2 || j8 == -1 || j8 == 3) {
 						blockpos$mutable.setPos(i6 + k7 * l6, k2 + j8, k6 + k7 * i3);
-						this.world.setBlockState(blockpos$mutable, UmbrisStoneBlock.block.getDefaultState().getBlock().getDefaultState(), 3);
+						this.world.setBlockState(blockpos$mutable, DenseVolcanicMatterBlock.block.getDefaultState().getBlock().getDefaultState(), 3);
 					}
 				}
 			}

@@ -3,7 +3,7 @@
   "_type": "dimension",
   "definition": {
     "portalFrame": {
-      "value": "CUSTOM:UmbrisStone"
+      "value": "CUSTOM:DenseVolcanicMatter"
     },
     "portalParticles": {
       "value": "PORTAL"
